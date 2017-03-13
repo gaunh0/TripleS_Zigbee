@@ -1,0 +1,627 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V9.30.3.3983 for 8051               02/Mar/2017  15:45:30
+// Copyright 2004-2016 IAR Systems AB.
+// Standalone license - IAR Embedded Workbench for 8051
+//
+//    Core               =  plain
+//    Code model         =  banked
+//    Data model         =  large
+//    Calling convention =  xdata reentrant
+//    Constant location  =  data_rom
+//    Dptr setup         =  1,16
+//                          
+//    Source file        =  
+//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_GPIO.c
+//    Command line       =  
+//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"
+//        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRUE
+//        -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8 -DMAC_CFG_RX_MAX=5
+//        -DZDO_COORDINATOR -DRTR_NWK) -f "C:\Users\Teddy\Desktop\aaa\[COMBROS]
+//        Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+//        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+//        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+//        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+//        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+//        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+//        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+//        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+//        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+//        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+//        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+//        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+//        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+//        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+//        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+//        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_GPIO.c" -D
+//        COORDINATOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D NV_RESTORE
+//        -D xHOLD_AUTO_START -D ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D
+//        MT_SYS_FUNC -D MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -D
+//        MULTICAST_ENABLED=FALSE -D ZCL_READ -D ZCL_WRITE -D ZCL_REPORT -D
+//        ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D ZCL_ON_OFF -D
+//        ZCL_HVAC_CLUSTER -D xHAL_UART=TRUE -D xHAL_UART_DMA=1 -lC
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List"
+//        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List"
+//        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
+//        Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\Obj"
+//        -e --debug --core=plain --dptr=16,1 --data_model=large
+//        --code_model=banked --calling_convention=xdata_reentrant
+//        --place_constants=data_rom --nr_virtual_regs 16 -I
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+//        -Ohz --require_prototypes
+//    List file          =  
+//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List\MS_GPIO.s51
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME MS_GPIO
+
+        RTMODEL "__SystemLibrary", "CLib"
+        RTMODEL "__calling_convention", "xdata_reentrant"
+        RTMODEL "__code_model", "banked"
+        RTMODEL "__core", "plain"
+        RTMODEL "__data_model", "large"
+        RTMODEL "__dptr_size", "16"
+        RTMODEL "__extended_stack", "disabled"
+        RTMODEL "__location_for_constants", "data"
+        RTMODEL "__number_of_dptrs", "1"
+        RTMODEL "__rt_version", "1"
+
+        RSEG DOVERLAY:DATA:NOROOT(0)
+        RSEG IOVERLAY:IDATA:NOROOT(0)
+        RSEG ISTACK:IDATA:NOROOT(0)
+        RSEG PSTACK:XDATA:NOROOT(0)
+        RSEG XSTACK:XDATA:NOROOT(0)
+
+        EXTERN ?BDISPATCH
+        EXTERN ?BRET
+
+        PUBLIC `??CheckOutputState::?relay`
+        FUNCTION `??CheckOutputState::?relay`,0203H
+        PUBLIC `??GPIO_init::?relay`
+        FUNCTION `??GPIO_init::?relay`,0203H
+        PUBLIC `??TURN_off::?relay`
+        FUNCTION `??TURN_off::?relay`,0203H
+        PUBLIC `??TURN_on::?relay`
+        FUNCTION `??TURN_on::?relay`,0203H
+        PUBLIC `??Toggle::?relay`
+        FUNCTION `??Toggle::?relay`,0203H
+        PUBLIC CheckOutputState
+        FUNCTION CheckOutputState,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBLIC GPIO_init
+        FUNCTION GPIO_init,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBWEAK P0DIR
+        PUBWEAK P0SEL
+        PUBWEAK P1DIR
+        PUBWEAK P1SEL
+        PUBLIC TURN_off
+        FUNCTION TURN_off,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBLIC TURN_on
+        FUNCTION TURN_on,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBLIC Toggle
+        FUNCTION Toggle,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBWEAK _A_P0
+        PUBWEAK _A_P1
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA_SP SP IDATA
+          CFI StackFrame CFA_PSP16 PSP16 XDATA
+          CFI StackFrame CFA_XSP16 XSP16 XDATA
+          CFI StaticOverlayFrame CFA_IOVERLAY IOVERLAY
+          CFI StaticOverlayFrame CFA_DOVERLAY DOVERLAY
+          CFI Resource `PSW.CY`:1, `B.BR0`:1, `B.BR1`:1, `B.BR2`:1, `B.BR3`:1
+          CFI Resource `B.BR4`:1, `B.BR5`:1, `B.BR6`:1, `B.BR7`:1, `VB.BR8`:1
+          CFI Resource `VB.BR9`:1, `VB.BR10`:1, `VB.BR11`:1, `VB.BR12`:1
+          CFI Resource `VB.BR13`:1, `VB.BR14`:1, `VB.BR15`:1, VB:8, B:8, A:8
+          CFI Resource PSW:8, DPL0:8, DPH0:8, R0:8, R1:8, R2:8, R3:8, R4:8, R5:8
+          CFI Resource R6:8, R7:8, V0:8, V1:8, V2:8, V3:8, V4:8, V5:8, V6:8, V7:8
+          CFI Resource V8:8, V9:8, V10:8, V11:8, V12:8, V13:8, V14:8, V15:8, SP:8
+          CFI Resource PSPH:8, PSPL:8, PSP16:16, XSPH:8, XSPL:8, XSP16:16
+          CFI VirtualResource ?RET:24
+          CFI Resource ?BRET_EXT:8
+          CFI VirtualResource ?RET_HIGH:8, ?RET_LOW:8
+          CFI ResourceParts PSP16 PSPH, PSPL
+          CFI ResourceParts XSP16 XSPH, XSPL
+          CFI ResourceParts ?RET ?BRET_EXT, ?RET_HIGH, ?RET_LOW
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign -1
+          CFI ReturnAddress ?RET CODE
+          CFI CFA_DOVERLAY Used
+          CFI CFA_IOVERLAY Used
+          CFI CFA_SP SP+-3
+          CFI CFA_PSP16 PSP16+0
+          CFI CFA_XSP16 XSP16+0
+          CFI `PSW.CY` SameValue
+          CFI `B.BR0` SameValue
+          CFI `B.BR1` SameValue
+          CFI `B.BR2` SameValue
+          CFI `B.BR3` SameValue
+          CFI `B.BR4` SameValue
+          CFI `B.BR5` SameValue
+          CFI `B.BR6` SameValue
+          CFI `B.BR7` SameValue
+          CFI `VB.BR8` SameValue
+          CFI `VB.BR9` SameValue
+          CFI `VB.BR10` SameValue
+          CFI `VB.BR11` SameValue
+          CFI `VB.BR12` SameValue
+          CFI `VB.BR13` SameValue
+          CFI `VB.BR14` SameValue
+          CFI `VB.BR15` SameValue
+          CFI VB SameValue
+          CFI B Undefined
+          CFI A Undefined
+          CFI PSW SameValue
+          CFI DPL0 SameValue
+          CFI DPH0 SameValue
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 Undefined
+          CFI R5 Undefined
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI V0 SameValue
+          CFI V1 SameValue
+          CFI V2 SameValue
+          CFI V3 SameValue
+          CFI V4 SameValue
+          CFI V5 SameValue
+          CFI V6 SameValue
+          CFI V7 SameValue
+          CFI V8 SameValue
+          CFI V9 SameValue
+          CFI V10 SameValue
+          CFI V11 SameValue
+          CFI V12 SameValue
+          CFI V13 SameValue
+          CFI V14 SameValue
+          CFI V15 SameValue
+          CFI PSPH Undefined
+          CFI PSPL Undefined
+          CFI XSPH Undefined
+          CFI XSPL Undefined
+          CFI ?RET Concat
+          CFI ?BRET_EXT Frame(CFA_SP, 3)
+          CFI ?RET_HIGH Frame(CFA_SP, 2)
+          CFI ?RET_LOW Frame(CFA_SP, 1)
+          CFI EndCommon cfiCommon0
+        
+CheckOutputState    SYMBOL "CheckOutputState"
+`??CheckOutputState::?relay` SYMBOL "?relay", CheckOutputState
+GPIO_init           SYMBOL "GPIO_init"
+`??GPIO_init::?relay` SYMBOL "?relay", GPIO_init
+TURN_off            SYMBOL "TURN_off"
+`??TURN_off::?relay` SYMBOL "?relay", TURN_off
+TURN_on             SYMBOL "TURN_on"
+`??TURN_on::?relay` SYMBOL "?relay", TURN_on
+Toggle              SYMBOL "Toggle"
+`??Toggle::?relay`  SYMBOL "?relay", Toggle
+
+// C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_GPIO.c
+//    1 /***************************************************************************************************
+//    2  *                                            INCLUDES
+//    3  ***************************************************************************************************/
+//    4 #include "MS_GPIO.h"
+
+        ASEGN SFR_AN:DATA:NOROOT,080H
+// union <unnamed> volatile __sfr _A_P0
+_A_P0:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,090H
+// union <unnamed> volatile __sfr _A_P1
+_A_P1:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0f3H
+// unsigned char volatile __sfr P0SEL
+P0SEL:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0f4H
+// unsigned char volatile __sfr P1SEL
+P1SEL:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0fdH
+// unsigned char volatile __sfr P0DIR
+P0DIR:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0feH
+// unsigned char volatile __sfr P1DIR
+P1DIR:
+        DATA8
+        DS 1
+//    5 #include "hal_timer.h"
+//    6 /***************************************************************************************************
+//    7  *                                             MACROS
+//    8  ***************************************************************************************************/
+//    9 
+//   10 /***************************************************************************************************
+//   11  *                                            CONSTANTS
+//   12  ***************************************************************************************************/
+//   13  
+//   14 /***************************************************************************************************
+//   15  *                                             TYPEDEFS
+//   16  ***************************************************************************************************/
+//   17 
+//   18 /***************************************************************************************************
+//   19  *                                         GLOBAL VARIABLES
+//   20  ***************************************************************************************************/
+//   21 
+//   22 /***************************************************************************************************
+//   23  *                                          FUNCTIONS - External
+//   24  ***************************************************************************************************/
+//   25 
+//   26 /***************************************************************************************************
+//   27  *                                          FUNCTIONS - Local
+//   28  ***************************************************************************************************/
+//   29 
+//   30 
+//   31 
+//   32 /***************************************************************************************************
+//   33  *                                          FUNCTIONS - API
+//   34  ***************************************************************************************************/
+//   35 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   36 void GPIO_init(void)
+GPIO_init:
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function GPIO_init
+        CODE
+//   37 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   38 	/* Select general purpose on I/O pins. */
+//   39    	P0SEL &= ~(OUT_1_BIT);
+        ANL     0xf3,#0xbf
+//   40 	P1SEL &= ~(OUT_2_BIT|OUT_3_BIT);
+        ANL     0xf4,#0xfc
+//   41 		
+//   42 	/* Select GPIO direction : output */
+//   43 	P0DIR |= OUT_1_BIT;
+        ORL     0xfd,#0x40
+//   44 	P1DIR |= (OUT_2_BIT|OUT_3_BIT);
+        ORL     0xfe,#0x3
+//   45 }
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock0
+        REQUIRE P0SEL
+        REQUIRE P1SEL
+        REQUIRE P0DIR
+        REQUIRE P1DIR
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   46 void TURN_off(OUTPUT_TypeDef OUTx)
+TURN_off:
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function TURN_off
+        CODE
+//   47 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   48 	if(OUTx == 1)
+        MOV     A,#0x1
+        XRL     A,R1
+        JNZ     ??TURN_off_0
+//   49 	{
+//   50 		OUT_1 = 0;
+        CLR     0x80.6
+        SJMP    ??TURN_off_1
+//   51 	}
+//   52 	else if (OUTx ==2)
+??TURN_off_0:
+        MOV     A,#0x2
+        XRL     A,R1
+        JNZ     ??TURN_off_2
+//   53 	{
+//   54 		OUT_2 = 0;
+        CLR     0x90.0
+        SJMP    ??TURN_off_1
+//   55 	}
+//   56 	else if (OUTx == 3)
+??TURN_off_2:
+        MOV     A,#0x3
+        XRL     A,R1
+        JNZ     ??TURN_off_1
+//   57 	{
+//   58 		OUT_3 = 0;
+        CLR     0x90.1
+//   59 	}
+//   60 }
+??TURN_off_1:
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock1
+        REQUIRE _A_P0
+        REQUIRE _A_P1
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   61 void TURN_on(OUTPUT_TypeDef OUTx)
+TURN_on:
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Function TURN_on
+        CODE
+//   62 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   63 	if(OUTx == 1)
+        MOV     A,#0x1
+        XRL     A,R1
+        JNZ     ??TURN_on_0
+//   64 	{
+//   65 		OUT_1 = 1;
+        SETB    0x80.6
+        SJMP    ??TURN_on_1
+//   66 	}
+//   67 	else if (OUTx ==2)
+??TURN_on_0:
+        MOV     A,#0x2
+        XRL     A,R1
+        JNZ     ??TURN_on_2
+//   68 	{
+//   69 		OUT_2 = 1;
+        SETB    0x90.0
+        SJMP    ??TURN_on_1
+//   70 	}
+//   71 	else if (OUTx == 3)
+??TURN_on_2:
+        MOV     A,#0x3
+        XRL     A,R1
+        JNZ     ??TURN_on_1
+//   72 	{
+//   73 		OUT_3 = 1;
+        SETB    0x90.1
+//   74 	}
+//   75 }
+??TURN_on_1:
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock2
+        REQUIRE _A_P0
+        REQUIRE _A_P1
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   76 void Toggle(OUTPUT_TypeDef OUTx)
+Toggle:
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI Function Toggle
+        CODE
+//   77 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   78 	if(OUTx == 1)
+        MOV     A,#0x1
+        XRL     A,R1
+        JNZ     ??Toggle_0
+//   79 	{
+//   80 		OUT_1 = ~OUT_1;
+        MOV     C,0x80.6
+        SETB    B.0
+        MOV     C,0x80.6
+        JNB     B.0,??Toggle_1
+        CPL     C
+??Toggle_1:
+        MOV     0x80.6,C
+        SJMP    ??Toggle_2
+//   81 	}
+//   82 	else if (OUTx ==2)
+??Toggle_0:
+        MOV     A,#0x2
+        XRL     A,R1
+        JNZ     ??Toggle_3
+//   83 	{
+//   84 		OUT_2 = ~OUT_2;
+        MOV     C,0x90.0
+        SETB    B.0
+        MOV     C,0x90.0
+        JNB     B.0,??Toggle_4
+        CPL     C
+??Toggle_4:
+        MOV     0x90.0,C
+        SJMP    ??Toggle_2
+//   85 	}
+//   86 	else if (OUTx == 3)
+??Toggle_3:
+        MOV     A,#0x3
+        XRL     A,R1
+        JNZ     ??Toggle_2
+//   87 	{
+//   88 		OUT_3 = ~OUT_3;
+        MOV     C,0x90.1
+        SETB    B.0
+        MOV     C,0x90.1
+        JNB     B.0,??Toggle_5
+        CPL     C
+??Toggle_5:
+        MOV     0x90.1,C
+//   89 	}
+//   90 }
+??Toggle_2:
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock3
+        REQUIRE _A_P0
+        REQUIRE _A_P1
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   91 uint8 CheckOutputState(OUTPUT_TypeDef OUTx)
+CheckOutputState:
+          CFI Block cfiBlock4 Using cfiCommon0
+          CFI Function CheckOutputState
+        CODE
+//   92 {
+        ; Saved register size: 0
+        ; Auto size: 0
+        MOV     A,R1
+        MOV     R0,A
+//   93 	if(OUTx == 1)
+        MOV     A,#0x1
+        XRL     A,R0
+        JNZ     ??CheckOutputState_0
+//   94 	{
+//   95            if(OUT_1 == 1)
+        MOV     C,0x80.6
+        JC      ??CheckOutputState_1
+//   96              return 1;
+//   97            else
+//   98              return 0;
+//   99 	}
+//  100 	else if (OUTx ==2)
+//  101 	{
+//  102 	   if(OUT_2 == 1)
+//  103              return 1;
+//  104            else
+//  105              return 0;
+//  106 	}
+//  107 	else if (OUTx == 3)
+//  108 	{
+//  109 	   if(OUT_3 == 1)
+//  110              return 1;
+//  111            else
+//  112              return 0;
+??CheckOutputState_2:
+        MOV     R1,#0x0
+        SJMP    ??CheckOutputState_3
+??CheckOutputState_0:
+        MOV     A,#0x2
+        XRL     A,R0
+        JNZ     ??CheckOutputState_4
+        MOV     C,0x90.0
+        JC      ??CheckOutputState_1
+        SJMP    ??CheckOutputState_2
+??CheckOutputState_4:
+        MOV     A,#0x3
+        XRL     A,R0
+        JNZ     ??CheckOutputState_3
+        MOV     C,0x90.1
+        JNC     ??CheckOutputState_2
+??CheckOutputState_1:
+        MOV     R1,#0x1
+//  113 	}
+//  114 }
+??CheckOutputState_3:
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock4
+        REQUIRE _A_P0
+        REQUIRE _A_P1
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??GPIO_init::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    GPIO_init
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??TURN_off::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    TURN_off
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??TURN_on::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    TURN_on
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??Toggle::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    Toggle
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??CheckOutputState::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    CheckOutputState
+
+        END
+// 
+// 169 bytes in segment BANKED_CODE
+//  30 bytes in segment BANK_RELAYS
+//   6 bytes in segment SFR_AN
+// 
+//  30 bytes of CODE     memory
+//   0 bytes of DATA     memory (+ 6 bytes shared)
+// 169 bytes of HUGECODE memory
+//
+//Errors: none
+//Warnings: 1

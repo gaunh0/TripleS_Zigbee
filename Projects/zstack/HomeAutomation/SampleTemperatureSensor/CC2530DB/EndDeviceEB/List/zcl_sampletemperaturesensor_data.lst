@@ -1,0 +1,691 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V9.30.3.3983 for 8051                06/Mar/2017  23:17:53
+# Copyright 2004-2016 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor_data.c
+#    Command line       =  
+#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
+#        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+#        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+#        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+#        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+#        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+#        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor_data.c"
+#        -D END_DEVICE_SENSOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
+#        NV_RESTORE -D xPOWER_SAVING -D NWK_AUTO_POLL -D xHOLD_AUTO_START -D
+#        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
+#        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
+#        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
+#        ZCL_TEMPERATURE_MEASUREMENT -D HAL_UART=TRUE -D HAL_UART_DMA=1 -lC
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
+#        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
+#        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
+#        Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -I
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes
+#    List file          =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\zcl_sampletemperaturesensor_data.lst
+#    Object file        =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj\zcl_sampletemperaturesensor_data.r51
+#
+###############################################################################
+
+C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor_data.c
+      1          /**************************************************************************************************
+      2            Filename:       zcl_sampletemperaturesensor_data.c
+      3            Revised:        $Date: 2014-09-25 13:20:41 -0700 (Thu, 25 Sep 2014) $
+      4            Revision:       $Revision: 40295 $
+      5          
+      6          
+      7            Description:    Zigbee Cluster Library - sample device application.
+      8          
+      9          
+     10            Copyright 2013-2014 Texas Instruments Incorporated. All rights reserved.
+     11          
+     12            IMPORTANT: Your use of this Software is limited to those specific rights
+     13            granted under the terms of a software license agreement between the user
+     14            who downloaded the software, his/her employer (which must be your employer)
+     15            and Texas Instruments Incorporated (the "License").  You may not use this
+     16            Software unless you agree to abide by the terms of the License. The License
+     17            limits your use, and you acknowledge, that the Software may not be modified,
+     18            copied or distributed unless embedded on a Texas Instruments microcontroller
+     19            or used solely and exclusively in conjunction with a Texas Instruments radio
+     20            frequency transceiver, which is integrated into your product.  Other than for
+     21            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     22            works of, modify, distribute, perform, display or sell this Software and/or
+     23            its documentation for any purpose.
+     24          
+     25            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     26            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     27            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     28            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     29            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     30            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     31            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     32            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     33            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     34            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     35            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     36          
+     37            Should you have any questions regarding your right to use this Software,
+     38            contact Texas Instruments Incorporated at www.TI.com.
+     39          **************************************************************************************************/
+     40          
+     41          /*********************************************************************
+     42           * INCLUDES
+     43           */
+     44          #include "ZComDef.h"
+     45          #include "OSAL.h"
+     46          #include "AF.h"
+     47          #include "ZDConfig.h"
+     48          
+     49          #include "zcl.h"
+     50          #include "zcl_general.h"
+     51          #include "zcl_ha.h"
+     52          #include "zcl_ms.h"
+     53          #include "zcl_ezmode.h"
+     54          
+     55          #include "zcl_sampletemperaturesensor.h"
+     56          
+     57          /*********************************************************************
+     58           * CONSTANTS
+     59           */
+     60          
+     61          #define SAMPLETEMPERATURESENSOR_DEVICE_VERSION     0
+     62          #define SAMPLETEMPERATURESENSOR_FLAGS              0
+     63          
+     64          #define SAMPLETEMPERATURESENSOR_HWVERSION          1
+     65          #define SAMPLETEMPERATURESENSOR_ZCLVERSION         1
+     66          
+     67          /*********************************************************************
+     68           * TYPEDEFS
+     69           */
+     70          
+     71          /*********************************************************************
+     72           * MACROS
+     73           */
+     74          
+     75          /*********************************************************************
+     76           * GLOBAL VARIABLES
+     77           */
+     78          
+     79          // Basic Cluster
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     80          const uint8 zclSampleTemperatureSensor_HWRevision = SAMPLETEMPERATURESENSOR_HWVERSION;
+   \                     zclSampleTemperatureSensor_HWRevision:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     81          const uint8 zclSampleTemperatureSensor_ZCLVersion = SAMPLETEMPERATURESENSOR_ZCLVERSION;
+   \                     zclSampleTemperatureSensor_ZCLVersion:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     82          const uint8 zclSampleTemperatureSensor_ManufacturerName[] = { 16, 'T','e','x','a','s','I','n','s','t','r','u','m','e','n','t','s' };
+   \                     zclSampleTemperatureSensor_ManufacturerName:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   65           DB 101
+   \   000003   78           DB 120
+   \   000004   61           DB 97
+   \   000005   73           DB 115
+   \   000006   49           DB 73
+   \   000007   6E           DB 110
+   \   000008   73           DB 115
+   \   000009   74           DB 116
+   \   00000A   72           DB 114
+   \   00000B   75           DB 117
+   \   00000C   6D           DB 109
+   \   00000D   65           DB 101
+   \   00000E   6E           DB 110
+   \   00000F   74           DB 116
+   \   000010   73           DB 115
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     83          const uint8 zclSampleTemperatureSensor_ModelId[] = { 16, 'T','I','0','0','0','1',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleTemperatureSensor_ModelId:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   49           DB 73
+   \   000003   30           DB 48
+   \   000004   30           DB 48
+   \   000005   30           DB 48
+   \   000006   31           DB 49
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     84          const uint8 zclSampleTemperatureSensor_DateCode[] = { 16, '2','0','0','6','0','8','3','1',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleTemperatureSensor_DateCode:
+   \   000000   10           DB 16
+   \   000001   32           DB 50
+   \   000002   30           DB 48
+   \   000003   30           DB 48
+   \   000004   36           DB 54
+   \   000005   30           DB 48
+   \   000006   38           DB 56
+   \   000007   33           DB 51
+   \   000008   31           DB 49
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     85          const uint8 zclSampleTemperatureSensor_PowerSource = POWER_SOURCE_MAINS_1_PHASE;
+   \                     zclSampleTemperatureSensor_PowerSource:
+   \   000000   01           DB 1
+     86          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     87          uint8 zclSampleTemperatureSensor_LocationDescription[17] = { 16, ' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleTemperatureSensor_LocationDescription:
+   \   000000                DS 17
+   \   000011                REQUIRE `?<Initializer for zclSampleTemperatureSensor_L`
+   \   000011                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     88          uint8 zclSampleTemperatureSensor_PhysicalEnvironment = 0;
+   \                     zclSampleTemperatureSensor_PhysicalEnvironment:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     89          uint8 zclSampleTemperatureSensor_DeviceEnable = DEVICE_ENABLED;
+   \                     zclSampleTemperatureSensor_DeviceEnable:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleTemperatureSensor_D`
+   \   000001                REQUIRE __INIT_XDATA_I
+     90          
+     91          // Identify Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     92          uint16 zclSampleTemperatureSensor_IdentifyTime = 0;
+   \                     zclSampleTemperatureSensor_IdentifyTime:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+     93          
+     94          // On/Off Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     95          uint8  zclSampleTemperatureSensor_OnOff = LIGHT_OFF;
+   \                     zclSampleTemperatureSensor_OnOff:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     96          
+     97          // Temperature Sensor Cluster
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     98          int16 zclSampleTemperatureSensor_MeasuredValue = 2200;  // 22.00C
+   \                     zclSampleTemperatureSensor_MeasuredValue:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleTemperatureSensor_M`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     99          const int16 zclSampleTemperatureSensor_MinMeasuredValue = 1700;   // 17.00C
+   \                     zclSampleTemperatureSensor_MinMeasuredValue:
+   \   000000   A406         DW 1700
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    100          const uint16 zclSampleTemperatureSensor_MaxMeasuredValue = 2700;  // 27.00C
+   \                     zclSampleTemperatureSensor_MaxMeasuredValue:
+   \   000000   8C0A         DW 2700
+    101          
+    102          /*********************************************************************
+    103           * ATTRIBUTE DEFINITIONS - Uses REAL cluster IDs
+    104           */
+
+   \                                 In  segment CODE_C, align 1
+    105          CONST zclAttrRec_t zclSampleTemperatureSensor_Attrs[SAMPLETEMPERATURESENSOR_MAX_ATTRIBUTES] =
+   \                     zclSampleTemperatureSensor_Attrs:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   20           DB 32
+   \   000005   01           DB 1
+   \   000006   ....         DW zclSampleTemperatureSensor_HWRevision
+   \   000008   0000         DW 0
+   \   00000A   0000         DW 0
+   \   00000C   20           DB 32
+   \   00000D   01           DB 1
+   \   00000E   ....         DW zclSampleTemperatureSensor_ZCLVersion
+   \   000010   0000         DW 0
+   \   000012   0400         DW 4
+   \   000014   42           DB 66
+   \   000015   01           DB 1
+   \   000016   ....         DW zclSampleTemperatureSensor_ManufacturerName
+   \   000018   0000         DW 0
+   \   00001A   0500         DW 5
+   \   00001C   42           DB 66
+   \   00001D   01           DB 1
+   \   00001E   ....         DW zclSampleTemperatureSensor_ModelId
+   \   000020   0000         DW 0
+   \   000022   0600         DW 6
+   \   000024   42           DB 66
+   \   000025   01           DB 1
+   \   000026   ....         DW zclSampleTemperatureSensor_DateCode
+   \   000028   0000         DW 0
+   \   00002A   0700         DW 7
+   \   00002C   20           DB 32
+   \   00002D   01           DB 1
+   \   00002E   ....         DW zclSampleTemperatureSensor_PowerSource
+   \   000030   0000         DW 0
+   \   000032   1000         DW 16
+   \   000034   42           DB 66
+   \   000035   03           DB 3
+   \   000036   ....         DW zclSampleTemperatureSensor_LocationDescription
+   \   000038   0000         DW 0
+   \   00003A   1100         DW 17
+   \   00003C   20           DB 32
+   \   00003D   03           DB 3
+   \   00003E   ....         DW zclSampleTemperatureSensor_PhysicalEnvironment
+   \   000040   0000         DW 0
+   \   000042   1200         DW 18
+   \   000044   10           DB 16
+   \   000045   03           DB 3
+   \   000046   ....         DW zclSampleTemperatureSensor_DeviceEnable
+   \   000048   0300         DW 3
+   \   00004A   0000         DW 0
+   \   00004C   21           DB 33
+   \   00004D   03           DB 3
+   \   00004E   ....         DW zclSampleTemperatureSensor_IdentifyTime
+   \   000050   0600         DW 6
+   \   000052   0000         DW 0
+   \   000054   10           DB 16
+   \   000055   01           DB 1
+   \   000056   ....         DW zclSampleTemperatureSensor_OnOff
+   \   000058   0204         DW 1026
+   \   00005A   0000         DW 0
+   \   00005C   29           DB 41
+   \   00005D   01           DB 1
+   \   00005E   ....         DW zclSampleTemperatureSensor_MeasuredValue
+   \   000060   0204         DW 1026
+   \   000062   0100         DW 1
+   \   000064   29           DB 41
+   \   000065   01           DB 1
+   \   000066   ....         DW zclSampleTemperatureSensor_MinMeasuredValue
+   \   000068   0204         DW 1026
+   \   00006A   0200         DW 2
+   \   00006C   21           DB 33
+   \   00006D   01           DB 1
+   \   00006E   ....         DW zclSampleTemperatureSensor_MaxMeasuredValue
+   \   000070   00000000     DB 0, 0, 0, 0, 0, 0, 0, 0
+   \            00000000
+   \   000078   00000000     DB 0, 0, 0, 0, 0, 0, 0, 0
+   \            00000000
+   \   000080   00000000     DB 0, 0, 0, 0, 0, 0, 0, 0
+   \            00000000
+    106          {
+    107            // *** General Basic Cluster Attributes ***
+    108            {
+    109              ZCL_CLUSTER_ID_GEN_BASIC,             // Cluster IDs - defined in the foundation (ie. zcl.h)
+    110              {  // Attribute record
+    111                ATTRID_BASIC_HW_VERSION,            // Attribute ID - Found in Cluster Library header (ie. zcl_general.h)
+    112                ZCL_DATATYPE_UINT8,                 // Data Type - found in zcl.h
+    113                ACCESS_CONTROL_READ,                // Variable access control - found in zcl.h
+    114                (void *)&zclSampleTemperatureSensor_HWRevision  // Pointer to attribute variable
+    115              }
+    116            },
+    117            {
+    118              ZCL_CLUSTER_ID_GEN_BASIC,
+    119              { // Attribute record
+    120                ATTRID_BASIC_ZCL_VERSION,
+    121                ZCL_DATATYPE_UINT8,
+    122                ACCESS_CONTROL_READ,
+    123                (void *)&zclSampleTemperatureSensor_ZCLVersion
+    124              }
+    125            },
+    126            {
+    127              ZCL_CLUSTER_ID_GEN_BASIC,
+    128              { // Attribute record
+    129                ATTRID_BASIC_MANUFACTURER_NAME,
+    130                ZCL_DATATYPE_CHAR_STR,
+    131                ACCESS_CONTROL_READ,
+    132                (void *)zclSampleTemperatureSensor_ManufacturerName
+    133              }
+    134            },
+    135            {
+    136              ZCL_CLUSTER_ID_GEN_BASIC,
+    137              { // Attribute record
+    138                ATTRID_BASIC_MODEL_ID,
+    139                ZCL_DATATYPE_CHAR_STR,
+    140                ACCESS_CONTROL_READ,
+    141                (void *)zclSampleTemperatureSensor_ModelId
+    142              }
+    143            },
+    144            {
+    145              ZCL_CLUSTER_ID_GEN_BASIC,
+    146              { // Attribute record
+    147                ATTRID_BASIC_DATE_CODE,
+    148                ZCL_DATATYPE_CHAR_STR,
+    149                ACCESS_CONTROL_READ,
+    150                (void *)zclSampleTemperatureSensor_DateCode
+    151              }
+    152            },
+    153            {
+    154              ZCL_CLUSTER_ID_GEN_BASIC,
+    155              { // Attribute record
+    156                ATTRID_BASIC_POWER_SOURCE,
+    157                ZCL_DATATYPE_UINT8,
+    158                ACCESS_CONTROL_READ,
+    159                (void *)&zclSampleTemperatureSensor_PowerSource
+    160              }
+    161            },
+    162            {
+    163              ZCL_CLUSTER_ID_GEN_BASIC,
+    164              { // Attribute record
+    165                ATTRID_BASIC_LOCATION_DESC,
+    166                ZCL_DATATYPE_CHAR_STR,
+    167                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    168                (void *)zclSampleTemperatureSensor_LocationDescription
+    169              }
+    170            },
+    171            {
+    172              ZCL_CLUSTER_ID_GEN_BASIC,
+    173              { // Attribute record
+    174                ATTRID_BASIC_PHYSICAL_ENV,
+    175                ZCL_DATATYPE_UINT8,
+    176                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    177                (void *)&zclSampleTemperatureSensor_PhysicalEnvironment
+    178              }
+    179            },
+    180            {
+    181              ZCL_CLUSTER_ID_GEN_BASIC,
+    182              { // Attribute record
+    183                ATTRID_BASIC_DEVICE_ENABLED,
+    184                ZCL_DATATYPE_BOOLEAN,
+    185                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    186                (void *)&zclSampleTemperatureSensor_DeviceEnable
+    187              }
+    188            },
+    189          
+    190            // *** Identify Cluster Attribute ***
+    191            {
+    192              ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    193              { // Attribute record
+    194                ATTRID_IDENTIFY_TIME,
+    195                ZCL_DATATYPE_UINT16,
+    196                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    197                (void *)&zclSampleTemperatureSensor_IdentifyTime
+    198              }
+    199            },
+    200          
+    201            // *** On/Off Cluster Attributes ***
+    202            {
+    203              ZCL_CLUSTER_ID_GEN_ON_OFF,
+    204              { // Attribute record
+    205                ATTRID_ON_OFF,
+    206                ZCL_DATATYPE_BOOLEAN,
+    207                ACCESS_CONTROL_READ,
+    208                (void *)&zclSampleTemperatureSensor_OnOff
+    209              }
+    210            },
+    211          
+    212            // *** Temperature Measurement Attriubtes ***
+    213            {
+    214              ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
+    215              { // Attribute record
+    216                ATTRID_MS_TEMPERATURE_MEASURED_VALUE,
+    217                ZCL_DATATYPE_INT16,
+    218                ACCESS_CONTROL_READ,
+    219                (void *)&zclSampleTemperatureSensor_MeasuredValue
+    220              }
+    221            },
+    222            {
+    223              ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
+    224              { // Attribute record
+    225                ATTRID_MS_TEMPERATURE_MIN_MEASURED_VALUE,
+    226                ZCL_DATATYPE_INT16,
+    227                ACCESS_CONTROL_READ,
+    228                (void *)&zclSampleTemperatureSensor_MinMeasuredValue
+    229              }
+    230            },
+    231            {
+    232              ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
+    233              { // Attribute record
+    234                ATTRID_MS_TEMPERATURE_MAX_MEASURED_VALUE,
+    235                ZCL_DATATYPE_UINT16,
+    236                ACCESS_CONTROL_READ,
+    237                (void *)&zclSampleTemperatureSensor_MaxMeasuredValue
+    238              }
+    239            },
+    240          };
+    241          
+    242          /*********************************************************************
+    243           * SIMPLE DESCRIPTOR
+    244           */
+    245          // This is the Cluster ID List and should be filled with Application
+    246          // specific cluster IDs.
+    247          #define ZCLSAMPLETEMPERATURESENSOR_MAX_INCLUSTERS       3
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    248          const cId_t zclSampleTemperatureSensor_InClusterList[ZCLSAMPLETEMPERATURESENSOR_MAX_INCLUSTERS] =
+   \                     zclSampleTemperatureSensor_InClusterList:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   0204         DW 1026
+    249          {
+    250            ZCL_CLUSTER_ID_GEN_BASIC,
+    251            ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    252            ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT
+    253          };
+    254          
+    255          #define ZCLSAMPLETEMPERATURESENSOR_MAX_OUTCLUSTERS       1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    256          const cId_t zclSampleTemperatureSensor_OutClusterList[ZCLSAMPLETEMPERATURESENSOR_MAX_OUTCLUSTERS] =
+   \                     zclSampleTemperatureSensor_OutClusterList:
+   \   000000   0300         DW 3
+    257          {
+    258            ZCL_CLUSTER_ID_GEN_IDENTIFY
+    259          };
+    260          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    261          SimpleDescriptionFormat_t zclSampleTemperatureSensor_SimpleDesc =
+   \                     zclSampleTemperatureSensor_SimpleDesc:
+   \   000000                DS 12
+   \   00000C                REQUIRE `?<Initializer for zclSampleTemperatureSensor_S`
+   \   00000C                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleTemperatureSensor_L`:
+   \   000000   10           DB 16
+   \   000001   20           DB 32
+   \   000002   20           DB 32
+   \   000003   20           DB 32
+   \   000004   20           DB 32
+   \   000005   20           DB 32
+   \   000006   20           DB 32
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleTemperatureSensor_D`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleTemperatureSensor_M`:
+   \   000000   9808         DW 2200
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleTemperatureSensor_S`:
+   \   000000   01           DB 1
+   \   000001   0401         DW 260
+   \   000003   0203         DW 770
+   \   000005   00           DB 0
+   \   000006   03           DB 3
+   \   000007   ....         DW zclSampleTemperatureSensor_InClusterList
+   \   000009   01           DB 1
+   \   00000A   ....         DW zclSampleTemperatureSensor_OutClusterList
+    262          {
+    263            SAMPLETEMPERATURESENSOR_ENDPOINT,                  //  int Endpoint;
+    264            ZCL_HA_PROFILE_ID,                                 //  uint16 AppProfId[2];
+    265            ZCL_HA_DEVICEID_TEMPERATURE_SENSOR,                //  uint16 AppDeviceId[2];
+    266            SAMPLETEMPERATURESENSOR_DEVICE_VERSION,            //  int   AppDevVer:4;
+    267            SAMPLETEMPERATURESENSOR_FLAGS,                     //  int   AppFlags:4;
+    268            ZCLSAMPLETEMPERATURESENSOR_MAX_INCLUSTERS,         //  byte  AppNumInClusters;
+    269            (cId_t *)zclSampleTemperatureSensor_InClusterList, //  byte *pAppInClusterList;
+    270            ZCLSAMPLETEMPERATURESENSOR_MAX_OUTCLUSTERS,        //  byte  AppNumInClusters;
+    271            (cId_t *)zclSampleTemperatureSensor_OutClusterList //  byte *pAppInClusterList;
+    272          };
+    273          
+    274          /*********************************************************************
+    275           * GLOBAL FUNCTIONS
+    276           */
+    277          
+    278          /*********************************************************************
+    279           * LOCAL FUNCTIONS
+    280           */
+    281          
+    282          /****************************************************************************
+    283          ****************************************************************************/
+    284          
+    285          
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       1  ?<Initializer for zclSampleTemperatureSensor_D
+      17  ?<Initializer for zclSampleTemperatureSensor_L
+       2  ?<Initializer for zclSampleTemperatureSensor_M
+      12  ?<Initializer for zclSampleTemperatureSensor_S
+     136  zclSampleTemperatureSensor_Attrs
+      17  zclSampleTemperatureSensor_DateCode
+       1  zclSampleTemperatureSensor_DeviceEnable
+       1  zclSampleTemperatureSensor_HWRevision
+       2  zclSampleTemperatureSensor_IdentifyTime
+       6  zclSampleTemperatureSensor_InClusterList
+      17  zclSampleTemperatureSensor_LocationDescription
+      17  zclSampleTemperatureSensor_ManufacturerName
+       2  zclSampleTemperatureSensor_MaxMeasuredValue
+       2  zclSampleTemperatureSensor_MeasuredValue
+       2  zclSampleTemperatureSensor_MinMeasuredValue
+      17  zclSampleTemperatureSensor_ModelId
+       1  zclSampleTemperatureSensor_OnOff
+       2  zclSampleTemperatureSensor_OutClusterList
+       1  zclSampleTemperatureSensor_PhysicalEnvironment
+       1  zclSampleTemperatureSensor_PowerSource
+      12  zclSampleTemperatureSensor_SimpleDesc
+       1  zclSampleTemperatureSensor_ZCLVersion
+
+ 
+ 136 bytes in segment CODE_C
+  32 bytes in segment XDATA_I
+  32 bytes in segment XDATA_ID
+  66 bytes in segment XDATA_ROM_C
+   4 bytes in segment XDATA_Z
+ 
+ 168 bytes of CODE  memory
+  66 bytes of CONST memory
+  36 bytes of XDATA memory
+
+Errors: none
+Warnings: none

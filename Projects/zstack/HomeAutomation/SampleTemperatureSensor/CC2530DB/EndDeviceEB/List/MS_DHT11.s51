@@ -1,0 +1,1400 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// IAR C/C++ Compiler V9.30.3.3983 for 8051               23/Feb/2017  10:56:57
+// Copyright 2004-2016 IAR Systems AB.
+// Standalone license - IAR Embedded Workbench for 8051
+//
+//    Core               =  plain
+//    Code model         =  banked
+//    Data model         =  large
+//    Calling convention =  xdata reentrant
+//    Constant location  =  data_rom
+//    Dptr setup         =  1,16
+//                          
+//    Source file        =  
+//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_DHT11.c
+//    Command line       =  
+//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+//        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
+//        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+//        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+//        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+//        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+//        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+//        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+//        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+//        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+//        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+//        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+//        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+//        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+//        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+//        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+//        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+//        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_DHT11.c" -D
+//        END_DEVICE_SENSOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
+//        NV_RESTORE -D xPOWER_SAVING -D NWK_AUTO_POLL -D xHOLD_AUTO_START -D
+//        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
+//        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
+//        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
+//        ZCL_TEMPERATURE_MEASUREMENT -D HAL_UART=TRUE -D HAL_UART_DMA=1 -lC
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
+//        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
+//        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
+//        Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj"
+//        -e --debug --core=plain --dptr=16,1 --data_model=large
+//        --code_model=banked --calling_convention=xdata_reentrant
+//        --place_constants=data_rom --nr_virtual_regs 16 -I
+//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\"
+//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+//        -Ohz --require_prototypes
+//    List file          =  
+//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\MS_DHT11.s51
+//
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME MS_DHT11
+
+        RTMODEL "__SystemLibrary", "CLib"
+        RTMODEL "__calling_convention", "xdata_reentrant"
+        RTMODEL "__code_model", "banked"
+        RTMODEL "__core", "plain"
+        RTMODEL "__data_model", "large"
+        RTMODEL "__dptr_size", "16"
+        RTMODEL "__extended_stack", "disabled"
+        RTMODEL "__location_for_constants", "data"
+        RTMODEL "__number_of_dptrs", "1"
+        RTMODEL "__rt_version", "1"
+
+        RSEG DOVERLAY:DATA:NOROOT(0)
+        RSEG IOVERLAY:IDATA:NOROOT(0)
+        RSEG ISTACK:IDATA:NOROOT(0)
+        RSEG PSTACK:XDATA:NOROOT(0)
+        RSEG XSTACK:XDATA:NOROOT(0)
+
+        EXTERN ?V0
+        EXTERN ?V1
+        EXTERN ?BANKED_ENTER_XDATA
+        EXTERN ?BANKED_LEAVE_XDATA
+        EXTERN ?BDISPATCH
+        EXTERN ?BRET
+        EXTERN ?S_SHL
+        EXTERN __INIT_XDATA_I
+        EXTERN __INIT_XDATA_Z
+
+        PUBLIC `??DHT11_GetHumidityValue::?relay`
+        FUNCTION `??DHT11_GetHumidityValue::?relay`,0203H
+        PUBLIC `??DHT11_GetPackageValue::?relay`
+        FUNCTION `??DHT11_GetPackageValue::?relay`,0203H
+        PUBLIC `??DHT11_GetTempValue::?relay`
+        FUNCTION `??DHT11_GetTempValue::?relay`,0203H
+        PUBLIC `??DHT11_GetValue::?relay`
+        FUNCTION `??DHT11_GetValue::?relay`,0203H
+        PUBLIC `??DHT11_Init::?relay`
+        FUNCTION `??DHT11_Init::?relay`,0203H
+        PUBLIC `??DHT11_ReadSensor::?relay`
+        FUNCTION `??DHT11_ReadSensor::?relay`,0203H
+        PUBLIC `??DHT11_SetDataPinInput::?relay`
+        FUNCTION `??DHT11_SetDataPinInput::?relay`,0203H
+        PUBLIC `??DHT11_SetDataPinOutput::?relay`
+        FUNCTION `??DHT11_SetDataPinOutput::?relay`,0203H
+        PUBLIC `??DelayMs::?relay`
+        FUNCTION `??DelayMs::?relay`,0203H
+        PUBLIC `??DelayUs::?relay`
+        FUNCTION `??DelayUs::?relay`,0203H
+        PUBLIC DHT11_GetHumidityValue
+        FUNCTION DHT11_GetHumidityValue,0203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME ISTACK, 2, STACK
+        PUBLIC DHT11_GetPackageValue
+        FUNCTION DHT11_GetPackageValue,0203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME ISTACK, 2, STACK
+        PUBLIC DHT11_GetTempValue
+        FUNCTION DHT11_GetTempValue,0203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME ISTACK, 2, STACK
+        PUBLIC DHT11_GetValue
+        FUNCTION DHT11_GetValue,021203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        PUBLIC DHT11_Init
+        FUNCTION DHT11_Init,021203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME ISTACK, 2, STACK
+        PUBLIC DHT11_ReadSensor
+        FUNCTION DHT11_ReadSensor,0a1203H
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        LOCFRAME XSTACK, 10, STACK
+        PUBLIC DHT11_SetDataPinInput
+        FUNCTION DHT11_SetDataPinInput,0203H
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        PUBLIC DHT11_SetDataPinOutput
+        FUNCTION DHT11_SetDataPinOutput,0203H
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        PUBLIC DelayMs
+        FUNCTION DelayMs,0a1203H
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        LOCFRAME XSTACK, 10, STACK
+        PUBLIC DelayUs
+        FUNCTION DelayUs,080203H
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        PUBLIC OneWireDataBuffer
+        PUBWEAK P0DIR
+        PUBWEAK P0SEL
+        PUBWEAK _A_P0
+        PUBLIC _index
+        PUBLIC bitmask
+        PUBLIC byteIndex
+        PUBLIC humidityValue
+        PUBLIC loopCount
+        PUBLIC tempValue
+        
+          CFI Names cfiNames0
+          CFI StackFrame CFA_SP SP IDATA
+          CFI StackFrame CFA_PSP16 PSP16 XDATA
+          CFI StackFrame CFA_XSP16 XSP16 XDATA
+          CFI StaticOverlayFrame CFA_IOVERLAY IOVERLAY
+          CFI StaticOverlayFrame CFA_DOVERLAY DOVERLAY
+          CFI Resource `PSW.CY`:1, `B.BR0`:1, `B.BR1`:1, `B.BR2`:1, `B.BR3`:1
+          CFI Resource `B.BR4`:1, `B.BR5`:1, `B.BR6`:1, `B.BR7`:1, `VB.BR8`:1
+          CFI Resource `VB.BR9`:1, `VB.BR10`:1, `VB.BR11`:1, `VB.BR12`:1
+          CFI Resource `VB.BR13`:1, `VB.BR14`:1, `VB.BR15`:1, VB:8, B:8, A:8
+          CFI Resource PSW:8, DPL0:8, DPH0:8, R0:8, R1:8, R2:8, R3:8, R4:8, R5:8
+          CFI Resource R6:8, R7:8, V0:8, V1:8, V2:8, V3:8, V4:8, V5:8, V6:8, V7:8
+          CFI Resource V8:8, V9:8, V10:8, V11:8, V12:8, V13:8, V14:8, V15:8, SP:8
+          CFI Resource PSPH:8, PSPL:8, PSP16:16, XSPH:8, XSPL:8, XSP16:16
+          CFI VirtualResource ?RET:24
+          CFI Resource ?BRET_EXT:8
+          CFI VirtualResource ?RET_HIGH:8, ?RET_LOW:8
+          CFI ResourceParts PSP16 PSPH, PSPL
+          CFI ResourceParts XSP16 XSPH, XSPL
+          CFI ResourceParts ?RET ?BRET_EXT, ?RET_HIGH, ?RET_LOW
+          CFI EndNames cfiNames0
+        
+          CFI Common cfiCommon0 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign -1
+          CFI ReturnAddress ?RET CODE
+          CFI CFA_DOVERLAY Used
+          CFI CFA_IOVERLAY Used
+          CFI CFA_SP SP+-3
+          CFI CFA_PSP16 PSP16+0
+          CFI CFA_XSP16 XSP16+0
+          CFI `PSW.CY` SameValue
+          CFI `B.BR0` SameValue
+          CFI `B.BR1` SameValue
+          CFI `B.BR2` SameValue
+          CFI `B.BR3` SameValue
+          CFI `B.BR4` SameValue
+          CFI `B.BR5` SameValue
+          CFI `B.BR6` SameValue
+          CFI `B.BR7` SameValue
+          CFI `VB.BR8` SameValue
+          CFI `VB.BR9` SameValue
+          CFI `VB.BR10` SameValue
+          CFI `VB.BR11` SameValue
+          CFI `VB.BR12` SameValue
+          CFI `VB.BR13` SameValue
+          CFI `VB.BR14` SameValue
+          CFI `VB.BR15` SameValue
+          CFI VB SameValue
+          CFI B Undefined
+          CFI A Undefined
+          CFI PSW SameValue
+          CFI DPL0 SameValue
+          CFI DPH0 SameValue
+          CFI R0 Undefined
+          CFI R1 Undefined
+          CFI R2 Undefined
+          CFI R3 Undefined
+          CFI R4 Undefined
+          CFI R5 Undefined
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI V0 SameValue
+          CFI V1 SameValue
+          CFI V2 SameValue
+          CFI V3 SameValue
+          CFI V4 SameValue
+          CFI V5 SameValue
+          CFI V6 SameValue
+          CFI V7 SameValue
+          CFI V8 SameValue
+          CFI V9 SameValue
+          CFI V10 SameValue
+          CFI V11 SameValue
+          CFI V12 SameValue
+          CFI V13 SameValue
+          CFI V14 SameValue
+          CFI V15 SameValue
+          CFI PSPH Undefined
+          CFI PSPL Undefined
+          CFI XSPH Undefined
+          CFI XSPL Undefined
+          CFI ?RET Concat
+          CFI ?BRET_EXT Frame(CFA_SP, 3)
+          CFI ?RET_HIGH Frame(CFA_SP, 2)
+          CFI ?RET_LOW Frame(CFA_SP, 1)
+          CFI EndCommon cfiCommon0
+        
+        
+          CFI Common cfiCommon1 Using cfiNames0
+          CFI CodeAlign 1
+          CFI DataAlign -1
+          CFI ReturnAddress ?RET CODE
+          CFI CFA_DOVERLAY Used
+          CFI CFA_IOVERLAY Used
+          CFI CFA_SP SP+-2
+          CFI CFA_PSP16 PSP16+0
+          CFI CFA_XSP16 XSP16+0
+          CFI `PSW.CY` SameValue
+          CFI `B.BR0` SameValue
+          CFI `B.BR1` SameValue
+          CFI `B.BR2` SameValue
+          CFI `B.BR3` SameValue
+          CFI `B.BR4` SameValue
+          CFI `B.BR5` SameValue
+          CFI `B.BR6` SameValue
+          CFI `B.BR7` SameValue
+          CFI `VB.BR8` SameValue
+          CFI `VB.BR9` SameValue
+          CFI `VB.BR10` SameValue
+          CFI `VB.BR11` SameValue
+          CFI `VB.BR12` SameValue
+          CFI `VB.BR13` SameValue
+          CFI `VB.BR14` SameValue
+          CFI `VB.BR15` SameValue
+          CFI VB SameValue
+          CFI B SameValue
+          CFI A SameValue
+          CFI PSW SameValue
+          CFI DPL0 SameValue
+          CFI DPH0 SameValue
+          CFI R0 SameValue
+          CFI R1 SameValue
+          CFI R2 SameValue
+          CFI R3 SameValue
+          CFI R4 SameValue
+          CFI R5 SameValue
+          CFI R6 SameValue
+          CFI R7 SameValue
+          CFI V0 SameValue
+          CFI V1 SameValue
+          CFI V2 SameValue
+          CFI V3 SameValue
+          CFI V4 SameValue
+          CFI V5 SameValue
+          CFI V6 SameValue
+          CFI V7 SameValue
+          CFI V8 SameValue
+          CFI V9 SameValue
+          CFI V10 SameValue
+          CFI V11 SameValue
+          CFI V12 SameValue
+          CFI V13 SameValue
+          CFI V14 SameValue
+          CFI V15 SameValue
+          CFI PSPH Undefined
+          CFI PSPL Undefined
+          CFI XSPH Undefined
+          CFI XSPL Undefined
+          CFI ?RET Concat
+          CFI ?BRET_EXT SameValue
+          CFI ?RET_HIGH Frame(CFA_SP, 2)
+          CFI ?RET_LOW Frame(CFA_SP, 1)
+          CFI EndCommon cfiCommon1
+        
+DHT11_GetHumidityValue SYMBOL "DHT11_GetHumidityValue"
+`??DHT11_GetHumidityValue::?relay` SYMBOL "?relay", DHT11_GetHumidityValue
+DHT11_GetPackageValue SYMBOL "DHT11_GetPackageValue"
+`??DHT11_GetPackageValue::?relay` SYMBOL "?relay", DHT11_GetPackageValue
+DHT11_GetTempValue  SYMBOL "DHT11_GetTempValue"
+`??DHT11_GetTempValue::?relay` SYMBOL "?relay", DHT11_GetTempValue
+DHT11_GetValue      SYMBOL "DHT11_GetValue"
+`??DHT11_GetValue::?relay` SYMBOL "?relay", DHT11_GetValue
+DHT11_Init          SYMBOL "DHT11_Init"
+`??DHT11_Init::?relay` SYMBOL "?relay", DHT11_Init
+DHT11_ReadSensor    SYMBOL "DHT11_ReadSensor"
+`??DHT11_ReadSensor::?relay` SYMBOL "?relay", DHT11_ReadSensor
+DHT11_SetDataPinInput SYMBOL "DHT11_SetDataPinInput"
+`??DHT11_SetDataPinInput::?relay` SYMBOL "?relay", DHT11_SetDataPinInput
+DHT11_SetDataPinOutput SYMBOL "DHT11_SetDataPinOutput"
+`??DHT11_SetDataPinOutput::?relay` SYMBOL "?relay", DHT11_SetDataPinOutput
+DelayMs             SYMBOL "DelayMs"
+`??DelayMs::?relay` SYMBOL "?relay", DelayMs
+DelayUs             SYMBOL "DelayUs"
+`??DelayUs::?relay` SYMBOL "?relay", DelayUs
+
+// C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_DHT11.c
+//    1 /***************************************************************************************************
+//    2  *                                            INCLUDES
+//    3  ***************************************************************************************************/
+//    4 #include "MS_DHT11.h"
+
+        ASEGN SFR_AN:DATA:NOROOT,080H
+// union <unnamed> volatile __sfr _A_P0
+_A_P0:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0f3H
+// unsigned char volatile __sfr P0SEL
+P0SEL:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0fdH
+// unsigned char volatile __sfr P0DIR
+P0DIR:
+        DATA8
+        DS 1
+//    5 #include "hal_timer.h"
+//    6 /***************************************************************************************************
+//    7  *                                             MACROS
+//    8  ***************************************************************************************************/
+//    9 
+//   10 /***************************************************************************************************
+//   11  *                                            CONSTANTS
+//   12  ***************************************************************************************************/
+//   13  
+//   14 /***************************************************************************************************
+//   15  *                                             TYPEDEFS
+//   16  ***************************************************************************************************/
+//   17 
+//   18 /***************************************************************************************************
+//   19  *                                         GLOBAL VARIABLES
+//   20  ***************************************************************************************************/
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//   21 uint8 OneWireDataBuffer[5] = {0,0,0,0,0};
+OneWireDataBuffer:
+        DS 5
+        REQUIRE __INIT_XDATA_Z
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//   22 uint8 humidityValue =0;
+humidityValue:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+
+        RSEG XDATA_I:XDATA:NOROOT(0)
+//   23 uint8 tempValue = 1;
+tempValue:
+        DATA8
+        DS 1
+        REQUIRE `?<Initializer for tempValue>`
+        REQUIRE __INIT_XDATA_I
+//   24 
+
+        RSEG XDATA_I:XDATA:NOROOT(0)
+//   25 uint8 bitmask = 7;
+bitmask:
+        DATA8
+        DS 1
+        REQUIRE `?<Initializer for bitmask>`
+        REQUIRE __INIT_XDATA_I
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//   26 uint8 byteIndex = 0;
+byteIndex:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//   27 uint8 loopCount = 0;
+loopCount:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+
+        RSEG XDATA_Z:XDATA:NOROOT(0)
+        DATA8
+//   28 uint8 _index = 0;
+_index:
+        DS 1
+        REQUIRE __INIT_XDATA_Z
+//   29 
+//   30 /***************************************************************************************************
+//   31  *                                          FUNCTIONS - External
+//   32  ***************************************************************************************************/
+//   33 
+//   34 /***************************************************************************************************
+//   35  *                                          FUNCTIONS - Local
+//   36  ***************************************************************************************************/
+//   37 
+//   38 void DHT11_SetDataPinInput(void);
+//   39 void DHT11_SetDataPinOutput(void);
+//   40 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   41 void DHT11_SetDataPinInput(void)
+DHT11_SetDataPinInput:
+          CFI Block cfiBlock0 Using cfiCommon0
+          CFI Function DHT11_SetDataPinInput
+        CODE
+//   42 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   43 	/* Select GPIO direction : input*/
+//   44 	P0DIR &= ~(DHT11_Data_BIT);
+        ANL     0xfd,#0x7f
+//   45 }
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock0
+        REQUIRE P0DIR
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   46 void DHT11_SetDataPinOutput(void)
+DHT11_SetDataPinOutput:
+          CFI Block cfiBlock1 Using cfiCommon0
+          CFI Function DHT11_SetDataPinOutput
+        CODE
+//   47 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//   48 	/* Select GPIO direction : output */
+//   49 	P0DIR |= DHT11_Data_BIT;
+        ORL     0xfd,#0x80
+//   50 }
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock1
+        REQUIRE P0DIR
+//   51 
+//   52 /***************************************************************************************************
+//   53  *                                          FUNCTIONS - API
+//   54  ***************************************************************************************************/
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   55 void DHT11_Init(void)
+DHT11_Init:
+          CFI Block cfiBlock2 Using cfiCommon0
+          CFI Function DHT11_Init
+        CODE
+//   56 {
+        FUNCALL DHT11_Init, DHT11_SetDataPinOutput
+        LOCFRAME ISTACK, 2, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 0, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 2, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 0, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        PUSH    DPL
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI CFA_SP SP+-4
+        PUSH    DPH
+          CFI DPH0 Frame(CFA_SP, 5)
+          CFI CFA_SP SP+-5
+        ; Saved register size: 2
+        ; Auto size: 0
+//   57 	/* Select general purpose on I/O pins. */
+//   58 	P0SEL &= ~(DHT11_Data_BIT);
+        ANL     0xf3,#0x7f
+//   59 
+//   60 	/* Select GPIO direction : output */
+//   61 	DHT11_SetDataPinOutput();
+        ; Setup parameters for call to function DHT11_SetDataPinOutput
+        LCALL   `??DHT11_SetDataPinOutput::?relay`; Banked call to: DHT11_SetDataPinOutput
+//   62 
+//   63 	DHT11_Data = 1;
+        SETB    0x80.7
+//   64 }
+        SJMP    ??Subroutine3_0
+          CFI EndBlock cfiBlock2
+        REQUIRE P0SEL
+        REQUIRE _A_P0
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine0:
+          CFI Block cfiBlock3 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA_SP SP+-5
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI DPH0 Frame(CFA_SP, 5)
+        MOVX    A,@DPTR
+        MOV     R1,A
+          CFI EndBlock cfiBlock3
+        REQUIRE ??Subroutine3_0
+        ; // Fall through to label ??Subroutine3_0
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+??Subroutine3_0:
+          CFI Block cfiBlock4 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA_SP SP+-5
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI DPH0 Frame(CFA_SP, 5)
+        POP     DPH
+          CFI CFA_SP SP+-4
+          CFI DPH0 SameValue
+        POP     DPL
+          CFI CFA_SP SP+-3
+          CFI DPL0 SameValue
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock4
+//   65 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//   66 uint8 DHT11_ReadSensor(void)
+DHT11_ReadSensor:
+          CFI Block cfiBlock5 Using cfiCommon0
+          CFI Function DHT11_ReadSensor
+        CODE
+//   67 {
+        FUNCALL DHT11_ReadSensor, DHT11_SetDataPinOutput
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL DHT11_ReadSensor, DelayMs
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL DHT11_ReadSensor, DelayUs
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL DHT11_ReadSensor, DHT11_SetDataPinInput
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        FUNCALL DHT11_ReadSensor, DHT11_SetDataPinOutput
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        REQUIRE ?V0
+        REQUIRE ?V1
+        MOV     A,#-0xa
+        LCALL   ?BANKED_ENTER_XDATA
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI CFA_SP SP+0
+          CFI CFA_XSP16 add(XSP16, 10)
+        ; Saved register size: 10
+        ; Auto size: 0
+//   68 	DHT11_SetDataPinOutput();
+        ; Setup parameters for call to function DHT11_SetDataPinOutput
+        LCALL   `??DHT11_SetDataPinOutput::?relay`; Banked call to: DHT11_SetDataPinOutput
+//   69 	DHT11_Data = 0;
+        CLR     0x80.7
+//   70 	DelayMs(DHTLIB_DHT11_WAKEUP);
+        ; Setup parameters for call to function DelayMs
+        MOV     R2,#0x12
+        MOV     R3,#0x0
+        LCALL   `??DelayMs::?relay`  ; Banked call to: DelayMs
+//   71 	DHT11_Data = 1;
+        SETB    0x80.7
+//   72 	//disableInterrupts();
+//   73 	DelayUs(10);
+        ; Setup parameters for call to function DelayUs
+        MOV     R2,#0xa
+        MOV     R3,#0x0
+        LCALL   `??DelayUs::?relay`  ; Banked call to: DelayUs
+//   74 	DHT11_SetDataPinInput();
+        ; Setup parameters for call to function DHT11_SetDataPinInput
+        LCALL   `??DHT11_SetDataPinInput::?relay`; Banked call to: DHT11_SetDataPinInput
+//   75 	
+//   76 	loopCount = 0;
+        MOV     DPTR,#loopCount
+        CLR     A
+        MOVX    @DPTR,A
+//   77 	while (DHT11_Data == 0)
+??DHT11_ReadSensor_0:
+        MOV     C,0x80.7
+        JC      ??DHT11_ReadSensor_1
+//   78 	{
+//   79 		loopCount ++;
+        LCALL   ?Subroutine2 & 0xFFFF
+//   80 		if (loopCount > DHTLIB_TIMEOUT)
+??CrossCallReturnLabel_0:
+        JC      ??DHT11_ReadSensor_0
+//   81 		{
+//   82       //enableInterrupts();
+//   83       return DHTLIB_ERROR_ACK_L;
+        MOV     R1,#0x4
+        LJMP    ??DHT11_ReadSensor_2 & 0xFFFF
+//   84 		}
+//   85 	}
+//   86 	
+//   87 	loopCount = 0;
+??DHT11_ReadSensor_1:
+        CLR     A
+        MOVX    @DPTR,A
+//   88 	while (DHT11_Data != 0)
+??DHT11_ReadSensor_3:
+        MOV     C,0x80.7
+        JNC     ??DHT11_ReadSensor_4
+//   89 	{
+//   90 		loopCount ++;
+        LCALL   ?Subroutine2 & 0xFFFF
+//   91 		if (loopCount > DHTLIB_TIMEOUT)
+??CrossCallReturnLabel_1:
+        JC      ??DHT11_ReadSensor_3
+//   92 		{
+//   93 	    //enableInterrupts();
+//   94 	    return DHTLIB_ERROR_ACK_H;
+        MOV     R1,#0x5
+        LJMP    ??DHT11_ReadSensor_2 & 0xFFFF
+//   95 		}	
+//   96 	}
+//   97 	
+//   98 	while (_index < 40)
+//   99 	{
+//  100 		loopCount = 0;
+//  101 		while (DHT11_Data == 0)
+//  102 		{
+//  103 			asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+//  104 			loopCount ++;
+//  105 			if (loopCount > DHTLIB_TIMEOUT)
+//  106 			{
+//  107         //enableInterrupts();
+//  108         return DHTLIB_ERROR_TIMEOUT;
+//  109 			}
+//  110 		}
+//  111 		
+//  112 		loopCount = 0;
+//  113 		while (DHT11_Data != 0)
+//  114 		{
+//  115 			asm("nop");asm("nop");asm("nop");asm("nop");asm("nop");
+//  116 			loopCount ++;
+//  117 			if (loopCount > DHTLIB_TIMEOUT)
+//  118 			{
+//  119         //enableInterrupts();
+//  120         return DHTLIB_ERROR_TIMEOUT;
+//  121 			}
+//  122 		}
+//  123 		
+//  124 		if (loopCount > 20)
+//  125 		{
+//  126 			OneWireDataBuffer[byteIndex] |= (1 << bitmask);		
+//  127 		}
+//  128 		if (bitmask == 0)   // next byte			
+//  129 		{
+//  130 			bitmask = 7;
+//  131 			byteIndex++;
+//  132 		}
+//  133 		else
+//  134 		{
+//  135 			bitmask = bitmask - 1;
+??DHT11_ReadSensor_5:
+        DEC     A
+??DHT11_ReadSensor_6:
+        MOVX    @DPTR,A
+//  136 		}
+//  137 		_index = _index + 1;
+        MOV     DPTR,#_index
+        MOVX    A,@DPTR
+        INC     A
+        MOVX    @DPTR,A
+??DHT11_ReadSensor_4:
+        MOV     DPTR,#_index
+        MOVX    A,@DPTR
+        CLR     C
+        SUBB    A,#0x28
+        JNC     ??DHT11_ReadSensor_7
+        MOV     DPTR,#loopCount
+        CLR     A
+        MOVX    @DPTR,A
+??DHT11_ReadSensor_8:
+        MOV     C,0x80.7
+        JC      ??DHT11_ReadSensor_9
+        nop
+        nop
+        nop
+        nop
+        nop
+        LCALL   ?Subroutine2 & 0xFFFF
+??CrossCallReturnLabel_2:
+        JC      ??DHT11_ReadSensor_8
+        SJMP    ??DHT11_ReadSensor_10
+??DHT11_ReadSensor_9:
+        CLR     A
+        MOVX    @DPTR,A
+??DHT11_ReadSensor_11:
+        MOV     C,0x80.7
+        JNC     ??DHT11_ReadSensor_12
+        nop
+        nop
+        nop
+        nop
+        nop
+        LCALL   ?Subroutine2 & 0xFFFF
+??CrossCallReturnLabel_3:
+        JC      ??DHT11_ReadSensor_11
+??DHT11_ReadSensor_10:
+        MOV     R1,#0x2
+        SJMP    ??DHT11_ReadSensor_2
+??DHT11_ReadSensor_12:
+        MOVX    A,@DPTR
+        CLR     C
+        SUBB    A,#0x15
+        JC      ??DHT11_ReadSensor_13
+        MOV     ?V0,#0x1
+        MOV     ?V1,#0x0
+        MOV     DPTR,#bitmask
+        MOVX    A,@DPTR
+        MOV     R0,#?V0
+        LCALL   ?S_SHL
+        MOV     DPTR,#byteIndex
+        MOVX    A,@DPTR
+        MOV     R0,A
+        MOV     A,#OneWireDataBuffer & 0xff
+        ADD     A,R0
+        MOV     DPL,A
+        CLR     A
+        ADDC    A,#(OneWireDataBuffer >> 8) & 0xff
+        MOV     DPH,A
+        MOVX    A,@DPTR
+        ORL     A,?V0
+        MOVX    @DPTR,A
+??DHT11_ReadSensor_13:
+        MOV     DPTR,#bitmask
+        MOVX    A,@DPTR
+        JNZ     ??DHT11_ReadSensor_5
+        MOV     A,#0x7
+        MOVX    @DPTR,A
+        MOV     DPTR,#byteIndex
+        MOVX    A,@DPTR
+        INC     A
+        SJMP    ??DHT11_ReadSensor_6
+//  138 	}
+//  139 	
+//  140 	DHT11_SetDataPinOutput();
+??DHT11_ReadSensor_7:
+        ; Setup parameters for call to function DHT11_SetDataPinOutput
+        LCALL   `??DHT11_SetDataPinOutput::?relay`; Banked call to: DHT11_SetDataPinOutput
+//  141 	DHT11_Data = 1;
+        SETB    0x80.7
+//  142 	//enableInterrupts();
+//  143 	byteIndex = 0;
+        MOV     DPTR,#byteIndex
+        CLR     A
+        MOVX    @DPTR,A
+//  144 	_index = 0;
+        MOV     DPTR,#_index
+        MOVX    @DPTR,A
+//  145 	
+//  146 	return DHTLIB_OK;
+        MOV     R1,A
+??DHT11_ReadSensor_2:
+          CFI EndBlock cfiBlock5
+        REQUIRE ?Subroutine1
+        REQUIRE _A_P0
+        ; // Fall through to label ?Subroutine1
+//  147 }
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine1:
+          CFI Block cfiBlock6 Using cfiCommon0
+          CFI NoFunction
+          CFI CFA_SP SP+0
+          CFI CFA_XSP16 add(XSP16, 10)
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+        MOV     R7,#0x2
+        LJMP    ?BANKED_LEAVE_XDATA
+          CFI EndBlock cfiBlock6
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine2:
+          CFI Block cfiCond7 Using cfiCommon0
+          CFI Function DHT11_ReadSensor
+          CFI Conditional ??CrossCallReturnLabel_0
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI CFA_SP SP+-2
+          CFI CFA_XSP16 add(XSP16, 10)
+          CFI Block cfiCond8 Using cfiCommon0
+          CFI (cfiCond8) Function DHT11_ReadSensor
+          CFI (cfiCond8) Conditional ??CrossCallReturnLabel_1
+          CFI (cfiCond8) R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond8) VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond8) V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond8) V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond8) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond8) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond8) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond8) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond8) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond8) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond8) CFA_SP SP+-2
+          CFI (cfiCond8) CFA_XSP16 add(XSP16, 10)
+          CFI Block cfiCond9 Using cfiCommon0
+          CFI (cfiCond9) Function DHT11_ReadSensor
+          CFI (cfiCond9) Conditional ??CrossCallReturnLabel_2
+          CFI (cfiCond9) R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond9) VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond9) V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond9) V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond9) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond9) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond9) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond9) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond9) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond9) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond9) CFA_SP SP+-2
+          CFI (cfiCond9) CFA_XSP16 add(XSP16, 10)
+          CFI Block cfiCond10 Using cfiCommon0
+          CFI (cfiCond10) Function DHT11_ReadSensor
+          CFI (cfiCond10) Conditional ??CrossCallReturnLabel_3
+          CFI (cfiCond10) R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond10) VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond10) V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond10) V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond10) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond10) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond10) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond10) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond10) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond10) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond10) CFA_SP SP+-2
+          CFI (cfiCond10) CFA_XSP16 add(XSP16, 10)
+          CFI Block cfiPicker11 Using cfiCommon1
+          CFI (cfiPicker11) NoFunction
+          CFI (cfiPicker11) Picker
+        MOVX    A,@DPTR
+        INC     A
+        MOVX    @DPTR,A
+        CLR     C
+        SUBB    A,#0x65
+        RET
+          CFI EndBlock cfiCond7
+          CFI EndBlock cfiCond8
+          CFI EndBlock cfiCond9
+          CFI EndBlock cfiCond10
+          CFI EndBlock cfiPicker11
+//  148 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  149 uint8 DHT11_GetValue(void)
+DHT11_GetValue:
+          CFI Block cfiBlock12 Using cfiCommon0
+          CFI Function DHT11_GetValue
+        CODE
+//  150 {
+        FUNCALL DHT11_GetValue, DHT11_ReadSensor
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 9, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 9, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        MOV     A,#-0x9
+        LCALL   ?BANKED_ENTER_XDATA
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI CFA_SP SP+0
+          CFI CFA_XSP16 add(XSP16, 9)
+        ; Saved register size: 9
+        ; Auto size: 0
+//  151 	uint8 checksum = 0;
+        MOV     R6,#0x0
+//  152 	uint8 ret_val;
+//  153 	ret_val = DHT11_ReadSensor();
+//  154 	
+//  155 	if (ret_val == DHTLIB_OK)
+        ; Setup parameters for call to function DHT11_ReadSensor
+        LCALL   `??DHT11_ReadSensor::?relay`; Banked call to: DHT11_ReadSensor
+        MOV     A,R1
+        JNZ     ??DHT11_GetValue_0
+//  156 	{	
+//  157 		if (OneWireDataBuffer[4] == ((OneWireDataBuffer[0]+ OneWireDataBuffer[2])&0xFF))
+        MOV     DPTR,#OneWireDataBuffer + 2
+        MOVX    A,@DPTR
+        MOV     R7,A
+        MOV     DPTR,#OneWireDataBuffer + 4
+        MOVX    A,@DPTR
+        MOV     R4,A
+        MOV     DPTR,#OneWireDataBuffer
+        MOVX    A,@DPTR
+        ADD     A,R7
+        XRL     A,R4
+        JNZ     ??DHT11_GetValue_1
+        CLR     A
+??DHT11_GetValue_1:
+        JNZ     ??DHT11_GetValue_0
+//  158 		{
+//  159 			humidityValue = OneWireDataBuffer[0] & 0x7F;
+        MOVX    A,@DPTR
+        ANL     A,#0x7f
+        MOV     DPTR,#humidityValue
+        MOVX    @DPTR,A
+//  160 			tempValue = OneWireDataBuffer[2] & 0x7F;
+        MOV     A,#0x7f
+        ANL     A,R7
+        MOV     DPTR,#tempValue
+        MOVX    @DPTR,A
+//  161       checksum = 1;
+        MOV     R6,#0x1
+//  162 		}
+//  163 	}
+//  164 	OneWireDataBuffer[0] = 0;
+??DHT11_GetValue_0:
+        MOV     DPTR,#OneWireDataBuffer
+        CLR     A
+        MOVX    @DPTR,A
+//  165 	OneWireDataBuffer[2] = 0;
+        MOV     DPTR,#OneWireDataBuffer + 2
+        MOVX    @DPTR,A
+//  166 	OneWireDataBuffer[4] = 0;
+        MOV     DPTR,#OneWireDataBuffer + 4
+        MOVX    @DPTR,A
+//  167   return checksum;
+        MOV     A,R6
+        MOV     R1,A
+        MOV     R7,#0x1
+        LJMP    ?BANKED_LEAVE_XDATA
+//  168 }
+          CFI EndBlock cfiBlock12
+//  169 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  170 uint8 DHT11_GetHumidityValue(void)
+DHT11_GetHumidityValue:
+          CFI Block cfiBlock13 Using cfiCommon0
+          CFI Function DHT11_GetHumidityValue
+        CODE
+//  171 {
+        PUSH    DPL
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI CFA_SP SP+-4
+        PUSH    DPH
+          CFI DPH0 Frame(CFA_SP, 5)
+          CFI CFA_SP SP+-5
+        ; Saved register size: 2
+        ; Auto size: 0
+//  172 	return humidityValue;
+        MOV     DPTR,#humidityValue
+        LJMP    ?Subroutine0 & 0xFFFF
+//  173 }
+          CFI EndBlock cfiBlock13
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  174 uint8 DHT11_GetTempValue(void)
+DHT11_GetTempValue:
+          CFI Block cfiBlock14 Using cfiCommon0
+          CFI Function DHT11_GetTempValue
+        CODE
+//  175 {
+        PUSH    DPL
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI CFA_SP SP+-4
+        PUSH    DPH
+          CFI DPH0 Frame(CFA_SP, 5)
+          CFI CFA_SP SP+-5
+        ; Saved register size: 2
+        ; Auto size: 0
+//  176 	return tempValue;
+        MOV     DPTR,#tempValue
+        LJMP    ?Subroutine0 & 0xFFFF
+//  177 }
+          CFI EndBlock cfiBlock14
+//  178 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  179 int16 DHT11_GetPackageValue(void)
+DHT11_GetPackageValue:
+          CFI Block cfiBlock15 Using cfiCommon0
+          CFI Function DHT11_GetPackageValue
+        CODE
+//  180 {
+        PUSH    DPL
+          CFI DPL0 Frame(CFA_SP, 4)
+          CFI CFA_SP SP+-4
+        PUSH    DPH
+          CFI DPH0 Frame(CFA_SP, 5)
+          CFI CFA_SP SP+-5
+        ; Saved register size: 2
+        ; Auto size: 0
+//  181 	uint8 tmp_temperature;
+//  182 	uint8 tmp_humidity;
+//  183 	int16 tmp_package;
+//  184 
+//  185 //	DHT11_GetValue();
+//  186 	tmp_temperature = DHT11_GetTempValue();
+//  187 	tmp_humidity		= DHT11_GetHumidityValue();
+//  188 	tmp_package = BUILD_UINT16(tmp_temperature, tmp_humidity);
+//  189 	return tmp_package;
+        MOV     DPTR,#tempValue
+        MOVX    A,@DPTR
+        MOV     R2,A
+        MOV     DPTR,#humidityValue
+        MOVX    A,@DPTR
+        MOV     R0,A
+        CLR     A
+        XCH     A,R0
+        MOV     R1,A
+        MOV     A,R2
+        ADD     A,R0
+        CLR     A
+        ADDC    A,R1
+        MOV     R3,A
+        LJMP    ??Subroutine3_0 & 0xFFFF
+//  190 }
+          CFI EndBlock cfiBlock15
+//  191 
+//  192 
+//  193 /***************************************************************************************************
+//  194 ***************************************************************************************************/
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  195 void DelayUs(uint16 microSecs)
+DelayUs:
+          CFI Block cfiBlock16 Using cfiCommon0
+          CFI Function DelayUs
+        CODE
+//  196 {
+        ; Saved register size: 0
+        ; Auto size: 0
+        SJMP    ??DelayUs_0
+//  197 	while(microSecs--)
+//  198 	{
+//  199 		/* 32 NOPs == 1 usecs */
+//  200 		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+??DelayUs_1:
+        nop
+        nop
+        nop
+        nop
+        nop
+//  201 		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+        nop
+        nop
+        nop
+        nop
+        nop
+//  202 //		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+//  203 //		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+//  204 //		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+//  205 //		asm("nop"); asm("nop"); asm("nop"); asm("nop"); asm("nop");
+//  206 //		asm("nop"); asm("nop");
+//  207 	}
+??DelayUs_0:
+        MOV     A,R2
+        MOV     R0,A
+        MOV     A,R3
+        MOV     R1,A
+        MOV     A,R0
+        ADD     A,#-0x1
+        DEC     R2
+        MOV     A,R1
+        ADDC    A,#-0x1
+        MOV     R3,A
+        MOV     A,R0
+        ORL     A,R1
+        JNZ     ??DelayUs_1
+//  208 }
+        LJMP    ?BRET
+          CFI EndBlock cfiBlock16
+//  209 
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+//  210 void DelayMs(uint16 miliSecs)
+DelayMs:
+          CFI Block cfiBlock17 Using cfiCommon0
+          CFI Function DelayMs
+        CODE
+//  211 {
+        FUNCALL DelayMs, DelayUs
+        LOCFRAME ISTACK, 0, STACK
+        LOCFRAME PSTACK, 0, STACK
+        LOCFRAME XSTACK, 10, STACK
+        LOCFRAME IOVERLAY, 0, STATIC
+        LOCFRAME DOVERLAY, 0, STATIC
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 10, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
+        REQUIRE ?V0
+        REQUIRE ?V1
+        MOV     A,#-0xa
+        LCALL   ?BANKED_ENTER_XDATA
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI CFA_SP SP+0
+          CFI CFA_XSP16 add(XSP16, 10)
+        ; Saved register size: 10
+        ; Auto size: 0
+        MOV     A,R2
+        MOV     R6,A
+        MOV     A,R3
+        MOV     R7,A
+//  212 	uint16 i = 0;
+//  213 	
+//  214 	for (i = 0; i < 1000; i++)
+        MOV     ?V0,#-0x18
+        MOV     ?V1,#0x3
+//  215 	{
+//  216 		DelayUs(miliSecs);
+??DelayMs_0:
+        ; Setup parameters for call to function DelayUs
+        MOV     A,R6
+        MOV     R2,A
+        MOV     A,R7
+        MOV     R3,A
+        LCALL   `??DelayUs::?relay`  ; Banked call to: DelayUs
+//  217 	}
+        MOV     A,?V0
+        ADD     A,#-0x1
+        MOV     ?V0,A
+        MOV     A,?V1
+        ADDC    A,#-0x1
+        MOV     ?V1,A
+        MOV     A,?V0
+        ORL     A,?V1
+        JNZ     ??DelayMs_0
+//  218 }
+        LJMP    ?Subroutine1 & 0xFFFF
+          CFI EndBlock cfiBlock17
+
+        RSEG XDATA_ID:CODE:NOROOT(0)
+`?<Initializer for tempValue>`:
+        DATA8
+        DB 1
+
+        RSEG XDATA_ID:CODE:NOROOT(0)
+`?<Initializer for bitmask>`:
+        DATA8
+        DB 7
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_SetDataPinInput::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_SetDataPinInput
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_SetDataPinOutput::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_SetDataPinOutput
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_Init::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_Init
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_ReadSensor::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_ReadSensor
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_GetValue::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_GetValue
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_GetHumidityValue::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_GetHumidityValue
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_GetTempValue::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_GetTempValue
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DHT11_GetPackageValue::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DHT11_GetPackageValue
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DelayUs::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DelayUs
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+`??DelayMs::?relay`:
+        CODE
+        LCALL   ?BDISPATCH
+        DATA24
+        DC24    DelayMs
+
+        END
+//  219 	
+//  220 
+// 
+// 429 bytes in segment BANKED_CODE
+//  60 bytes in segment BANK_RELAYS
+//   3 bytes in segment SFR_AN
+//   2 bytes in segment XDATA_I
+//   2 bytes in segment XDATA_ID
+//   9 bytes in segment XDATA_Z
+// 
+//  62 bytes of CODE     memory
+//   0 bytes of DATA     memory (+ 3 bytes shared)
+// 429 bytes of HUGECODE memory
+//  11 bytes of XDATA    memory
+//
+//Errors: none
+//Warnings: none

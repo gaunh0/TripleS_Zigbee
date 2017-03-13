@@ -1,0 +1,712 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V9.30.1.3056 for 8051                01/Dec/2016  15:07:18
+# Copyright 2004-2015 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\Source\zcl_sampleheatingcoolingunit_data.c
+#    Command line       =  
+#        -f "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
+#        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f "D:\_GIT_COMBROS\[COMBROS]
+#        Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+#        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+#        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+#        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+#        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+#        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+#        -f "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\Source\zcl_sampleheatingcoolingunit_data.c"
+#        -D END_DEVICE_ENGINE -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
+#        NV_RESTORE -D xPOWER_SAVING -D NWK_AUTO_POLL -D xHOLD_AUTO_START -D
+#        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
+#        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
+#        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
+#        ZCL_ON_OFF -D ZCL_HVAC_CLUSTER -D xHAL_UART=TRUE -D xHAL_UART_DMA=1
+#        -lC "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\EndDeviceEB\List"
+#        -lA "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\EndDeviceEB\List"
+#        --diag_suppress Pe001,Pa010 -o "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\EndDeviceEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -I
+#        "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\Source\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\Source\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes
+#    List file          =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\EndDeviceEB\List\zcl_sampleheatingcoolingunit_data.lst
+#    Object file        =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\CC2530DB\EndDeviceEB\Obj\zcl_sampleheatingcoolingunit_data.r51
+#
+###############################################################################
+
+D:\_GIT_COMBROS\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleHeatingCoolingUnit\Source\zcl_sampleheatingcoolingunit_data.c
+      1          /**************************************************************************************************
+      2            Filename:       zcl_sampleheatingcoolingunit_data.c
+      3            Revised:        $Date: 2014-09-25 13:20:41 -0700 (Thu, 25 Sep 2014) $
+      4            Revision:       $Revision: 40295 $
+      5          
+      6          
+      7            Description:    Zigbee Cluster Library - sample device application.
+      8          
+      9          
+     10            Copyright 2013-2014 Texas Instruments Incorporated. All rights reserved.
+     11          
+     12            IMPORTANT: Your use of this Software is limited to those specific rights
+     13            granted under the terms of a software license agreement between the user
+     14            who downloaded the software, his/her employer (which must be your employer)
+     15            and Texas Instruments Incorporated (the "License").  You may not use this
+     16            Software unless you agree to abide by the terms of the License. The License
+     17            limits your use, and you acknowledge, that the Software may not be modified,
+     18            copied or distributed unless embedded on a Texas Instruments microcontroller
+     19            or used solely and exclusively in conjunction with a Texas Instruments radio
+     20            frequency transceiver, which is integrated into your product.  Other than for
+     21            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     22            works of, modify, distribute, perform, display or sell this Software and/or
+     23            its documentation for any purpose.
+     24          
+     25            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     26            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     27            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     28            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     29            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     30            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     31            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     32            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     33            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     34            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     35            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     36          
+     37            Should you have any questions regarding your right to use this Software,
+     38            contact Texas Instruments Incorporated at www.TI.com.
+     39          **************************************************************************************************/
+     40          
+     41          /*********************************************************************
+     42           * INCLUDES
+     43           */
+     44          #include "ZComDef.h"
+     45          #include "OSAL.h"
+     46          #include "AF.h"
+     47          #include "ZDConfig.h"
+     48          
+     49          #include "zcl.h"
+     50          #include "zcl_general.h"
+     51          #include "zcl_ha.h"
+     52          #include "zcl_poll_control.h"
+     53          #include "zcl_electrical_measurement.h"
+     54          #include "zcl_diagnostic.h"
+     55          #include "zcl_meter_identification.h"
+     56          #include "zcl_appliance_identification.h"
+     57          #include "zcl_appliance_events_alerts.h"
+     58          #include "zcl_power_profile.h"
+     59          #include "zcl_appliance_control.h"
+     60          #include "zcl_appliance_statistics.h"
+     61          #include "zcl_hvac.h"
+     62          #include "zcl_ezmode.h"
+     63          
+     64          #include "zcl_sampleheatingcoolingunit.h"
+     65          
+     66          /*********************************************************************
+     67           * CONSTANTS
+     68           */
+     69          
+     70          #define SAMPLEHEATINGCOOLINGUNIT_DEVICE_VERSION     0
+     71          #define SAMPLEHEATINGCOOLINGUNIT_FLAGS              0
+     72          
+     73          #define SAMPLEHEATINGCOOLINGUNIT_HWVERSION          1
+     74          #define SAMPLEHEATINGCOOLINGUNIT_ZCLVERSION         1
+     75          
+     76          /*********************************************************************
+     77           * TYPEDEFS
+     78           */
+     79          
+     80          /*********************************************************************
+     81           * MACROS
+     82           */
+     83          
+     84          /*********************************************************************
+     85           * GLOBAL VARIABLES
+     86           */
+     87          
+     88          // Basic Cluster
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     89          const uint8 zclSampleHeatingCoolingUnit_HWRevision = SAMPLEHEATINGCOOLINGUNIT_HWVERSION;
+   \                     zclSampleHeatingCoolingUnit_HWRevision:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     90          const uint8 zclSampleHeatingCoolingUnit_ZCLVersion = SAMPLEHEATINGCOOLINGUNIT_ZCLVERSION;
+   \                     zclSampleHeatingCoolingUnit_ZCLVersion:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     91          const uint8 zclSampleHeatingCoolingUnit_ManufacturerName[] = { 16, 'T','e','x','a','s','I','n','s','t','r','u','m','e','n','t','s' };
+   \                     zclSampleHeatingCoolingUnit_ManufacturerName:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   65           DB 101
+   \   000003   78           DB 120
+   \   000004   61           DB 97
+   \   000005   73           DB 115
+   \   000006   49           DB 73
+   \   000007   6E           DB 110
+   \   000008   73           DB 115
+   \   000009   74           DB 116
+   \   00000A   72           DB 114
+   \   00000B   75           DB 117
+   \   00000C   6D           DB 109
+   \   00000D   65           DB 101
+   \   00000E   6E           DB 110
+   \   00000F   74           DB 116
+   \   000010   73           DB 115
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     92          const uint8 zclSampleHeatingCoolingUnit_ModelId[] = { 16, 'T','I','0','0','0','1',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleHeatingCoolingUnit_ModelId:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   49           DB 73
+   \   000003   30           DB 48
+   \   000004   30           DB 48
+   \   000005   30           DB 48
+   \   000006   31           DB 49
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     93          const uint8 zclSampleHeatingCoolingUnit_DateCode[] = { 16, '2','0','0','6','0','8','3','1',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleHeatingCoolingUnit_DateCode:
+   \   000000   10           DB 16
+   \   000001   32           DB 50
+   \   000002   30           DB 48
+   \   000003   30           DB 48
+   \   000004   36           DB 54
+   \   000005   30           DB 48
+   \   000006   38           DB 56
+   \   000007   33           DB 51
+   \   000008   31           DB 49
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     94          const uint8 zclSampleHeatingCoolingUnit_PowerSource = POWER_SOURCE_MAINS_1_PHASE;
+   \                     zclSampleHeatingCoolingUnit_PowerSource:
+   \   000000   01           DB 1
+     95          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     96          uint8 zclSampleHeatingCoolingUnit_LocationDescription[17] = { 16, ' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleHeatingCoolingUnit_LocationDescription:
+   \   000000                DS 17
+   \   000011                REQUIRE `?<Initializer for zclSampleHeatingCoolingUnit_`
+   \   000011                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     97          uint8 zclSampleHeatingCoolingUnit_PhysicalEnvironment = 0;
+   \                     zclSampleHeatingCoolingUnit_PhysicalEnvironment:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     98          uint8 zclSampleHeatingCoolingUnit_DeviceEnable = DEVICE_ENABLED;
+   \                     zclSampleHeatingCoolingUnit_DeviceEnable:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleHeatingCoolingUnit__1`
+   \   000001                REQUIRE __INIT_XDATA_I
+     99          
+    100          // Identify Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    101          uint16 zclSampleHeatingCoolingUnit_IdentifyTime = 0;
+   \                     zclSampleHeatingCoolingUnit_IdentifyTime:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+    102          
+    103          // On/Off Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    104          uint8  zclSampleHeatingCoolingUnit_OnOff = LIGHT_OFF;
+   \                     zclSampleHeatingCoolingUnit_OnOff:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+    105          
+    106          // HVAC Cluster Attributes
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    107          int16 zclSampleHeatingCoolingUnit_LocalTemperature;
+   \                     zclSampleHeatingCoolingUnit_LocalTemperature:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    108          int16 zclSampleHeatingCoolingUnit_OccupiedCoolingSetpoint;
+   \                     zclSampleHeatingCoolingUnit_OccupiedCoolingSetpoint:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    109          int16 zclSampleHeatingCoolingUnit_OccupiedHeatingSetpoint;
+   \                     zclSampleHeatingCoolingUnit_OccupiedHeatingSetpoint:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    110          uint16 zclSampleHeatingCoolingUnit_RunningState = 0;
+   \                     zclSampleHeatingCoolingUnit_RunningState:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+    111          
+    112          /*********************************************************************
+    113           * ATTRIBUTE DEFINITIONS - Uses REAL cluster IDs
+    114           */
+
+   \                                 In  segment CODE_C, align 1
+    115          CONST zclAttrRec_t zclSampleHeatingCoolingUnit_Attrs[SAMPLEHEATINGCOOLINGUNIT_MAX_ATTRIBUTES] =
+   \                     zclSampleHeatingCoolingUnit_Attrs:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   20           DB 32
+   \   000005   01           DB 1
+   \   000006   ....         DW zclSampleHeatingCoolingUnit_HWRevision
+   \   000008   0000         DW 0
+   \   00000A   0000         DW 0
+   \   00000C   20           DB 32
+   \   00000D   01           DB 1
+   \   00000E   ....         DW zclSampleHeatingCoolingUnit_ZCLVersion
+   \   000010   0000         DW 0
+   \   000012   0400         DW 4
+   \   000014   42           DB 66
+   \   000015   01           DB 1
+   \   000016   ....         DW zclSampleHeatingCoolingUnit_ManufacturerName
+   \   000018   0000         DW 0
+   \   00001A   0500         DW 5
+   \   00001C   42           DB 66
+   \   00001D   01           DB 1
+   \   00001E   ....         DW zclSampleHeatingCoolingUnit_ModelId
+   \   000020   0000         DW 0
+   \   000022   0600         DW 6
+   \   000024   42           DB 66
+   \   000025   01           DB 1
+   \   000026   ....         DW zclSampleHeatingCoolingUnit_DateCode
+   \   000028   0000         DW 0
+   \   00002A   0700         DW 7
+   \   00002C   20           DB 32
+   \   00002D   01           DB 1
+   \   00002E   ....         DW zclSampleHeatingCoolingUnit_PowerSource
+   \   000030   0000         DW 0
+   \   000032   1000         DW 16
+   \   000034   42           DB 66
+   \   000035   03           DB 3
+   \   000036   ....         DW zclSampleHeatingCoolingUnit_LocationDescription
+   \   000038   0000         DW 0
+   \   00003A   1100         DW 17
+   \   00003C   20           DB 32
+   \   00003D   03           DB 3
+   \   00003E   ....         DW zclSampleHeatingCoolingUnit_PhysicalEnvironment
+   \   000040   0000         DW 0
+   \   000042   1200         DW 18
+   \   000044   10           DB 16
+   \   000045   03           DB 3
+   \   000046   ....         DW zclSampleHeatingCoolingUnit_DeviceEnable
+   \   000048   0300         DW 3
+   \   00004A   0000         DW 0
+   \   00004C   21           DB 33
+   \   00004D   03           DB 3
+   \   00004E   ....         DW zclSampleHeatingCoolingUnit_IdentifyTime
+   \   000050   0600         DW 6
+   \   000052   0000         DW 0
+   \   000054   10           DB 16
+   \   000055   01           DB 1
+   \   000056   ....         DW zclSampleHeatingCoolingUnit_OnOff
+   \   000058   0102         DW 513
+   \   00005A   0000         DW 0
+   \   00005C   29           DB 41
+   \   00005D   01           DB 1
+   \   00005E   ....         DW zclSampleHeatingCoolingUnit_LocalTemperature
+   \   000060   0102         DW 513
+   \   000062   2900         DW 41
+   \   000064   19           DB 25
+   \   000065   01           DB 1
+   \   000066   ....         DW zclSampleHeatingCoolingUnit_RunningState
+   \   000068   0102         DW 513
+   \   00006A   1100         DW 17
+   \   00006C   29           DB 41
+   \   00006D   01           DB 1
+   \   00006E   ....         DW zclSampleHeatingCoolingUnit_OccupiedCoolingSetpoint
+   \   000070   0102         DW 513
+   \   000072   1200         DW 18
+   \   000074   29           DB 41
+   \   000075   01           DB 1
+   \   000076   ....         DW zclSampleHeatingCoolingUnit_OccupiedHeatingSetpoint
+    116          {
+    117            // *** General Basic Cluster Attributes ***
+    118            {
+    119              ZCL_CLUSTER_ID_GEN_BASIC,             // Cluster IDs - defined in the foundation (ie. zcl.h)
+    120              {  // Attribute record
+    121                ATTRID_BASIC_HW_VERSION,            // Attribute ID - Found in Cluster Library header (ie. zcl_general.h)
+    122                ZCL_DATATYPE_UINT8,                 // Data Type - found in zcl.h
+    123                ACCESS_CONTROL_READ,                // Variable access control - found in zcl.h
+    124                (void *)&zclSampleHeatingCoolingUnit_HWRevision  // Pointer to attribute variable
+    125              }
+    126            },
+    127            {
+    128              ZCL_CLUSTER_ID_GEN_BASIC,
+    129              { // Attribute record
+    130                ATTRID_BASIC_ZCL_VERSION,
+    131                ZCL_DATATYPE_UINT8,
+    132                ACCESS_CONTROL_READ,
+    133                (void *)&zclSampleHeatingCoolingUnit_ZCLVersion
+    134              }
+    135            },
+    136            {
+    137              ZCL_CLUSTER_ID_GEN_BASIC,
+    138              { // Attribute record
+    139                ATTRID_BASIC_MANUFACTURER_NAME,
+    140                ZCL_DATATYPE_CHAR_STR,
+    141                ACCESS_CONTROL_READ,
+    142                (void *)zclSampleHeatingCoolingUnit_ManufacturerName
+    143              }
+    144            },
+    145            {
+    146              ZCL_CLUSTER_ID_GEN_BASIC,
+    147              { // Attribute record
+    148                ATTRID_BASIC_MODEL_ID,
+    149                ZCL_DATATYPE_CHAR_STR,
+    150                ACCESS_CONTROL_READ,
+    151                (void *)zclSampleHeatingCoolingUnit_ModelId
+    152              }
+    153            },
+    154            {
+    155              ZCL_CLUSTER_ID_GEN_BASIC,
+    156              { // Attribute record
+    157                ATTRID_BASIC_DATE_CODE,
+    158                ZCL_DATATYPE_CHAR_STR,
+    159                ACCESS_CONTROL_READ,
+    160                (void *)zclSampleHeatingCoolingUnit_DateCode
+    161              }
+    162            },
+    163            {
+    164              ZCL_CLUSTER_ID_GEN_BASIC,
+    165              { // Attribute record
+    166                ATTRID_BASIC_POWER_SOURCE,
+    167                ZCL_DATATYPE_UINT8,
+    168                ACCESS_CONTROL_READ,
+    169                (void *)&zclSampleHeatingCoolingUnit_PowerSource
+    170              }
+    171            },
+    172            {
+    173              ZCL_CLUSTER_ID_GEN_BASIC,
+    174              { // Attribute record
+    175                ATTRID_BASIC_LOCATION_DESC,
+    176                ZCL_DATATYPE_CHAR_STR,
+    177                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    178                (void *)zclSampleHeatingCoolingUnit_LocationDescription
+    179              }
+    180            },
+    181            {
+    182              ZCL_CLUSTER_ID_GEN_BASIC,
+    183              { // Attribute record
+    184                ATTRID_BASIC_PHYSICAL_ENV,
+    185                ZCL_DATATYPE_UINT8,
+    186                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    187                (void *)&zclSampleHeatingCoolingUnit_PhysicalEnvironment
+    188              }
+    189            },
+    190            {
+    191              ZCL_CLUSTER_ID_GEN_BASIC,
+    192              { // Attribute record
+    193                ATTRID_BASIC_DEVICE_ENABLED,
+    194                ZCL_DATATYPE_BOOLEAN,
+    195                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    196                (void *)&zclSampleHeatingCoolingUnit_DeviceEnable
+    197              }
+    198            },
+    199          
+    200            // *** Identify Cluster Attribute ***
+    201            {
+    202              ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    203              { // Attribute record
+    204                ATTRID_IDENTIFY_TIME,
+    205                ZCL_DATATYPE_UINT16,
+    206                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    207                (void *)&zclSampleHeatingCoolingUnit_IdentifyTime
+    208              }
+    209            },
+    210          
+    211            // *** On/Off Cluster Attributes ***
+    212            {
+    213              ZCL_CLUSTER_ID_GEN_ON_OFF,
+    214              { // Attribute record
+    215                ATTRID_ON_OFF,
+    216                ZCL_DATATYPE_BOOLEAN,
+    217                ACCESS_CONTROL_READ,
+    218                (void *)&zclSampleHeatingCoolingUnit_OnOff
+    219              }
+    220            },
+    221          
+    222            // *** HVAC Heating/Cooling Unit Cluster *** //
+    223            {
+    224              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    225              { // Attribute record
+    226                ATTRID_HVAC_THERMOSTAT_LOCAL_TEMPERATURE,
+    227                ZCL_DATATYPE_INT16,
+    228                ACCESS_CONTROL_READ,
+    229                (void *)&zclSampleHeatingCoolingUnit_LocalTemperature
+    230              }
+    231            },
+    232            {
+    233              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    234              { // Attribute record
+    235                ATTRID_HVAC_THERMOSTAT_RUNNING_STATE,
+    236                ZCL_DATATYPE_BITMAP16,
+    237                ACCESS_CONTROL_READ,
+    238                (void *)&zclSampleHeatingCoolingUnit_RunningState
+    239              }
+    240            },
+    241            {
+    242              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    243              { // Attribute record
+    244                ATTRID_HVAC_THERMOSTAT_OCCUPIED_COOLING_SETPOINT,
+    245                ZCL_DATATYPE_INT16,
+    246                ACCESS_CONTROL_READ,
+    247                (void *)&zclSampleHeatingCoolingUnit_OccupiedCoolingSetpoint
+    248              }
+    249            },
+    250            {
+    251              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    252              { // Attribute record
+    253                ATTRID_HVAC_THERMOSTAT_OCCUPIED_HEATING_SETPOINT,
+    254                ZCL_DATATYPE_INT16,
+    255                ACCESS_CONTROL_READ,
+    256                (void *)&zclSampleHeatingCoolingUnit_OccupiedHeatingSetpoint
+    257              }
+    258            },
+    259          };
+    260          
+    261          /*********************************************************************
+    262           * SIMPLE DESCRIPTOR
+    263           */
+    264          // This is the Cluster ID List and should be filled with Application
+    265          // specific cluster IDs.
+    266          #define ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_INCLUSTERS       4
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    267          const cId_t zclSampleHeatingCoolingUnit_InClusterList[ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_INCLUSTERS] =
+   \                     zclSampleHeatingCoolingUnit_InClusterList:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   0600         DW 6
+   \   000006   0102         DW 513
+    268          {
+    269            ZCL_CLUSTER_ID_GEN_BASIC,
+    270            ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    271            ZCL_CLUSTER_ID_GEN_ON_OFF,
+    272            ZCL_CLUSTER_ID_HVAC_THERMOSTAT
+    273          };
+    274          
+    275          #define ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_OUTCLUSTERS       1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    276          const cId_t zclSampleHeatingCoolingUnit_OutClusterList[ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_OUTCLUSTERS] =
+   \                     zclSampleHeatingCoolingUnit_OutClusterList:
+   \   000000   0000         DW 0
+    277          {
+    278            ZCL_CLUSTER_ID_GEN_BASIC
+    279          };
+    280          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    281          SimpleDescriptionFormat_t zclSampleHeatingCoolingUnit_SimpleDesc =
+   \                     zclSampleHeatingCoolingUnit_SimpleDesc:
+   \   000000                DS 12
+   \   00000C                REQUIRE `?<Initializer for zclSampleHeatingCoolingUnit__2`
+   \   00000C                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleHeatingCoolingUnit_`:
+   \   000000   10           DB 16
+   \   000001   20           DB 32
+   \   000002   20           DB 32
+   \   000003   20           DB 32
+   \   000004   20           DB 32
+   \   000005   20           DB 32
+   \   000006   20           DB 32
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleHeatingCoolingUnit__1`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleHeatingCoolingUnit__2`:
+   \   000000   01           DB 1
+   \   000001   0401         DW 260
+   \   000003   0003         DW 768
+   \   000005   00           DB 0
+   \   000006   04           DB 4
+   \   000007   ....         DW zclSampleHeatingCoolingUnit_InClusterList
+   \   000009   01           DB 1
+   \   00000A   ....         DW zclSampleHeatingCoolingUnit_OutClusterList
+    282          {
+    283            SAMPLEHEATINGCOOLINGUNIT_ENDPOINT,                  //  int Endpoint;
+    284            ZCL_HA_PROFILE_ID,                                  //  uint16 AppProfId[2];
+    285            ZCL_HA_DEVICEID_HEATING_COOLING_UNIT,               //  uint16 AppDeviceId[2];
+    286            SAMPLEHEATINGCOOLINGUNIT_DEVICE_VERSION,            //  int   AppDevVer:4;
+    287            SAMPLEHEATINGCOOLINGUNIT_FLAGS,                     //  int   AppFlags:4;
+    288            ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_INCLUSTERS,         //  byte  AppNumInClusters;
+    289            (cId_t *)zclSampleHeatingCoolingUnit_InClusterList, //  byte *pAppInClusterList;
+    290            ZCLSAMPLEHEATINGCOOLINGUNIT_MAX_OUTCLUSTERS,        //  byte  AppNumInClusters;
+    291            (cId_t *)zclSampleHeatingCoolingUnit_OutClusterList //  byte *pAppInClusterList;
+    292          };
+    293          
+    294          /*********************************************************************
+    295           * GLOBAL FUNCTIONS
+    296           */
+    297          
+    298          /*********************************************************************
+    299           * LOCAL FUNCTIONS
+    300           */
+    301          
+    302          /****************************************************************************
+    303          ****************************************************************************/
+    304          
+    305          
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      17  ?<Initializer for zclSampleHeatingCoolingUnit_
+       1  ?<Initializer for zclSampleHeatingCoolingUnit__1
+      12  ?<Initializer for zclSampleHeatingCoolingUnit__2
+     120  zclSampleHeatingCoolingUnit_Attrs
+      17  zclSampleHeatingCoolingUnit_DateCode
+       1  zclSampleHeatingCoolingUnit_DeviceEnable
+       1  zclSampleHeatingCoolingUnit_HWRevision
+       2  zclSampleHeatingCoolingUnit_IdentifyTime
+       8  zclSampleHeatingCoolingUnit_InClusterList
+       2  zclSampleHeatingCoolingUnit_LocalTemperature
+      17  zclSampleHeatingCoolingUnit_LocationDescription
+      17  zclSampleHeatingCoolingUnit_ManufacturerName
+      17  zclSampleHeatingCoolingUnit_ModelId
+       2  zclSampleHeatingCoolingUnit_OccupiedCoolingSetpoint
+       2  zclSampleHeatingCoolingUnit_OccupiedHeatingSetpoint
+       1  zclSampleHeatingCoolingUnit_OnOff
+       2  zclSampleHeatingCoolingUnit_OutClusterList
+       1  zclSampleHeatingCoolingUnit_PhysicalEnvironment
+       1  zclSampleHeatingCoolingUnit_PowerSource
+       2  zclSampleHeatingCoolingUnit_RunningState
+      12  zclSampleHeatingCoolingUnit_SimpleDesc
+       1  zclSampleHeatingCoolingUnit_ZCLVersion
+
+ 
+ 120 bytes in segment CODE_C
+  30 bytes in segment XDATA_I
+  30 bytes in segment XDATA_ID
+  64 bytes in segment XDATA_ROM_C
+  12 bytes in segment XDATA_Z
+ 
+ 150 bytes of CODE  memory
+  64 bytes of CONST memory
+  42 bytes of XDATA memory
+
+Errors: none
+Warnings: none

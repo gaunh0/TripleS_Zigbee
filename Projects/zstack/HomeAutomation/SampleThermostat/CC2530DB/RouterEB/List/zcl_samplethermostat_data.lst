@@ -1,0 +1,911 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V9.30.3.3983 for 8051                14/Feb/2017  09:10:58
+# Copyright 2004-2016 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\Source\zcl_samplethermostat_data.c
+#    Command line       =  
+#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wRouter.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRUE
+#        -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8 -DMAC_CFG_RX_MAX=5
+#        -DRTR_NWK) -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+#        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+#        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+#        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+#        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+#        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\Source\zcl_samplethermostat_data.c"
+#        -D ROUTER -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D NV_RESTORE -D
+#        xHOLD_AUTO_START -D ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC
+#        -D MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D
+#        ZCL_READ -D ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D
+#        ZCL_IDENTIFY -D ZCL_ON_OFF -D ZCL_HVAC_CLUSTER -lC
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\RouterEB\List"
+#        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\RouterEB\List"
+#        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
+#        Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\RouterEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -I
+#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes
+#    List file          =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\RouterEB\List\zcl_samplethermostat_data.lst
+#    Object file        =  
+#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\RouterEB\Obj\zcl_samplethermostat_data.r51
+#
+###############################################################################
+
+C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\Source\zcl_samplethermostat_data.c
+      1          /**************************************************************************************************
+      2            Filename:       zcl_samplethermostat_data.c
+      3            Revised:        $Date: 2014-09-25 13:20:41 -0700 (Thu, 25 Sep 2014) $
+      4            Revision:       $Revision: 40295 $
+      5          
+      6          
+      7            Description:    Zigbee Cluster Library - sample device application.
+      8          
+      9          
+     10            Copyright 2013-2014 Texas Instruments Incorporated. All rights reserved.
+     11          
+     12            IMPORTANT: Your use of this Software is limited to those specific rights
+     13            granted under the terms of a software license agreement between the user
+     14            who downloaded the software, his/her employer (which must be your employer)
+     15            and Texas Instruments Incorporated (the "License").  You may not use this
+     16            Software unless you agree to abide by the terms of the License. The License
+     17            limits your use, and you acknowledge, that the Software may not be modified,
+     18            copied or distributed unless embedded on a Texas Instruments microcontroller
+     19            or used solely and exclusively in conjunction with a Texas Instruments radio
+     20            frequency transceiver, which is integrated into your product.  Other than for
+     21            the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+     22            works of, modify, distribute, perform, display or sell this Software and/or
+     23            its documentation for any purpose.
+     24          
+     25            YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+     26            PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+     27            INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+     28            NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+     29            TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+     30            NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+     31            LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+     32            INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+     33            OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+     34            OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+     35            (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+     36          
+     37            Should you have any questions regarding your right to use this Software,
+     38            contact Texas Instruments Incorporated at www.TI.com.
+     39          **************************************************************************************************/
+     40          
+     41          /*********************************************************************
+     42           * INCLUDES
+     43           */
+     44          #include "ZComDef.h"
+     45          #include "OSAL.h"
+     46          #include "AF.h"
+     47          #include "ZDConfig.h"
+     48          
+     49          #include "zcl.h"
+     50          #include "zcl_general.h"
+     51          #include "zcl_ha.h"
+     52          #include "zcl_poll_control.h"
+     53          #include "zcl_electrical_measurement.h"
+     54          #include "zcl_diagnostic.h"
+     55          #include "zcl_meter_identification.h"
+     56          #include "zcl_appliance_identification.h"
+     57          #include "zcl_appliance_events_alerts.h"
+     58          #include "zcl_power_profile.h"
+     59          #include "zcl_appliance_control.h"
+     60          #include "zcl_appliance_statistics.h"
+     61          #include "zcl_hvac.h"
+     62          #include "zcl_ezmode.h"
+     63          
+     64          #include "zcl_samplethermostat.h"
+     65          
+     66          /*********************************************************************
+     67           * CONSTANTS
+     68           */
+     69          
+     70          #define SAMPLETHERMOSTAT_DEVICE_VERSION     0
+     71          #define SAMPLETHERMOSTAT_FLAGS              0
+     72          
+     73          #define SAMPLETHERMOSTAT_HWVERSION          1
+     74          #define SAMPLETHERMOSTAT_ZCLVERSION         1
+     75          
+     76          /*********************************************************************
+     77           * TYPEDEFS
+     78           */
+     79          
+     80          /*********************************************************************
+     81           * MACROS
+     82           */
+     83          
+     84          /*********************************************************************
+     85           * GLOBAL VARIABLES
+     86           */
+     87          
+     88          // Basic Cluster
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     89          const uint8 zclSampleThermostat_HWRevision = SAMPLETHERMOSTAT_HWVERSION;
+   \                     zclSampleThermostat_HWRevision:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     90          const uint8 zclSampleThermostat_ZCLVersion = SAMPLETHERMOSTAT_ZCLVERSION;
+   \                     zclSampleThermostat_ZCLVersion:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     91          const uint8 zclSampleThermostat_ManufacturerName[] = { 16, 'T','e','x','a','s','I','n','s','t','r','u','m','e','n','t','s' };
+   \                     zclSampleThermostat_ManufacturerName:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   65           DB 101
+   \   000003   78           DB 120
+   \   000004   61           DB 97
+   \   000005   73           DB 115
+   \   000006   49           DB 73
+   \   000007   6E           DB 110
+   \   000008   73           DB 115
+   \   000009   74           DB 116
+   \   00000A   72           DB 114
+   \   00000B   75           DB 117
+   \   00000C   6D           DB 109
+   \   00000D   65           DB 101
+   \   00000E   6E           DB 110
+   \   00000F   74           DB 116
+   \   000010   73           DB 115
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     92          const uint8 zclSampleThermostat_ModelId[] = { 16, 'T','I','0','0','0','1',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleThermostat_ModelId:
+   \   000000   10           DB 16
+   \   000001   54           DB 84
+   \   000002   49           DB 73
+   \   000003   30           DB 48
+   \   000004   30           DB 48
+   \   000005   30           DB 48
+   \   000006   31           DB 49
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     93          const uint8 zclSampleThermostat_DateCode[] = { 16, '2','0','0','6','0','8','3','1',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleThermostat_DateCode:
+   \   000000   10           DB 16
+   \   000001   32           DB 50
+   \   000002   30           DB 48
+   \   000003   30           DB 48
+   \   000004   36           DB 54
+   \   000005   30           DB 48
+   \   000006   38           DB 56
+   \   000007   33           DB 51
+   \   000008   31           DB 49
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ROM_C, align 1
+     94          const uint8 zclSampleThermostat_PowerSource = POWER_SOURCE_MAINS_1_PHASE;
+   \                     zclSampleThermostat_PowerSource:
+   \   000000   01           DB 1
+     95          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     96          uint8 zclSampleThermostat_LocationDescription[17] = { 16, ' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ' };
+   \                     zclSampleThermostat_LocationDescription:
+   \   000000                DS 17
+   \   000011                REQUIRE `?<Initializer for zclSampleThermostat_Location`
+   \   000011                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     97          uint8 zclSampleThermostat_PhysicalEnvironment = 0;
+   \                     zclSampleThermostat_PhysicalEnvironment:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+     98          uint8 zclSampleThermostat_DeviceEnable = DEVICE_ENABLED;
+   \                     zclSampleThermostat_DeviceEnable:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleThermostat_DeviceEn`
+   \   000001                REQUIRE __INIT_XDATA_I
+     99          
+    100          // Identify Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    101          uint16 zclSampleThermostat_IdentifyTime = 0;
+   \                     zclSampleThermostat_IdentifyTime:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+    102          
+    103          // On/Off Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    104          uint8  zclSampleThermostat_OnOff = COMMAND_OFF;
+   \                     zclSampleThermostat_OnOff:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+    105          
+    106          // HVAC Thermostat Cluster
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    107          int16 zclSampleThermostat_LocalTemperature = NULL;
+   \                     zclSampleThermostat_LocalTemperature:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    108          int16 zclSampleThermostat_MinHeatSetpointLimit = 1700;  // 17.00C
+   \                     zclSampleThermostat_MinHeatSetpointLimit:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_MinHeatS`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    109          int16 zclSampleThermostat_MaxHeatSetpointLimit = 2700;  // 27.00C
+   \                     zclSampleThermostat_MaxHeatSetpointLimit:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_MaxHeatS`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    110          int16 zclSampleThermostat_MinCoolSetpointLimit = 1700;  // 17.00C
+   \                     zclSampleThermostat_MinCoolSetpointLimit:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_MinCoolS`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    111          int16 zclSampleThermostat_MaxCoolSetpointLimit = 2700;  // 27.00C
+   \                     zclSampleThermostat_MaxCoolSetpointLimit:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_MaxCoolS`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    112          int16 zclSampleThermostat_OccupiedHeatingSetpoint = 2000; // 20.00C
+   \                     zclSampleThermostat_OccupiedHeatingSetpoint:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_Occupied`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    113          int16 zclSampleThermostat_OccupiedCoolingSetpoint = 3000; // 24.00C
+   \                     zclSampleThermostat_OccupiedCoolingSetpoint:
+   \   000000                DS 2
+   \   000002                REQUIRE `?<Initializer for zclSampleThermostat_Occupied_1`
+   \   000002                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    114          uint8 zclSampleThermostat_HeatingDemand = 100;   // 100% heating demanded of heating device
+   \                     zclSampleThermostat_HeatingDemand:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleThermostat_HeatingD`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    115          uint8 zclSampleThermostat_CoolingDemand = 100;   // 100% cooling demanded of cooling device
+   \                     zclSampleThermostat_CoolingDemand:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleThermostat_CoolingD`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    116          uint8 zclSampleThermostat_ControlSequenceOfOperation = HVAC_THERMOSTAT_CTRL_SEQ_OF_OPER_COOLING_HEATING;    // Both heating and cooling is possible
+   \                     zclSampleThermostat_ControlSequenceOfOperation:
+   \   000000                DS 1
+   \   000001                REQUIRE `?<Initializer for zclSampleThermostat_ControlS`
+   \   000001                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+    117          uint8 zclSampleThermostat_SystemMode = HVAC_THERMOSTAT_SYSTEM_MODE_OFF;
+   \                     zclSampleThermostat_SystemMode:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+    118          
+    119          /*********************************************************************
+    120           * ATTRIBUTE DEFINITIONS - Uses REAL cluster IDs
+    121           */
+
+   \                                 In  segment CODE_C, align 1
+    122          CONST zclAttrRec_t zclSampleThermostat_Attrs[SAMPLETHERMOSTAT_MAX_ATTRIBUTES] =
+   \                     zclSampleThermostat_Attrs:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   20           DB 32
+   \   000005   01           DB 1
+   \   000006   ....         DW zclSampleThermostat_HWRevision
+   \   000008   0000         DW 0
+   \   00000A   0000         DW 0
+   \   00000C   20           DB 32
+   \   00000D   01           DB 1
+   \   00000E   ....         DW zclSampleThermostat_ZCLVersion
+   \   000010   0000         DW 0
+   \   000012   0400         DW 4
+   \   000014   42           DB 66
+   \   000015   01           DB 1
+   \   000016   ....         DW zclSampleThermostat_ManufacturerName
+   \   000018   0000         DW 0
+   \   00001A   0500         DW 5
+   \   00001C   42           DB 66
+   \   00001D   01           DB 1
+   \   00001E   ....         DW zclSampleThermostat_ModelId
+   \   000020   0000         DW 0
+   \   000022   0600         DW 6
+   \   000024   42           DB 66
+   \   000025   01           DB 1
+   \   000026   ....         DW zclSampleThermostat_DateCode
+   \   000028   0000         DW 0
+   \   00002A   0700         DW 7
+   \   00002C   20           DB 32
+   \   00002D   01           DB 1
+   \   00002E   ....         DW zclSampleThermostat_PowerSource
+   \   000030   0000         DW 0
+   \   000032   1000         DW 16
+   \   000034   42           DB 66
+   \   000035   03           DB 3
+   \   000036   ....         DW zclSampleThermostat_LocationDescription
+   \   000038   0000         DW 0
+   \   00003A   1100         DW 17
+   \   00003C   20           DB 32
+   \   00003D   03           DB 3
+   \   00003E   ....         DW zclSampleThermostat_PhysicalEnvironment
+   \   000040   0000         DW 0
+   \   000042   1200         DW 18
+   \   000044   10           DB 16
+   \   000045   03           DB 3
+   \   000046   ....         DW zclSampleThermostat_DeviceEnable
+   \   000048   0300         DW 3
+   \   00004A   0000         DW 0
+   \   00004C   21           DB 33
+   \   00004D   03           DB 3
+   \   00004E   ....         DW zclSampleThermostat_IdentifyTime
+   \   000050   0600         DW 6
+   \   000052   0000         DW 0
+   \   000054   10           DB 16
+   \   000055   01           DB 1
+   \   000056   ....         DW zclSampleThermostat_OnOff
+   \   000058   0102         DW 513
+   \   00005A   1100         DW 17
+   \   00005C   29           DB 41
+   \   00005D   03           DB 3
+   \   00005E   ....         DW zclSampleThermostat_OccupiedCoolingSetpoint
+   \   000060   0102         DW 513
+   \   000062   1200         DW 18
+   \   000064   29           DB 41
+   \   000065   03           DB 3
+   \   000066   ....         DW zclSampleThermostat_OccupiedHeatingSetpoint
+   \   000068   0102         DW 513
+   \   00006A   0000         DW 0
+   \   00006C   29           DB 41
+   \   00006D   01           DB 1
+   \   00006E   ....         DW zclSampleThermostat_LocalTemperature
+   \   000070   0102         DW 513
+   \   000072   1500         DW 21
+   \   000074   29           DB 41
+   \   000075   01           DB 1
+   \   000076   ....         DW zclSampleThermostat_MinHeatSetpointLimit
+   \   000078   0102         DW 513
+   \   00007A   1600         DW 22
+   \   00007C   29           DB 41
+   \   00007D   01           DB 1
+   \   00007E   ....         DW zclSampleThermostat_MaxHeatSetpointLimit
+   \   000080   0102         DW 513
+   \   000082   1700         DW 23
+   \   000084   29           DB 41
+   \   000085   01           DB 1
+   \   000086   ....         DW zclSampleThermostat_MinCoolSetpointLimit
+   \   000088   0102         DW 513
+   \   00008A   1800         DW 24
+   \   00008C   29           DB 41
+   \   00008D   01           DB 1
+   \   00008E   ....         DW zclSampleThermostat_MaxCoolSetpointLimit
+   \   000090   0102         DW 513
+   \   000092   0700         DW 7
+   \   000094   20           DB 32
+   \   000095   01           DB 1
+   \   000096   ....         DW zclSampleThermostat_CoolingDemand
+   \   000098   0102         DW 513
+   \   00009A   0800         DW 8
+   \   00009C   20           DB 32
+   \   00009D   01           DB 1
+   \   00009E   ....         DW zclSampleThermostat_HeatingDemand
+   \   0000A0   0102         DW 513
+   \   0000A2   1B00         DW 27
+   \   0000A4   30           DB 48
+   \   0000A5   03           DB 3
+   \   0000A6   ....         DW zclSampleThermostat_ControlSequenceOfOperation
+   \   0000A8   0102         DW 513
+   \   0000AA   1C00         DW 28
+   \   0000AC   30           DB 48
+   \   0000AD   03           DB 3
+   \   0000AE   ....         DW zclSampleThermostat_SystemMode
+    123          {
+    124            // *** General Basic Cluster Attributes ***
+    125            {
+    126              ZCL_CLUSTER_ID_GEN_BASIC,             // Cluster IDs - defined in the foundation (ie. zcl.h)
+    127              {  // Attribute record
+    128                ATTRID_BASIC_HW_VERSION,            // Attribute ID - Found in Cluster Library header (ie. zcl_general.h)
+    129                ZCL_DATATYPE_UINT8,                 // Data Type - found in zcl.h
+    130                ACCESS_CONTROL_READ,                // Variable access control - found in zcl.h
+    131                (void *)&zclSampleThermostat_HWRevision  // Pointer to attribute variable
+    132              }
+    133            },
+    134            {
+    135              ZCL_CLUSTER_ID_GEN_BASIC,
+    136              { // Attribute record
+    137                ATTRID_BASIC_ZCL_VERSION,
+    138                ZCL_DATATYPE_UINT8,
+    139                ACCESS_CONTROL_READ,
+    140                (void *)&zclSampleThermostat_ZCLVersion
+    141              }
+    142            },
+    143            {
+    144              ZCL_CLUSTER_ID_GEN_BASIC,
+    145              { // Attribute record
+    146                ATTRID_BASIC_MANUFACTURER_NAME,
+    147                ZCL_DATATYPE_CHAR_STR,
+    148                ACCESS_CONTROL_READ,
+    149                (void *)zclSampleThermostat_ManufacturerName
+    150              }
+    151            },
+    152            {
+    153              ZCL_CLUSTER_ID_GEN_BASIC,
+    154              { // Attribute record
+    155                ATTRID_BASIC_MODEL_ID,
+    156                ZCL_DATATYPE_CHAR_STR,
+    157                ACCESS_CONTROL_READ,
+    158                (void *)zclSampleThermostat_ModelId
+    159              }
+    160            },
+    161            {
+    162              ZCL_CLUSTER_ID_GEN_BASIC,
+    163              { // Attribute record
+    164                ATTRID_BASIC_DATE_CODE,
+    165                ZCL_DATATYPE_CHAR_STR,
+    166                ACCESS_CONTROL_READ,
+    167                (void *)zclSampleThermostat_DateCode
+    168              }
+    169            },
+    170            {
+    171              ZCL_CLUSTER_ID_GEN_BASIC,
+    172              { // Attribute record
+    173                ATTRID_BASIC_POWER_SOURCE,
+    174                ZCL_DATATYPE_UINT8,
+    175                ACCESS_CONTROL_READ,
+    176                (void *)&zclSampleThermostat_PowerSource
+    177              }
+    178            },
+    179            {
+    180              ZCL_CLUSTER_ID_GEN_BASIC,
+    181              { // Attribute record
+    182                ATTRID_BASIC_LOCATION_DESC,
+    183                ZCL_DATATYPE_CHAR_STR,
+    184                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    185                (void *)zclSampleThermostat_LocationDescription
+    186              }
+    187            },
+    188            {
+    189              ZCL_CLUSTER_ID_GEN_BASIC,
+    190              { // Attribute record
+    191                ATTRID_BASIC_PHYSICAL_ENV,
+    192                ZCL_DATATYPE_UINT8,
+    193                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    194                (void *)&zclSampleThermostat_PhysicalEnvironment
+    195              }
+    196            },
+    197            {
+    198              ZCL_CLUSTER_ID_GEN_BASIC,
+    199              { // Attribute record
+    200                ATTRID_BASIC_DEVICE_ENABLED,
+    201                ZCL_DATATYPE_BOOLEAN,
+    202                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    203                (void *)&zclSampleThermostat_DeviceEnable
+    204              }
+    205            },
+    206          
+    207            // *** Identify Cluster Attribute ***
+    208            {
+    209              ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    210              { // Attribute record
+    211                ATTRID_IDENTIFY_TIME,
+    212                ZCL_DATATYPE_UINT16,
+    213                (ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE),
+    214                (void *)&zclSampleThermostat_IdentifyTime
+    215              }
+    216            },
+    217          
+    218            // *** On/Off Cluster Attributes ***
+    219            {
+    220              ZCL_CLUSTER_ID_GEN_ON_OFF,
+    221              { // Attribute record
+    222                ATTRID_ON_OFF,
+    223                ZCL_DATATYPE_BOOLEAN,
+    224                ACCESS_CONTROL_READ,
+    225                (void *)&zclSampleThermostat_OnOff
+    226              }
+    227            },
+    228          
+    229            // *** HVAC Thermostat Cluster Attributes *** //
+    230            {
+    231              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    232              { // Attribute record
+    233                ATTRID_HVAC_THERMOSTAT_OCCUPIED_COOLING_SETPOINT,
+    234                ZCL_DATATYPE_INT16,
+    235                ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE,
+    236                (void *)&zclSampleThermostat_OccupiedCoolingSetpoint
+    237              }
+    238            },
+    239            {
+    240              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    241              { // Attribute record
+    242                ATTRID_HVAC_THERMOSTAT_OCCUPIED_HEATING_SETPOINT,
+    243                ZCL_DATATYPE_INT16,
+    244                ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE,
+    245                (void *)&zclSampleThermostat_OccupiedHeatingSetpoint
+    246              }
+    247            },
+    248            {
+    249              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    250              { // Attribute record
+    251                ATTRID_HVAC_THERMOSTAT_LOCAL_TEMPERATURE,
+    252                ZCL_DATATYPE_INT16,
+    253                ACCESS_CONTROL_READ,
+    254                (void *)&zclSampleThermostat_LocalTemperature
+    255              }
+    256            },
+    257            {
+    258              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    259              { // Attribute record
+    260                ATTRID_HVAC_THERMOSTAT_MIN_HEAT_SETPOINT_LIMIT,
+    261                ZCL_DATATYPE_INT16,
+    262                ACCESS_CONTROL_READ,
+    263                (void *)&zclSampleThermostat_MinHeatSetpointLimit
+    264              }
+    265            },
+    266            {
+    267              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    268              { // Attribute record
+    269                ATTRID_HVAC_THERMOSTAT_MAX_HEAT_SETPOINT_LIMIT,
+    270                ZCL_DATATYPE_INT16,
+    271                ACCESS_CONTROL_READ,
+    272                (void *)&zclSampleThermostat_MaxHeatSetpointLimit
+    273              }
+    274            },
+    275            {
+    276              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    277              { // Attribute record
+    278                ATTRID_HVAC_THERMOSTAT_MIN_COOL_SETPOINT_LIMIT,
+    279                ZCL_DATATYPE_INT16,
+    280                ACCESS_CONTROL_READ,
+    281                (void *)&zclSampleThermostat_MinCoolSetpointLimit
+    282              }
+    283            },
+    284            {
+    285              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    286              { // Attribute record
+    287                ATTRID_HVAC_THERMOSTAT_MAX_COOL_SETPOINT_LIMIT,
+    288                ZCL_DATATYPE_INT16,
+    289                ACCESS_CONTROL_READ,
+    290                (void *)&zclSampleThermostat_MaxCoolSetpointLimit
+    291              }
+    292            },
+    293            {
+    294              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    295              { // Attribute record
+    296                ATTRID_HVAC_THERMOSTAT_PI_COOLING_DEMAND,
+    297                ZCL_DATATYPE_UINT8,
+    298                ACCESS_CONTROL_READ,
+    299                (void *)&zclSampleThermostat_CoolingDemand
+    300              }
+    301            },
+    302            {
+    303              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    304              { // Attribute record
+    305                ATTRID_HVAC_THERMOSTAT_PI_HEATING_DEMAND,
+    306                ZCL_DATATYPE_UINT8,
+    307                ACCESS_CONTROL_READ,
+    308                (void *)&zclSampleThermostat_HeatingDemand
+    309              }
+    310            },
+    311            {
+    312              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    313              { // Attribute record
+    314                ATTRID_HVAC_THERMOSTAT_CTRL_SEQ_OF_OPER,
+    315                ZCL_DATATYPE_ENUM8,
+    316                ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE,
+    317                (void *)&zclSampleThermostat_ControlSequenceOfOperation
+    318              }
+    319            },
+    320            {
+    321              ZCL_CLUSTER_ID_HVAC_THERMOSTAT,
+    322              { // Attribute record
+    323                ATTRID_HVAC_THERMOSTAT_SYSTEM_MODE,
+    324                ZCL_DATATYPE_ENUM8,
+    325                ACCESS_CONTROL_READ | ACCESS_CONTROL_WRITE,
+    326                (void *)&zclSampleThermostat_SystemMode
+    327              }
+    328            },
+    329          };
+    330          
+    331          /*********************************************************************
+    332           * SIMPLE DESCRIPTOR
+    333           */
+    334          // This is the Cluster ID List and should be filled with Application
+    335          // specific cluster IDs.
+    336          #define ZCLSAMPLETHERMOSTAT_MAX_INCLUSTERS       3
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    337          const cId_t zclSampleThermostat_InClusterList[ZCLSAMPLETHERMOSTAT_MAX_INCLUSTERS] =
+   \                     zclSampleThermostat_InClusterList:
+   \   000000   0000         DW 0
+   \   000002   0300         DW 3
+   \   000004   0102         DW 513
+    338          {
+    339            ZCL_CLUSTER_ID_GEN_BASIC,
+    340            ZCL_CLUSTER_ID_GEN_IDENTIFY,
+    341            ZCL_CLUSTER_ID_HVAC_THERMOSTAT
+    342          };
+    343          
+    344          #define ZCLSAMPLETHERMOSTAT_MAX_OUTCLUSTERS       1
+
+   \                                 In  segment XDATA_ROM_C, align 1
+    345          const cId_t zclSampleThermostat_OutClusterList[ZCLSAMPLETHERMOSTAT_MAX_OUTCLUSTERS] =
+   \                     zclSampleThermostat_OutClusterList:
+   \   000000   0204         DW 1026
+    346          {
+    347            ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT
+    348          };
+    349          
+
+   \                                 In  segment XDATA_I, align 1, keep-with-next
+    350          SimpleDescriptionFormat_t zclSampleThermostat_SimpleDesc =
+   \                     zclSampleThermostat_SimpleDesc:
+   \   000000                DS 12
+   \   00000C                REQUIRE `?<Initializer for zclSampleThermostat_SimpleDe`
+   \   00000C                REQUIRE __INIT_XDATA_I
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_Location`:
+   \   000000   10           DB 16
+   \   000001   20           DB 32
+   \   000002   20           DB 32
+   \   000003   20           DB 32
+   \   000004   20           DB 32
+   \   000005   20           DB 32
+   \   000006   20           DB 32
+   \   000007   20           DB 32
+   \   000008   20           DB 32
+   \   000009   20           DB 32
+   \   00000A   20           DB 32
+   \   00000B   20           DB 32
+   \   00000C   20           DB 32
+   \   00000D   20           DB 32
+   \   00000E   20           DB 32
+   \   00000F   20           DB 32
+   \   000010   20           DB 32
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_DeviceEn`:
+   \   000000   01           DB 1
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_MinHeatS`:
+   \   000000   A406         DW 1700
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_MaxHeatS`:
+   \   000000   8C0A         DW 2700
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_MinCoolS`:
+   \   000000   A406         DW 1700
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_MaxCoolS`:
+   \   000000   8C0A         DW 2700
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_Occupied`:
+   \   000000   D007         DW 2000
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_Occupied_1`:
+   \   000000   B80B         DW 3000
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_HeatingD`:
+   \   000000   64           DB 100
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_CoolingD`:
+   \   000000   64           DB 100
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_ControlS`:
+   \   000000   04           DB 4
+
+   \                                 In  segment XDATA_ID, align 1, keep-with-next
+   \                     `?<Initializer for zclSampleThermostat_SimpleDe`:
+   \   000000   01           DB 1
+   \   000001   0401         DW 260
+   \   000003   0103         DW 769
+   \   000005   00           DB 0
+   \   000006   03           DB 3
+   \   000007   ....         DW zclSampleThermostat_InClusterList
+   \   000009   01           DB 1
+   \   00000A   ....         DW zclSampleThermostat_OutClusterList
+    351          {
+    352            SAMPLETHERMOSTAT_ENDPOINT,                  //  int Endpoint;
+    353            ZCL_HA_PROFILE_ID,                          //  uint16 AppProfId[2];
+    354            ZCL_HA_DEVICEID_THERMOSTAT,                 //  uint16 AppDeviceId[2];
+    355            SAMPLETHERMOSTAT_DEVICE_VERSION,            //  int   AppDevVer:4;
+    356            SAMPLETHERMOSTAT_FLAGS,                     //  int   AppFlags:4;
+    357            ZCLSAMPLETHERMOSTAT_MAX_INCLUSTERS,         //  byte  AppNumInClusters;
+    358            (cId_t *)zclSampleThermostat_InClusterList, //  byte *pAppInClusterList;
+    359            ZCLSAMPLETHERMOSTAT_MAX_OUTCLUSTERS,        //  byte  AppNumInClusters;
+    360            (cId_t *)zclSampleThermostat_OutClusterList //  byte *pAppInClusterList;
+    361          };
+    362          
+    363          /*********************************************************************
+    364           * GLOBAL FUNCTIONS
+    365           */
+    366          
+    367          /*********************************************************************
+    368           * LOCAL FUNCTIONS
+    369           */
+    370          
+    371          /****************************************************************************
+    372          ****************************************************************************/
+    373          
+    374          
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       1  ?<Initializer for zclSampleThermostat_ControlS
+       1  ?<Initializer for zclSampleThermostat_CoolingD
+       1  ?<Initializer for zclSampleThermostat_DeviceEn
+       1  ?<Initializer for zclSampleThermostat_HeatingD
+      17  ?<Initializer for zclSampleThermostat_Location
+       2  ?<Initializer for zclSampleThermostat_MaxCoolS
+       2  ?<Initializer for zclSampleThermostat_MaxHeatS
+       2  ?<Initializer for zclSampleThermostat_MinCoolS
+       2  ?<Initializer for zclSampleThermostat_MinHeatS
+       2  ?<Initializer for zclSampleThermostat_Occupied
+       2  ?<Initializer for zclSampleThermostat_Occupied_1
+      12  ?<Initializer for zclSampleThermostat_SimpleDe
+     176  zclSampleThermostat_Attrs
+       1  zclSampleThermostat_ControlSequenceOfOperation
+       1  zclSampleThermostat_CoolingDemand
+      17  zclSampleThermostat_DateCode
+       1  zclSampleThermostat_DeviceEnable
+       1  zclSampleThermostat_HWRevision
+       1  zclSampleThermostat_HeatingDemand
+       2  zclSampleThermostat_IdentifyTime
+       6  zclSampleThermostat_InClusterList
+       2  zclSampleThermostat_LocalTemperature
+      17  zclSampleThermostat_LocationDescription
+      17  zclSampleThermostat_ManufacturerName
+       2  zclSampleThermostat_MaxCoolSetpointLimit
+       2  zclSampleThermostat_MaxHeatSetpointLimit
+       2  zclSampleThermostat_MinCoolSetpointLimit
+       2  zclSampleThermostat_MinHeatSetpointLimit
+      17  zclSampleThermostat_ModelId
+       2  zclSampleThermostat_OccupiedCoolingSetpoint
+       2  zclSampleThermostat_OccupiedHeatingSetpoint
+       1  zclSampleThermostat_OnOff
+       2  zclSampleThermostat_OutClusterList
+       1  zclSampleThermostat_PhysicalEnvironment
+       1  zclSampleThermostat_PowerSource
+      12  zclSampleThermostat_SimpleDesc
+       1  zclSampleThermostat_SystemMode
+       1  zclSampleThermostat_ZCLVersion
+
+ 
+ 176 bytes in segment CODE_C
+  45 bytes in segment XDATA_I
+  45 bytes in segment XDATA_ID
+  62 bytes in segment XDATA_ROM_C
+   7 bytes in segment XDATA_Z
+ 
+ 221 bytes of CODE  memory
+  62 bytes of CONST memory
+  52 bytes of XDATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,436 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V9.30.1.3056 for 8051                06/Dec/2016  10:52:54
+# Copyright 2004-2015 IAR Systems AB.
+# Standalone license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
+#    Command line       =  
+#        -f "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRUE
+#        -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8 -DMAC_CFG_RX_MAX=5
+#        -DZDO_COORDINATOR -DRTR_NWK) -f "D:\_GIT_COMBROS\[COMBROS] Z-Stack
+#        Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+#        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+#        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+#        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+#        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+#        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
+#        -f "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c"
+#        -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D xNV_RESTORE -D
+#        xHOLD_AUTO_START -D ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC
+#        -D MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D
+#        ZCL_READ -D ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D
+#        ZCL_IDENTIFY -D ZCL_TEMPERATURE_MEASUREMENT -lC
+#        "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\CoordinatorEB\List"
+#        -lA "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\CoordinatorEB\List"
+#        --diag_suppress Pe001,Pa010 -o "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\CoordinatorEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -I
+#        "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes
+#    List file          =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\CoordinatorEB\List\MS_UART_CMD.lst
+#    Object file        =  
+#        D:\_GIT_COMBROS\[COMBROS] Z-Stack Home
+#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\CoordinatorEB\Obj\MS_UART_CMD.r51
+#
+###############################################################################
+
+D:\_GIT_COMBROS\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
+      1          /*******************************************************************************
+      2           *                                            INCLUDES
+      3           *******************************************************************************/
+      4          #include "MS_UART_CMD.h"
+      5          #include "MS_UART.h"
+      6          #include "string.h"
+      7          
+      8          #include "zcl.h"
+      9          #include "zcl_general.h"
+     10          #include "zcl_ha.h"
+     11          #include "zcl_ezmode.h"
+     12          #include "zcl_hvac.h"
+     13          #include "zcl_ms.h"
+     14          
+     15          #if 	(defined COORDINATOR) || (defined ROUTER)
+     16          	#include "zcl_samplethermostat.h" 
+     17          #elif (defined END_DEVICE_SENSOR)
+     18          	#include "zcl_sampletemperaturesensor.h"
+     19          #elif (defined END_DEVICE_ENGINE)
+     20          	#include "zcl_sampleheatingcoolingunit.h"
+     21          #endif
+     22          
+     23          /*******************************************************************************
+     24           *                                             MACROS
+     25           *******************************************************************************/
+     26          
+     27          /*******************************************************************************
+     28           *                                            CONSTANTS
+     29           *******************************************************************************/
+     30          #define UART_CMD_BUF_SIZE_128           			128
+     31          
+     32          #define CMD_CHECK_ALIVE												0
+     33          #define CMD_BINDING_START											1
+     34          #define CMD_BINDING_STOP											2
+     35          #define CMD_RETURN_SHORT_ADDRESS							3
+     36          #define CMD_RETURN_COORD_SHORT_ADDRESS				4
+     37          #define CMD_ENABLE_ECHO_SDATA									5
+     38          #define CMD_DISABLE_ECHO_SDATA								6
+     39          #define CMD_ENABLE_ECHO_RDATA									7
+     40          #define CMD_DISABLE_ECHO_RDATA								8
+     41          #define CMD_SEND_ADC_VALUE										9
+     42          #define CMD_SEND_FREE_DATA										10
+     43          
+     44          /*******************************************************************************
+     45           *                                             TYPEDEFS
+     46           *******************************************************************************/
+     47          
+     48          /*******************************************************************************
+     49           *                                         GLOBAL VARIABLES
+     50           *******************************************************************************/
+     51          static uint16 packageLength = 0;
+     52          char* pcmdData;
+     53          
+     54          bool FLAG_ECHO_SDATA 	= FALSE;
+     55          bool FLAG_ECHO_RDATA 	= FALSE;
+     56          
+     57          char		Free_Data[FREE_DATA_BFR_SIZE + 1];
+     58          uint8 	Free_Data_Size;
+     59          
+     60          /*******************************************************************************
+     61           *                                          FUNCTIONS - External
+     62           *******************************************************************************/
+     63          
+     64          /*******************************************************************************
+     65           *                                          FUNCTIONS - Local
+     66           *******************************************************************************/
+     67          static char* ZCMD_MatchCMD(char* buf, char* str);
+     68          static uint8 ZCMD_FindChrStr(char* buf, uint8 chr);
+     69          static void ZCMD_ProcessCMD(uint8 CMD);
+     70          /*******************************************************************************
+     71           *                                          FUNCTIONS - API
+     72           *******************************************************************************/
+     73          void ZCMD_ReplyCMD(void)
+     74          {
+     75          	char Rx0_tmpBuffer[UART_CMD_BUF_SIZE_128];
+     76          	packageLength = UART_ParseLength(HAL_UART_PORT_0);
+     77          	
+     78          	UART_GetData(HAL_UART_PORT_0, (uint8*)Rx0_tmpBuffer, packageLength);
+     79          	UART_DebugPrintNum(HAL_UART_PORT_0, packageLength);
+     80          	UART_DebugPrint(HAL_UART_PORT_0, " ");
+     81          
+     82          	if ( Rx0_tmpBuffer[0] == '@' && Rx0_tmpBuffer[1] == 'Z' &&
+     83          		 	 Rx0_tmpBuffer[2] == 'B' && Rx0_tmpBuffer[packageLength-1] == '!' &&
+     84          		 	 ZCMD_FindChrStr(Rx0_tmpBuffer, '!') )
+     85          	{
+     86          		// Check alive
+     87          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB!"))
+     88          		{
+     89          			ZCMD_ProcessCMD(CMD_CHECK_ALIVE);
+     90          			return;
+     91          		}
+     92          		
+     93          		// Binding STOP
+     94          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=0!"))
+     95          		{
+     96          			ZCMD_ProcessCMD(CMD_BINDING_STOP);
+     97          			return;
+     98          		}
+     99          		
+    100          		// Binding START
+    101          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=1!"))
+    102          		{
+    103          			ZCMD_ProcessCMD(CMD_BINDING_START);
+    104          			return;
+    105          		}
+    106          		
+    107          		// Get Short Address
+    108          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+SHORTADDR!"))
+    109          		{
+    110          			ZCMD_ProcessCMD(CMD_RETURN_SHORT_ADDRESS);
+    111          			return;
+    112          		}
+    113          
+    114          		// Get Coord Short Address
+    115          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+COORDSHORTADDR!"))
+    116          		{
+    117          			ZCMD_ProcessCMD(CMD_RETURN_COORD_SHORT_ADDRESS);
+    118          			return;
+    119          		}
+    120          
+    121          		// Disable Echo SEND Data
+    122          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=0!"))
+    123          		{
+    124          			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_SDATA);
+    125          			return;
+    126          		}
+    127          
+    128          		// Enable Echo SEND Data
+    129          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=1!"))
+    130          		{		
+    131          			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_SDATA);
+    132          			return;
+    133          		}
+    134          
+    135          		// Disable Echo RECEIVE Data
+    136          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=0!"))
+    137          		{
+    138          			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_RDATA);
+    139          			return;
+    140          		}
+    141          
+    142          		// Enable Echo RECEIVE Data
+    143          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=1!"))
+    144          		{		
+    145          			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_RDATA);
+    146          			return;
+    147          		}
+    148          
+    149          		// Send FREE DATA - Only for ZB Coordinator
+    150          		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+DATA="))
+    151          		{		
+    152          			ZCMD_ProcessCMD(CMD_SEND_FREE_DATA);
+    153          			return;
+    154          		}
+    155          		
+    156          	}
+    157          	UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");		
+    158          }
+    159          
+    160          void ZCMD_ProcessCMD(uint8 CMD)
+    161          {
+    162          	switch (CMD)
+    163          	{
+    164          		case CMD_CHECK_ALIVE:
+    165          			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+    166          			break;
+    167          			
+    168          		case CMD_BINDING_STOP:
+    169          			if (FLAG_BINDING)
+                 			    ^
+Error[Pe020]: identifier "FLAG_BINDING" is undefined
+    170          			{
+    171          				#if 	(defined COORDINATOR) || (defined ROUTER)
+    172          					zclSampleThermostat_BindingProcess();
+    173          				#elif (defined END_DEVICE_SENSOR)
+    174          					zclSampleTemperatureSensor_BindingProcess();
+    175          				#elif (defined END_DEVICE_ENGINE)
+    176          					zclSampleHeatingCoolingUnit_BindingProcess();
+    177          				#endif
+    178          				FLAG_HARD_BINDING = FALSE;
+                 				^
+Error[Pe020]: identifier "FLAG_HARD_BINDING" is undefined
+    179          				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOPPED");
+    180          			}
+    181          			else
+    182          			{
+    183          				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOP ALREADY");
+    184          			}
+    185          			break;
+    186          
+    187          		case CMD_BINDING_START:
+    188          			if (!FLAG_BINDING)
+                 			     ^
+Error[Pe020]: identifier "FLAG_BINDING" is undefined
+    189          			{
+    190          				#if 	(defined COORDINATOR) || (defined ROUTER)
+    191          					zclSampleThermostat_BindingProcess();
+    192          				#elif (defined END_DEVICE_SENSOR)
+    193          					zclSampleTemperatureSensor_BindingProcess();
+    194          				#elif (defined END_DEVICE_ENGINE)
+    195          					zclSampleHeatingCoolingUnit_BindingProcess();
+    196          				#endif
+    197          				FLAG_HARD_BINDING = TRUE;
+                 				^
+Error[Pe020]: identifier "FLAG_HARD_BINDING" is undefined
+    198          				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STARTED");
+    199          			}
+    200          			else
+    201          			{					
+    202          				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING START ALREADY");
+    203          			}
+    204          			
+    205          			break;
+    206          
+    207          		case CMD_RETURN_SHORT_ADDRESS:
+    208          			UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetShortAddr());
+    209          			UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
+    210          			break;
+    211          
+    212          		case CMD_RETURN_COORD_SHORT_ADDRESS:
+    213          			#ifndef COORDINATOR
+    214          				UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetCoordShortAddr());
+    215          				UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
+    216          			#else
+    217          				UART_ZCmdPrint(HAL_UART_PORT_0, "COORDINATOR!");
+    218          			#endif		
+    219          
+    220          			break;
+    221          			
+    222          		case CMD_ENABLE_ECHO_SDATA:
+    223          			FLAG_ECHO_SDATA = TRUE;
+    224          			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");			
+    225          			break;
+    226          
+    227          		case CMD_DISABLE_ECHO_SDATA:
+    228          			FLAG_ECHO_SDATA = FALSE;
+    229          			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");		
+    230          			break;
+    231          
+    232          		case CMD_ENABLE_ECHO_RDATA:
+    233          			FLAG_ECHO_RDATA = TRUE;
+    234          			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+    235          			break;
+    236          
+    237          		case CMD_DISABLE_ECHO_RDATA:
+    238          			FLAG_ECHO_RDATA = FALSE;
+    239          			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+    240          			break;
+    241          
+    242          		case CMD_SEND_FREE_DATA:
+    243          			{
+    244          				#ifdef COORDINATOR
+    245          				uint8 i = 0;
+    246          				uint8 parseStr_len = osal_strlen("@ZB+DATA=");
+    247          				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
+    248          				Free_Data[0] = '0'; 																			// DUMMY Byte
+    249          
+    250          				if ( Free_Data_Size <= FREE_DATA_BFR_SIZE )
+    251          				{	
+    252          					
+    253          					for (i = 1; i <= FREE_DATA_BFR_SIZE; i++)
+    254          					{
+    255          						if (i <= Free_Data_Size)
+    256          						{
+    257          							Free_Data[i] = *(pcmdData + parseStr_len + i - 1);
+    258          						}
+    259          						else
+    260          						{
+    261          							Free_Data[i] = ' ';
+    262          						}
+    263          					}
+    264          					zclSampleThermostat_SendFreeData();
+    265          					
+    266          					UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+    267          				}
+    268          				else
+    269          				{
+    270          					UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");
+    271          				}
+    272          				#else
+    273          					UART_ZCmdPrint(HAL_UART_PORT_0, "NOT SUPPORT");
+    274          				#endif
+    275          			}
+    276          			break;
+    277          			
+    278          		default:
+    279          			break;
+    280          	}
+    281          }
+    282          
+    283          char* ZCMD_MatchCMD(char* buf, char* str)
+    284          {
+    285          	pcmdData = strstr(buf, str);
+    286          	return pcmdData;
+    287          }
+    288          
+    289          uint8 ZCMD_FindChrStr(char* buf, uint8 chr)
+    290          {
+    291          	uint8 i, num;
+    292          
+    293          	num = 0;
+    294          	for (i = 0; i < packageLength; i++)
+    295          	{
+    296          		if (buf[i] == chr)
+    297          		{
+    298          			num++;
+    299          		}
+    300          	}
+    301          
+    302          	if (num == 1)
+    303          	{
+    304          		return 1;
+    305          	}
+    306          
+    307          	return 0;
+    308          }
+    309          
+    310          /*******************************************************************************
+    311          ********************************************************************************/
+
+Errors: 4
+Warnings: none

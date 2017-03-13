@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>SampleThermostat/CoordinatorEB</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>285</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+    <Build><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>785</ColumnWidth1><ColumnWidth2>256</ColumnWidth2><ColumnWidth3>68</ColumnWidth3></Build><Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1365</ColumnWidth1></Debug-Log><TerminalIO/><Select-Ambiguous-Definitions><ColumnWidth0>490</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>841</ColumnWidth2></Select-Ambiguous-Definitions></Static>
+    <Windows>
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-1947-22908</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>SampleThermostat</ExpandedNode><ExpandedNode>SampleThermostat/App</ExpandedNode><ExpandedNode>SampleThermostat/App/MY-SOURCE</ExpandedNode><ExpandedNode>SampleThermostat/HAL</ExpandedNode><ExpandedNode>SampleThermostat/HAL/Common</ExpandedNode><ExpandedNode>SampleThermostat/HAL/Include</ExpandedNode><ExpandedNode>SampleThermostat/HAL/Target</ExpandedNode><ExpandedNode>SampleThermostat/HAL/Target/CC2530EB</ExpandedNode><ExpandedNode>SampleThermostat/HAL/Target/CC2530EB/Drivers</ExpandedNode><ExpandedNode>SampleThermostat/Tools</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1><Tabs><Tab><Identity>TabID-4962-25825</Identity><TabName>Build</TabName><Factory>Build</Factory><Session/></Tab><Tab><Identity>TabID-8540-11737</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-17787-22334</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\ZMain\TI2530DB\ZMain.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>67</YPos2><SelStart2>3297</SelStart2><SelEnd2>3297</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Source\zcl_samplethermostat.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>1345</YPos2><SelStart2>46541</SelStart2><SelEnd2>46541</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-0539B498><key>iaridepm.enu1</key></Toolbar-0539B498></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>452</Bottom><Right>376</Right><x>-2</x><y>-2</y><xscreen>141</xscreen><yscreen>141</yscreen><sizeHorzCX>103676</sizeHorzCX><sizeHorzCY>202878</sizeHorzCY><sizeVertCX>277941</sizeVertCX><sizeVertCY>653237</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1362</Right><x>-2</x><y>-2</y><xscreen>1364</xscreen><yscreen>200</yscreen><sizeHorzCX>1002941</sizeHorzCX><sizeHorzCY>287770</sizeHorzCY><sizeVertCX>140441</sizeVertCX><sizeVertCY>287770</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
