@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR C/C++ Compiler V9.30.3.3983 for 8051                06/Mar/2017  23:17:52
+# IAR C/C++ Compiler V9.30.3.3983 for 8051                14/Mar/2017  10:12:57
 # Copyright 2004-2016 IAR Systems AB.
 # Standalone license - IAR Embedded Workbench for 8051
 #
@@ -12,15 +12,13 @@
 #    Dptr setup         =  1,16
 #                          
 #    Source file        =  
-#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Components\hal\target\CC2530EB\hal_key.c
+#        D:\GitHub\TripleS_Zigbee\Components\hal\target\CC2530EB\hal_key.c
 #    Command line       =  
-#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+#        -f
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg
 #        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
 #        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f
-#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg
 #        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
 #        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
 #        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
@@ -36,85 +34,79 @@
 #        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
 #        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
 #        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
-#        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
-#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Components\hal\target\CC2530EB\hal_key.c" -D
+#        -f
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg
+#        D:\GitHub\TripleS_Zigbee\Components\hal\target\CC2530EB\hal_key.c -D
 #        END_DEVICE_SENSOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
 #        NV_RESTORE -D xPOWER_SAVING -D NWK_AUTO_POLL -D xHOLD_AUTO_START -D
 #        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
 #        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
 #        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
 #        ZCL_TEMPERATURE_MEASUREMENT -D HAL_UART=TRUE -D HAL_UART_DMA=1 -lC
-#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
-#        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
-#        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
-#        Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj"
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List
+#        -lA
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List
+#        --diag_suppress Pe001,Pa010 -o
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj
 #        -e --debug --core=plain --dptr=16,1 --data_model=large
 #        --code_model=banked --calling_convention=xdata_reentrant
 #        --place_constants=data_rom --nr_virtual_regs 16 -I
-#        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\"
-#        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\
+#        -I
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\
 #        -Ohz --require_prototypes
 #    List file          =  
-#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\hal_key.lst
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\hal_key.lst
 #    Object file        =  
-#        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-#        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj\hal_key.r51
+#        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj\hal_key.r51
 #
 ###############################################################################
 
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\hal\target\CC2530EB\hal_key.c
+D:\GitHub\TripleS_Zigbee\Components\hal\target\CC2530EB\hal_key.c
       1          /**************************************************************************************************
       2            Filename:       hal_key.c
       3            Revised:        $Date: 2010-09-15 19:02:45 -0700 (Wed, 15 Sep 2010) $

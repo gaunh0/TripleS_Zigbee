@@ -39,8 +39,7 @@
 #define CMD_ENABLE_ECHO_RDATA									7
 #define CMD_DISABLE_ECHO_RDATA								8
 #define CMD_SEND_FREE_DATA										10
-#define CMD_SEND_CONTROL                              11
-
+#define CMD_SEND_C                                12
 
 /*******************************************************************************
  *                                             TYPEDEFS
@@ -154,12 +153,11 @@ void ZCMD_ReplyCMD(void)
 			return;
 		}
 		// control led -  only for ZBC
-		if (ZCMD_MatchCMD(Rx0_tmpBuffer,"@ZB+CONTROL="))
+		if (ZCMD_MatchCMD(Rx0_tmpBuffer,"@ZBC="))
 		{
-			ZCMD_ProcessCMD(CMD_SEND_CONTROL);
+			ZCMD_ProcessCMD(CMD_SEND_C);
 			return;
 		}
-		
 	}
 	UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");		
 }
@@ -281,11 +279,11 @@ void ZCMD_ProcessCMD(uint8 CMD)
 				#endif
 			}
 			break;
-		case CMD_SEND_CONTROL:
+			case CMD_SEND_C:
 			{
 				#ifdef COORDINATOR
 				uint8 i = 0;
-				uint8 parseStr_len = osal_strlen("@ZB+CONTROL=");
+				uint8 parseStr_len = osal_strlen("@ZBC=");
 				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
 				Free_Data[0] = '0'; 																			// DUMMY Byte
 
@@ -303,7 +301,7 @@ void ZCMD_ProcessCMD(uint8 CMD)
 							Free_Data[i] = ' ';
 						}
 					}
-					zclSampleThermostat_SendControlData();
+					zclSampleThermostat_SendC();
 					
 					UART_ZCmdPrint(HAL_UART_PORT_0, "DONE");
 				}
@@ -316,7 +314,6 @@ void ZCMD_ProcessCMD(uint8 CMD)
 				#endif
 			}
 			break;		
-
 		default:
 			break;
 	}

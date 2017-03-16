@@ -1,54 +1,54 @@
-"C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\Source\OSAL_SampleThermostat.c"
+"D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\Source\OSAL_SampleThermostat.c"
 -std=c99
 -ferror-limit=100
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\inc
 -I
@@ -56,53 +56,53 @@ D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\lib\dlib
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\8051\inc\clib
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\Source
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\Source
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\Source
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\Source
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE
+D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\MY-SOURCE
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\ZMain\TI2530DB
+D:\GitHub\TripleS_Zigbee\Projects\zstack\ZMain\TI2530DB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\hal\include
+D:\GitHub\TripleS_Zigbee\Components\hal\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\hal\target\CC2530EB
+D:\GitHub\TripleS_Zigbee\Components\hal\target\CC2530EB
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\mac\include
+D:\GitHub\TripleS_Zigbee\Components\mac\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\mac\high_level
+D:\GitHub\TripleS_Zigbee\Components\mac\high_level
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\mac\low_level\srf04
+D:\GitHub\TripleS_Zigbee\Components\mac\low_level\srf04
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\mac\low_level\srf04\single_chip
+D:\GitHub\TripleS_Zigbee\Components\mac\low_level\srf04\single_chip
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\mt
+D:\GitHub\TripleS_Zigbee\Components\mt
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\osal\include
+D:\GitHub\TripleS_Zigbee\Components\osal\include
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\services\saddr
+D:\GitHub\TripleS_Zigbee\Components\services\saddr
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\services\sdata
+D:\GitHub\TripleS_Zigbee\Components\services\sdata
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\af
+D:\GitHub\TripleS_Zigbee\Components\stack\af
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\nwk
+D:\GitHub\TripleS_Zigbee\Components\stack\nwk
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\sapi
+D:\GitHub\TripleS_Zigbee\Components\stack\sapi
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\sec
+D:\GitHub\TripleS_Zigbee\Components\stack\sec
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\sys
+D:\GitHub\TripleS_Zigbee\Components\stack\sys
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\zcl
+D:\GitHub\TripleS_Zigbee\Components\stack\zcl
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\stack\zdo
+D:\GitHub\TripleS_Zigbee\Components\stack\zdo
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\zmac
+D:\GitHub\TripleS_Zigbee\Components\zmac
 -I
-C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Components\zmac\f8w
+D:\GitHub\TripleS_Zigbee\Components\zmac\f8w
 -DCOORDINATOR=1
 -DSECURE=1
 -DTC_LINKKEY_JOIN=1

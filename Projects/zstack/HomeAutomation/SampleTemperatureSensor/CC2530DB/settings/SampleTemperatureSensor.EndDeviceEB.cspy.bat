@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.general.xcl" --backend -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.driver.xcl" 
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.general.xcl" --backend -f "D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.driver.xcl" 
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\common\bin\cspybat" -f "D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.general.xcl" "--debug_file=%~1" --backend -f "D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\settings\SampleTemperatureSensor.EndDeviceEB.driver.xcl" 
 
 @echo off 
 :end

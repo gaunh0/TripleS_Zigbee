@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR C/C++ Compiler V9.30.3.3983 for 8051               13/Mar/2017  13:58:02
+// IAR C/C++ Compiler V9.30.3.3983 for 8051               14/Mar/2017  17:25:33
 // Copyright 2004-2016 IAR Systems AB.
 // Standalone license - IAR Embedded Workbench for 8051
 //
@@ -12,15 +12,13 @@
 //    Dptr setup         =  1,16
 //                          
 //    Source file        =  
-//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c
 //    Command line       =  
-//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg"
+//        -f
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wEndev.cfg
 //        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3
 //        -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg
 //        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
 //        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
 //        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
@@ -36,78 +34,73 @@
 //        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
 //        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
 //        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
-//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c"
+//        -f
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c
 //        -D END_DEVICE_SENSOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
 //        NV_RESTORE -D xPOWER_SAVING -D NWK_AUTO_POLL -D xHOLD_AUTO_START -D
 //        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
 //        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
 //        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
 //        ZCL_TEMPERATURE_MEASUREMENT -D HAL_UART=TRUE -D HAL_UART_DMA=1 -lC
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
-//        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List"
-//        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
-//        Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj"
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List
+//        -lA
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List
+//        --diag_suppress Pe001,Pa010 -o
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\Obj
 //        -e --debug --core=plain --dptr=16,1 --data_model=large
 //        --code_model=banked --calling_convention=xdata_reentrant
 //        --place_constants=data_rom --nr_virtual_regs 16 -I
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\Source\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\Source\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\ZMain\TI2530DB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\high_level\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\mt\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\osal\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\saddr\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\services\sdata\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\af\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\nwk\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sapi\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sec\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\sys\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zcl\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\stack\zdo\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\..\..\..\..\..\Components\zmac\f8w\
 //        -Ohz --require_prototypes
 //    List file          =  
-//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\zcl_sampletemperaturesensor.s51
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\CC2530DB\EndDeviceEB\List\zcl_sampletemperaturesensor.s51
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -146,6 +139,7 @@
         EXTERN ?BDISPATCH
         EXTERN ?BRET
         EXTERN ?DEALLOC_XSTACK8
+        EXTERN ?MOVE_LONG8_XDATA_XDATA
         EXTERN ?PUSH_XSTACK8_X_FOUR
         EXTERN ?PUSH_XSTACK_I_ONE
         EXTERN ?PUSH_XSTACK_I_THREE
@@ -155,6 +149,7 @@
         EXTERN ?XSTACK_DISP0_8
         EXTERN ?XSTACK_DISP100_8
         EXTERN ?XSTACK_DISP101_8
+        EXTERN ?XSTACK_DISP102_8
         EXTERN __INIT_XDATA_I
         EXTERN __INIT_XDATA_Z
 
@@ -255,12 +250,12 @@
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         LOCFRAME ISTACK, 1, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         FUNCTION zclSampleTemperatureSensor_SendState,0a1203H
         ARGFRAME XSTACK, 16, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        LOCFRAME XSTACK, 19, STACK
+        LOCFRAME XSTACK, 36, STACK
         FUNCTION zclSampleTemperatureSensor_SendTemp,0a1203H
         ARGFRAME XSTACK, 16, STACK
         ARGFRAME IOVERLAY, 0, STATIC
@@ -437,6 +432,8 @@ HalLcdWriteString   SYMBOL "HalLcdWriteString"
 `??HalLcdWriteString::?relay` SYMBOL "?relay", HalLcdWriteString
 HalLedSet           SYMBOL "HalLedSet"
 `??HalLedSet::?relay` SYMBOL "?relay", HalLedSet
+HalUARTWrite        SYMBOL "HalUARTWrite"
+`??HalUARTWrite::?relay` SYMBOL "?relay", HalUARTWrite
 MT_SysCommandProcessing SYMBOL "MT_SysCommandProcessing"
 `??MT_SysCommandProcessing::?relay` SYMBOL "?relay", MT_SysCommandProcessing
 NLME_GetShortAddr   SYMBOL "NLME_GetShortAddr"
@@ -455,10 +452,6 @@ UART_Init           SYMBOL "UART_Init"
 `??UART_Init::?relay` SYMBOL "?relay", UART_Init
 UART_ParseRxPackage SYMBOL "UART_ParseRxPackage"
 `??UART_ParseRxPackage::?relay` SYMBOL "?relay", UART_ParseRxPackage
-UART_SendNum        SYMBOL "UART_SendNum"
-`??UART_SendNum::?relay` SYMBOL "?relay", UART_SendNum
-UART_SendString     SYMBOL "UART_SendString"
-`??UART_SendString::?relay` SYMBOL "?relay", UART_SendString
 UART_ZCmdPrint      SYMBOL "UART_ZCmdPrint"
 `??UART_ZCmdPrint::?relay` SYMBOL "?relay", UART_ZCmdPrint
 UART_ZCmdPrintBuffer SYMBOL "UART_ZCmdPrintBuffer"
@@ -495,8 +488,6 @@ osal_start_timerEx  SYMBOL "osal_start_timerEx"
 `??osal_start_timerEx::?relay` SYMBOL "?relay", osal_start_timerEx
 osal_stop_timerEx   SYMBOL "osal_stop_timerEx"
 `??osal_stop_timerEx::?relay` SYMBOL "?relay", osal_stop_timerEx
-strstr              SYMBOL "strstr"
-`??strstr::?relay`  SYMBOL "?relay", strstr
 zclGeneral_RegisterCmdCallbacks SYMBOL "zclGeneral_RegisterCmdCallbacks"
 `??zclGeneral_RegisterCmdCallbacks::?relay` SYMBOL "?relay", zclGeneral_RegisterCmdCallbacks
 zclHA_Init          SYMBOL "zclHA_Init"
@@ -542,6 +533,8 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION `??HalLcdWriteString::?relay`,00H
         EXTERN `??HalLedSet::?relay`
         FUNCTION `??HalLedSet::?relay`,00H
+        EXTERN `??HalUARTWrite::?relay`
+        FUNCTION `??HalUARTWrite::?relay`,00H
         EXTERN `??MT_SysCommandProcessing::?relay`
         FUNCTION `??MT_SysCommandProcessing::?relay`,00H
         EXTERN `??NLME_GetShortAddr::?relay`
@@ -560,10 +553,6 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION `??UART_Init::?relay`,00H
         EXTERN `??UART_ParseRxPackage::?relay`
         FUNCTION `??UART_ParseRxPackage::?relay`,00H
-        EXTERN `??UART_SendNum::?relay`
-        FUNCTION `??UART_SendNum::?relay`,00H
-        EXTERN `??UART_SendString::?relay`
-        FUNCTION `??UART_SendString::?relay`,00H
         EXTERN `??UART_ZCmdPrint::?relay`
         FUNCTION `??UART_ZCmdPrint::?relay`,00H
         EXTERN `??UART_ZCmdPrintBuffer::?relay`
@@ -600,8 +589,6 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION `??osal_start_timerEx::?relay`,00H
         EXTERN `??osal_stop_timerEx::?relay`
         FUNCTION `??osal_stop_timerEx::?relay`,00H
-        EXTERN `??strstr::?relay`
-        FUNCTION `??strstr::?relay`,00H
         EXTERN `??zclGeneral_RegisterCmdCallbacks::?relay`
         FUNCTION `??zclGeneral_RegisterCmdCallbacks::?relay`,00H
         EXTERN `??zclHA_Init::?relay`
@@ -628,7 +615,7 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION CheckOutputState,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 16, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN DHT11_Init
@@ -663,6 +650,13 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         ARGFRAME XSTACK, 0, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
+        EXTERN HalUARTWrite
+        FUNCTION HalUARTWrite,0202H
+        ARGFRAME ISTACK, 0, STACK
+        ARGFRAME PSTACK, 0, STACK
+        ARGFRAME XSTACK, 40, STACK
+        ARGFRAME IOVERLAY, 0, STATIC
+        ARGFRAME DOVERLAY, 0, STATIC
         EXTERN MT_SysCommandProcessing
         FUNCTION MT_SysCommandProcessing,0202H
         ARGFRAME ISTACK, 2, STACK
@@ -688,14 +682,14 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION TURN_off,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN TURN_on
         FUNCTION TURN_on,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN Toggle
@@ -726,46 +720,32 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         ARGFRAME XSTACK, 16, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN UART_SendNum
-        FUNCTION UART_SendNum,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN UART_SendString
-        FUNCTION UART_SendString,0202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
         EXTERN UART_ZCmdPrint
         FUNCTION UART_ZCmdPrint,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN UART_ZCmdPrintBuffer
         FUNCTION UART_ZCmdPrintBuffer,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN UART_ZCmdPrintNum
         FUNCTION UART_ZCmdPrintNum,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN UART_ZCmdPrintString
         FUNCTION UART_ZCmdPrintString,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN ZCMD_ReplyCMD
@@ -815,14 +795,14 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION osal_mem_alloc,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 16, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN osal_mem_free
         FUNCTION osal_mem_free,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 16, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN osal_memcpy
@@ -865,13 +845,6 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         ARGFRAME ISTACK, 2, STACK
         ARGFRAME PSTACK, 0, STACK
         ARGFRAME XSTACK, 0, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN strstr
-        FUNCTION strstr,010202H
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN zclGeneral_RegisterCmdCallbacks
@@ -932,7 +905,7 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         FUNCTION zcl_SendReportCmd,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 21, STACK
+        ARGFRAME XSTACK, 36, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         EXTERN zcl_registerAttrList
@@ -957,7 +930,7 @@ zclSampleTemperatureSensor_event_loop SYMBOL "zclSampleTemperatureSensor_event_l
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
 
-// C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c
+// D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleTemperatureSensor\Source\zcl_sampletemperaturesensor.c
 //    1 /**************************************************************************************************
 //    2   Filename:       zcl_sampletemperaturesensor.c
 //    3   Revised:        $Date: 2014-10-24 16:04:46 -0700 (Fri, 24 Oct 2014) $
@@ -1198,7 +1171,7 @@ sampleTemperatureSensor_TestEp:
 //  177 void zclSampleTemperatureSensor_LcdDisplayHelpMode(void);
 //  178 
 //  179 static void zclSampleTemperatureSensor_SendTemp(void);
-//  180 static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTX);
+//  180 static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTx);
 //  181 
 //  182 
 //  183 // Functions to process ZCL Foundation incoming Command/Response messages
@@ -2248,7 +2221,7 @@ zclSampleTemperatureSensor_event_loop:
 //  404   {
 //  405     if ( zclSampleTemperatureSensor_IdentifyTime > 0 )
         LCALL   ?Subroutine10 & 0xFFFF
-??CrossCallReturnLabel_26:
+??CrossCallReturnLabel_28:
         MOV     A,R0
         ORL     A,R1
         JZ      ??zclSampleTemperatureSensor_event_loop_2
@@ -2365,7 +2338,7 @@ zclSampleTemperatureSensor_event_loop:
         MOV     ?V2,R2
         MOV     ?V3,R3
         LCALL   ?Subroutine5 & 0xFFFF
-??CrossCallReturnLabel_19:
+??CrossCallReturnLabel_21:
         MOV     R1,#0x5
         LCALL   `??zcl_EZModeAction::?relay`; Banked call to: zcl_EZModeAction
         ; Setup parameters for call to function osal_mem_free
@@ -2595,7 +2568,7 @@ zclSampleTemperatureSensor_event_loop:
         ANL     A,#0x4
         JZ      ??zclSampleTemperatureSensor_event_loop_25
 //  460 	{
-//  461       Toggle(Output_3);
+//  461 	  Toggle(Output_3);
         ; Setup parameters for call to function Toggle
         MOV     R1,#0x3
         LCALL   `??Toggle::?relay`   ; Banked call to: Toggle
@@ -2624,9 +2597,9 @@ zclSampleTemperatureSensor_event_loop:
         ; Setup parameters for call to function Toggle
         MOV     R1,#0x3
         LCALL   `??Toggle::?relay`   ; Banked call to: Toggle
-//  469 	  zclSampleTemperatureSensor_SendState(Output_1);
+//  469 	  zclSampleTemperatureSensor_SendState(Output_3);	  
         ; Setup parameters for call to function zclSampleTemperatureSensor_SendState
-        MOV     R1,#0x1
+        MOV     R1,#0x3
         LCALL   `??zclSampleTemperatureSensor_SendState::?relay`; Banked call to: zclSampleTemperatureSensor_SendState
 //  470 	  return (events ^ SAMPLETEMPERATURESENSOR_SW3);
         MOV     A,R6
@@ -2915,7 +2888,7 @@ zclSampleTemperatureSensor_event_loop:
 ?Subroutine5:
           CFI Block cfiCond5 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_event_loop
-          CFI Conditional ??CrossCallReturnLabel_19
+          CFI Conditional ??CrossCallReturnLabel_21
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
           CFI VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
           CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
@@ -2934,7 +2907,7 @@ zclSampleTemperatureSensor_event_loop:
           CFI CFA_XSP16 add(XSP16, 16)
           CFI Block cfiCond6 Using cfiCommon0
           CFI (cfiCond6) Function zclSampleTemperatureSensor_IdentifyQueryRspCB
-          CFI (cfiCond6) Conditional ??CrossCallReturnLabel_20
+          CFI (cfiCond6) Conditional ??CrossCallReturnLabel_22
           CFI (cfiCond6) DPL0 Frame(CFA_SP, 4)
           CFI (cfiCond6) DPH0 Frame(CFA_SP, 5)
           CFI (cfiCond6) CFA_SP SP+-7
@@ -2951,8 +2924,8 @@ zclSampleTemperatureSensor_event_loop:
           CFI EndBlock cfiCond5
           CFI EndBlock cfiCond6
           CFI EndBlock cfiPicker7
-        REQUIRE ??Subroutine13_0
-        ; // Fall through to label ??Subroutine13_0
+        REQUIRE ??Subroutine14_0
+        ; // Fall through to label ??Subroutine14_0
 //  545 
 //  546 /*********************************************************************
 //  547  * @fn      zclSampleTemperatureSensor_HandleKeys
@@ -2971,10 +2944,10 @@ zclSampleTemperatureSensor_event_loop:
 //  560  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-??Subroutine13_0:
+??Subroutine14_0:
           CFI Block cfiCond8 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_HandleKeys
-          CFI Conditional ??CrossCallReturnLabel_21
+          CFI Conditional ??CrossCallReturnLabel_23
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-9)))
           CFI VB load(1, XDATA, add(CFA_XSP16, literal(-8)))
           CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-7)))
@@ -2988,14 +2961,14 @@ zclSampleTemperatureSensor_event_loop:
           CFI CFA_XSP16 add(XSP16, 18)
           CFI Block cfiCond9 Using cfiCommon0
           CFI (cfiCond9) Function zclSampleTemperatureSensor_BindingProcess
-          CFI (cfiCond9) Conditional ??CrossCallReturnLabel_22
+          CFI (cfiCond9) Conditional ??CrossCallReturnLabel_24
           CFI (cfiCond9) DPL0 Frame(CFA_SP, 4)
           CFI (cfiCond9) DPH0 Frame(CFA_SP, 5)
           CFI (cfiCond9) CFA_SP SP+-7
           CFI (cfiCond9) CFA_XSP16 add(XSP16, 9)
           CFI Block cfiCond10 Using cfiCommon0
           CFI (cfiCond10) Function zclSampleTemperatureSensor_event_loop
-          CFI (cfiCond10) Conditional ??CrossCallReturnLabel_19
+          CFI (cfiCond10) Conditional ??CrossCallReturnLabel_21
           CFI (cfiCond10) R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
           CFI (cfiCond10) VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
           CFI (cfiCond10) V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
@@ -3014,7 +2987,7 @@ zclSampleTemperatureSensor_event_loop:
           CFI (cfiCond10) CFA_XSP16 add(XSP16, 16)
           CFI Block cfiCond11 Using cfiCommon0
           CFI (cfiCond11) Function zclSampleTemperatureSensor_IdentifyQueryRspCB
-          CFI (cfiCond11) Conditional ??CrossCallReturnLabel_20
+          CFI (cfiCond11) Conditional ??CrossCallReturnLabel_22
           CFI (cfiCond11) DPL0 Frame(CFA_SP, 4)
           CFI (cfiCond11) DPH0 Frame(CFA_SP, 5)
           CFI (cfiCond11) CFA_SP SP+-7
@@ -3276,7 +3249,7 @@ zclSampleTemperatureSensor_HandleKeys:
 ??zclSampleTemperatureSensor_HandleKeys_7:
         CLR     A
 ??zclSampleTemperatureSensor_HandleKeys_8:
-        LCALL   ?Subroutine3 & 0xFFFF
+        LCALL   ?Subroutine4 & 0xFFFF
 //  587 		#ifdef ZCL_EZMODE
 //  588       zclEZMode_InvokeData_t ezModeData;
 //  589       static uint16 clusterIDs[] = { ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT };   // only bind on the Temperature Measurement cluster
@@ -3286,7 +3259,7 @@ zclSampleTemperatureSensor_HandleKeys:
 //  593       if ( ( zclSampleTemperatureSensor_NwkState == DEV_ZB_COORD ) ||
 //  594            ( zclSampleTemperatureSensor_NwkState == DEV_ROUTER )   ||
 //  595            ( zclSampleTemperatureSensor_NwkState == DEV_END_DEVICE ) )
-??CrossCallReturnLabel_2:
+??CrossCallReturnLabel_4:
         JZ      ??zclSampleTemperatureSensor_HandleKeys_9
         MOVX    A,@DPTR
         XRL     A,#0x7
@@ -3341,9 +3314,9 @@ zclSampleTemperatureSensor_HandleKeys:
         CLR     A
         MOVX    @DPTR,A
         INC     DPTR
-        LCALL   ??Subroutine13_0 & 0xFFFF
+        LCALL   ??Subroutine14_0 & 0xFFFF
 //  608       zcl_InvokeEZMode( &ezModeData );
-??CrossCallReturnLabel_21:
+??CrossCallReturnLabel_23:
         LCALL   `??zcl_InvokeEZMode::?relay`; Banked call to: zcl_InvokeEZMode
 //  609 
 //  610 			#ifdef LCD_SUPPORTED
@@ -3589,7 +3562,7 @@ zclSampleTemperatureSensor_LcdDisplayUpdate:
 //  715   }
 //  716 }
 ??zclSampleTemperatureSensor_LcdDisplayUpdate_1:
-        LJMP    ??Subroutine14_0 & 0xFFFF
+        LJMP    ??Subroutine15_0 & 0xFFFF
           CFI EndBlock cfiBlock14
 //  717 
 //  718 /*********************************************************************
@@ -3807,8 +3780,8 @@ zclSampleTemperatureSensor_LcdDisplayMainMode:
         LCALL   ?PUSH_XSTACK_I_TWO
           CFI CFA_XSP16 add(XSP16, 29)
         MOV     DPTR,#zclSampleTemperatureSensor_MeasuredValue
-        LCALL   ??Subroutine15_0 & 0xFFFF
-??CrossCallReturnLabel_23:
+        LCALL   ??Subroutine16_0 & 0xFFFF
+??CrossCallReturnLabel_25:
         MOV     R2,#0x64
         MOV     R3,#0x0
         LCALL   ?S_DIV_MOD
@@ -3986,7 +3959,7 @@ zclSampleTemperatureSensor_LcdDisplayHelpMode:
         LCALL   `??HalLcdWriteString::?relay`; Banked call to: HalLcdWriteString
 //  789 #endif
 //  790 }
-        SJMP    ??Subroutine14_0
+        SJMP    ??Subroutine15_0
           CFI EndBlock cfiBlock16
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
@@ -4000,11 +3973,11 @@ zclSampleTemperatureSensor_LcdDisplayHelpMode:
           CFI Invalid
         LCALL   ?DEALLOC_XSTACK8
           CFI EndBlock cfiBlock17
-        REQUIRE ??Subroutine14_0
-        ; // Fall through to label ??Subroutine14_0
+        REQUIRE ??Subroutine15_0
+        ; // Fall through to label ??Subroutine15_0
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-??Subroutine14_0:
+??Subroutine15_0:
           CFI Block cfiBlock18 Using cfiCommon0
           CFI NoFunction
           CFI CFA_SP SP+-5
@@ -4206,17 +4179,7 @@ zclSampleTemperatureSensor_SendTemp:
 //  843     pReportCmd->attrList[0].attrData = (void *)(&data1);
         MOV     A,#0x2
         LCALL   ?XSTACK_DISP100_8
-        MOV     DPL,R2
-        MOV     DPH,R3
-        INC     DPTR
-        INC     DPTR
-        INC     DPTR
-        INC     DPTR
-        MOV     A,R0
-        MOVX    @DPTR,A
-        INC     DPTR
-        MOV     A,R1
-        LCALL   ?Subroutine4 & 0xFFFF
+        LCALL   ?Subroutine3 & 0xFFFF
 //  844 
 //  845     pReportCmd->attrList[1].dataType = ZCL_DATATYPE_INT16;
 //  846     pReportCmd->attrList[1].attrData = (void *)(&data2);	
@@ -4225,13 +4188,8 @@ zclSampleTemperatureSensor_SendTemp:
 //  849                        ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
 //  850                        pReportCmd, ZCL_FRAME_SERVER_CLIENT_DIR, TRUE, zclSampleTemperatureSensorSeqNum++ );
 //  851   }
-??CrossCallReturnLabel_4:
-        INC     DPTR
-        INC     DPTR
-        INC     DPTR
+??CrossCallReturnLabel_2:
         MOV     A,#0x29
-        LCALL   ?Subroutine4 & 0xFFFF
-??CrossCallReturnLabel_5:
         LCALL   ?Subroutine2 & 0xFFFF
 ??CrossCallReturnLabel_0:
         LCALL   ?PUSH_XSTACK_I_ONE
@@ -4294,151 +4252,59 @@ zclSampleTemperatureSensor_SendTemp:
         MOV     R7,#0x4
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock20
-
-        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-?Subroutine4:
-          CFI Block cfiCond21 Using cfiCommon0
-          CFI Function zclSampleTemperatureSensor_SendTemp
-          CFI Conditional ??CrossCallReturnLabel_4
-          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI CFA_SP SP+-2
-          CFI CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiCond22 Using cfiCommon0
-          CFI (cfiCond22) Function zclSampleTemperatureSensor_SendTemp
-          CFI (cfiCond22) Conditional ??CrossCallReturnLabel_5
-          CFI (cfiCond22) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond22) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond22) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond22) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond22) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond22) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond22) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond22) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond22) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond22) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond22) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond22) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond22) CFA_SP SP+-2
-          CFI (cfiCond22) CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiPicker23 Using cfiCommon1
-          CFI (cfiPicker23) NoFunction
-          CFI (cfiPicker23) Picker
-        LCALL   ?Subroutine12 & 0xFFFF
-??CrossCallReturnLabel_17:
-        INC     DPTR
-        INC     DPTR
-        RET
-          CFI EndBlock cfiCond21
-          CFI EndBlock cfiCond22
-          CFI EndBlock cfiPicker23
 //  856 
 //  857 //----------------------------
 //  858 
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  859 static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTX)
+//  859 static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTx)
 zclSampleTemperatureSensor_SendState:
-          CFI Block cfiBlock24 Using cfiCommon0
+          CFI Block cfiBlock21 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_SendState
         CODE
 //  860 {
         FUNCALL zclSampleTemperatureSensor_SendState, CheckOutputState
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
+        LOCFRAME XSTACK, 31, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_SendState, CheckOutputState
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_SendState, CheckOutputState
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_SendState, UART_SendNum
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_SendState, UART_SendString
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_SendState, osal_mem_alloc
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
+        LOCFRAME XSTACK, 31, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_SendState, zcl_SendReportCmd
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 19, STACK
+        LOCFRAME XSTACK, 36, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 19, STACK
+        ARGFRAME XSTACK, 36, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_SendState, osal_mem_free
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 14, STACK
+        LOCFRAME XSTACK, 31, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 14, STACK
+        ARGFRAME XSTACK, 31, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         REQUIRE ?V0
@@ -4462,152 +4328,115 @@ zclSampleTemperatureSensor_SendState:
           CFI CFA_SP SP+0
           CFI CFA_XSP16 add(XSP16, 12)
         ; Saved register size: 12
-        ; Auto size: 2
-        MOV     A,#-0x2
+        ; Auto size: 19
+        MOV     A,#-0x13
         LCALL   ?ALLOC_XSTACK8
-          CFI CFA_XSP16 add(XSP16, 14)
+          CFI CFA_XSP16 add(XSP16, 31)
         MOV     A,R1
         MOV     R6,A
-//  861 	uint8 pos;
-//  862 	uint16 state;
-//  863 	uint8 temp_s;
-//  864 	 if(OUTX == 1)
-        MOV     A,#0x1
-        XRL     A,R6
-        JNZ     ??zclSampleTemperatureSensor_SendState_0
-//  865      {
-//  866 		 temp_s = CheckOutputState(Output_1);
+//  861 	
+//  862 	char data[] = "00124B000A91EF1D";
+        MOV     DPTR,#`?<Constant "00124B000A91EF1D">`
+        MOV     A,#0x2
+        LCALL   ?XSTACK_DISP102_8
+        MOV     A,#0x11
+        LCALL   ?MOVE_LONG8_XDATA_XDATA
+//  863 	uint8 t_state;
+//  864 	uint16 state;
+//  865 	t_state = CheckOutputState(OUTx);
         ; Setup parameters for call to function CheckOutputState
-        MOV     R1,#0x1
         LCALL   `??CheckOutputState::?relay`; Banked call to: CheckOutputState
         MOV     A,R1
-        MOV     R2,A
-//  867 		 pos = 23;
-        MOV     R0,#0x17
-        SJMP    ??zclSampleTemperatureSensor_SendState_1
-//  868 	 }
-//  869 	 else if (OUTX == 2)
-??zclSampleTemperatureSensor_SendState_0:
+        MOV     R0,A
+//  866 	if(OUTx == 2 )
         MOV     A,#0x2
         XRL     A,R6
-        JNZ     ??zclSampleTemperatureSensor_SendState_2
-//  870 	 {
-//  871 		 temp_s = CheckOutputState(Output_2);
-        ; Setup parameters for call to function CheckOutputState
-        MOV     R1,#0x2
-        LCALL   `??CheckOutputState::?relay`; Banked call to: CheckOutputState
-        MOV     A,R1
-        MOV     R2,A
-//  872 		 pos = 21;
-        MOV     R0,#0x15
+        JNZ     ??zclSampleTemperatureSensor_SendState_0
+//  867 		{
+//  868 		state = BUILD_UINT16(1,t_state);
+        CLR     A
+        ADD     A,#0x1
         SJMP    ??zclSampleTemperatureSensor_SendState_1
-//  873 	 }
-//  874 	 else if (OUTX == 3)
-??zclSampleTemperatureSensor_SendState_2:
+//  869 		}
+//  870 	else if (OUTx == 3)
+??zclSampleTemperatureSensor_SendState_0:
         MOV     A,#0x3
         XRL     A,R6
-        JNZ     ??zclSampleTemperatureSensor_SendState_1
-//  875 	 {
-//  876 		 temp_s = CheckOutputState(Output_3);
-        ; Setup parameters for call to function CheckOutputState
-        MOV     R1,#0x3
-        LCALL   `??CheckOutputState::?relay`; Banked call to: CheckOutputState
-        MOV     A,R1
-        MOV     R2,A
-//  877 		 pos = 22;
-        MOV     R0,#0x16
-//  878 	 }
-//  879 	 state = BUILD_UINT16(temp_s,pos);
-??zclSampleTemperatureSensor_SendState_1:
-        MOV     A,R0
-        MOV     R1,A
-        MOV     A,R2
-        MOV     DPL,?XSP + 0
-        MOV     DPH,?XSP + 1
-        MOVX    @DPTR,A
-        INC     DPTR
-        MOV     A,R1
-        MOVX    @DPTR,A
-//  880 	 UART_SendNum(HAL_UART_PORT_0,state);
-        ; Setup parameters for call to function UART_SendNum
-        MOV     DPL,?XSP + 0
-        MOV     DPH,?XSP + 1
-        MOVX    A,@DPTR
-        MOV     ?V0,A
-        INC     DPTR
-        MOVX    A,@DPTR
-        MOV     R2,?V0
-        MOV     R3,A
+        JNZ     ??zclSampleTemperatureSensor_SendState_2
+//  871 		{
+//  872 		state = BUILD_UINT16(2,t_state);
         CLR     A
-        MOV     R4,A
-        MOV     R5,A
-        MOV     R1,A
-        LCALL   `??UART_SendNum::?relay`; Banked call to: UART_SendNum
-//  881 	 UART_SendString(HAL_UART_PORT_0,"!\n");
-        ; Setup parameters for call to function UART_SendString
-        MOV     R2,#`?<Constant "!\\n">` & 0xff
-        MOV     R3,#(`?<Constant "!\\n">` >> 8) & 0xff
-        MOV     R1,#0x0
-        LCALL   `??UART_SendString::?relay`; Banked call to: UART_SendString
-//  882 	
-//  883 	#ifdef ZCL_REPORT
-//  884   zclReportCmd_t *pReportCmd;
-//  885 	
-//  886   pReportCmd = osal_mem_alloc( sizeof(zclReportCmd_t) + 1 * sizeof(zclReport_t) );
+        ADD     A,#0x2
+??zclSampleTemperatureSensor_SendState_1:
+        JNC     ??zclSampleTemperatureSensor_SendState_3
+        INC     R1
+??zclSampleTemperatureSensor_SendState_3:
+        MOV     DPL,?XSP + 0
+        MOV     DPH,?XSP + 1
+        MOVX    @DPTR,A
+        INC     DPTR
+        MOV     A,R1
+        MOVX    @DPTR,A
+//  873 		}
+//  874   zclReportCmd_t *pReportCmd;
+//  875   pReportCmd = osal_mem_alloc( sizeof(zclReportCmd_t) + 2 * sizeof(zclReport_t) );
+??zclSampleTemperatureSensor_SendState_2:
         ; Setup parameters for call to function osal_mem_alloc
-        MOV     R2,#0x6
+        MOV     R2,#0xb
         MOV     R3,#0x0
         LCALL   `??osal_mem_alloc::?relay`; Banked call to: osal_mem_alloc
         MOV     ?V0,R2
         MOV     ?V1,R3
-//  887   if ( pReportCmd != NULL )
+//  876   if ( pReportCmd != NULL )
         MOV     A,R2
         ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_SendState_3
-//  888   {
-//  889     pReportCmd->numAttr = 1;
+        JZ      ??zclSampleTemperatureSensor_SendState_4
+//  877   {
+//  878     pReportCmd->numAttr = 2;
         MOV     DPL,R2
         MOV     DPH,R3
-        MOV     A,#0x1
+        MOV     A,#0x2
         MOVX    @DPTR,A
-//  890 		// Data
-//  891     pReportCmd->attrList[0].attrID = ATTRID_SENDSTATE;
+//  879 		
+//  880 		// Data
+//  881     pReportCmd->attrList[0].attrID 		= ATTRID_SENDSTATE;
         INC     DPTR
         MOV     A,#0x6
         MOVX    @DPTR,A
         INC     DPTR
         MOV     A,#-0x60
         LCALL   ?Subroutine6 & 0xFFFF
-//  892     pReportCmd->attrList[0].dataType = ZCL_DATATYPE_UINT16;
+//  882     pReportCmd->attrList[0].dataType 	= ZCL_DATATYPE_CHAR_STR;
 ??CrossCallReturnLabel_7:
-        MOV     A,#0x21
+        MOV     A,#0x42
         MOVX    @DPTR,A
-//  893     pReportCmd->attrList[0].attrData = (void *)(&state);
-        MOV     DPL,R2
-        MOV     DPH,R3
+//  883     pReportCmd->attrList[0].attrData 	= (void *)(data);
+        MOV     A,#0x2
+        LCALL   ?XSTACK_DISP100_8
+        LCALL   ?Subroutine3 & 0xFFFF
+//  884 
+//  885 	pReportCmd->attrList[1].dataType 	= ZCL_DATATYPE_UINT16;
+??CrossCallReturnLabel_3:
+        MOV     A,#0x21
         LCALL   ?Subroutine2 & 0xFFFF
-//  894 
-//  895     // pReportCmd->attrList[1].attrID = NLME_GetCoordShortAddr();
-//  896     // pReportCmd->attrList[1].dataType = ZCL_DATATYPE_UINT8;
-//  897     // pReportCmd->attrList[1].attrData = (void *)(&state);
-//  898 		
-//  899     zcl_SendReportCmd( SAMPLETEMPERATURESENSOR_ENDPOINT, &zclSampleTemperatureSensor_DstAddr,
-//  900                        ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
-//  901                        pReportCmd, ZCL_FRAME_SERVER_CLIENT_DIR, TRUE, zclSampleTemperatureSensorSeqNum++ );
-//  902   }
+//  886     pReportCmd->attrList[1].attrData 	= (void *)(&state);
+//  887 
+//  888    zcl_SendReportCmd( SAMPLETEMPERATURESENSOR_ENDPOINT, &zclSampleTemperatureSensor_DstAddr,
+//  889                        ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
+//  890                        pReportCmd, ZCL_FRAME_SERVER_CLIENT_DIR, TRUE, zclSampleTemperatureSensorSeqNum++ );
 ??CrossCallReturnLabel_1:
         LCALL   ?PUSH_XSTACK_I_ONE
-          CFI CFA_XSP16 add(XSP16, 15)
+          CFI CFA_XSP16 add(XSP16, 32)
         MOV     ?V2,#0x1
         MOV     R0,#?V2
         LCALL   ?PUSH_XSTACK_I_ONE
-          CFI CFA_XSP16 add(XSP16, 16)
+          CFI CFA_XSP16 add(XSP16, 33)
         MOV     R0,#?V2
         LCALL   ?PUSH_XSTACK_I_ONE
-          CFI CFA_XSP16 add(XSP16, 17)
+          CFI CFA_XSP16 add(XSP16, 34)
         MOV     R0,#?V0
         LCALL   ?PUSH_XSTACK_I_TWO
-          CFI CFA_XSP16 add(XSP16, 19)
+          CFI CFA_XSP16 add(XSP16, 36)
         MOV     R4,#0x2
         MOV     R5,#0x4
         MOV     R2,#zclSampleTemperatureSensor_DstAddr & 0xff
@@ -4616,22 +4445,22 @@ zclSampleTemperatureSensor_SendState:
         LCALL   `??zcl_SendReportCmd::?relay`; Banked call to: zcl_SendReportCmd
         MOV     A,#0x5
         LCALL   ?DEALLOC_XSTACK8
-          CFI CFA_XSP16 add(XSP16, 14)
-//  903   osal_mem_free( pReportCmd );
-??zclSampleTemperatureSensor_SendState_3:
+          CFI CFA_XSP16 add(XSP16, 31)
+//  891  	 osal_mem_free( pReportCmd );
         ; Setup parameters for call to function osal_mem_free
         MOV     R2,?V0
         MOV     R3,?V1
         LCALL   `??osal_mem_free::?relay`; Banked call to: osal_mem_free
-//  904 	#endif  // ZCL_REPORT
-//  905 }
-        MOV     A,#0x2
+//  892   }
+//  893 }
+??zclSampleTemperatureSensor_SendState_4:
+        MOV     A,#0x13
         LJMP    ?Subroutine1 & 0xFFFF
-          CFI EndBlock cfiBlock24
+          CFI EndBlock cfiBlock21
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
 ?Subroutine6:
-          CFI Block cfiCond25 Using cfiCommon0
+          CFI Block cfiCond22 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_SendTemp
           CFI Conditional ??CrossCallReturnLabel_6
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
@@ -4648,38 +4477,38 @@ zclSampleTemperatureSensor_SendState:
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-2
           CFI CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiCond26 Using cfiCommon0
-          CFI (cfiCond26) Function zclSampleTemperatureSensor_SendState
-          CFI (cfiCond26) Conditional ??CrossCallReturnLabel_7
-          CFI (cfiCond26) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond26) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond26) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond26) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond26) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond26) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond26) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond26) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond26) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond26) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond26) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond26) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond26) CFA_SP SP+-2
-          CFI (cfiCond26) CFA_XSP16 add(XSP16, 14)
-          CFI Block cfiPicker27 Using cfiCommon1
-          CFI (cfiPicker27) NoFunction
-          CFI (cfiPicker27) Picker
-        LCALL   ?Subroutine12 & 0xFFFF
-??CrossCallReturnLabel_18:
+          CFI Block cfiCond23 Using cfiCommon0
+          CFI (cfiCond23) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond23) Conditional ??CrossCallReturnLabel_7
+          CFI (cfiCond23) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond23) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond23) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond23) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond23) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond23) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond23) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond23) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond23) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond23) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond23) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond23) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond23) CFA_SP SP+-2
+          CFI (cfiCond23) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiPicker24 Using cfiCommon1
+          CFI (cfiPicker24) NoFunction
+          CFI (cfiPicker24) Picker
+        LCALL   ?Subroutine13 & 0xFFFF
+??CrossCallReturnLabel_19:
         RET
-          CFI EndBlock cfiCond25
-          CFI EndBlock cfiCond26
-          CFI EndBlock cfiPicker27
+          CFI EndBlock cfiCond22
+          CFI EndBlock cfiCond23
+          CFI EndBlock cfiPicker24
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-?Subroutine12:
-          CFI Block cfiCond28 Using cfiCommon0
+?Subroutine13:
+          CFI Block cfiCond25 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_SendTemp
-          CFI Conditional ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_4
+          CFI Conditional ??CrossCallReturnLabel_19, ??CrossCallReturnLabel_6
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
           CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
           CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
@@ -4694,9 +4523,60 @@ zclSampleTemperatureSensor_SendState:
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-4
           CFI CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond26 Using cfiCommon0
+          CFI (cfiCond26) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond26) Conditional ??CrossCallReturnLabel_19, ??CrossCallReturnLabel_7
+          CFI (cfiCond26) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond26) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond26) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond26) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond26) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond26) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond26) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond26) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond26) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond26) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond26) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond26) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond26) CFA_SP SP+-4
+          CFI (cfiCond26) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiCond27 Using cfiCommon0
+          CFI (cfiCond27) Function zclSampleTemperatureSensor_SendTemp
+          CFI (cfiCond27) Conditional ??CrossCallReturnLabel_20, ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_2
+          CFI (cfiCond27) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond27) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond27) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond27) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond27) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond27) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond27) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond27) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond27) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond27) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond27) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond27) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond27) CFA_SP SP+-6
+          CFI (cfiCond27) CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond28 Using cfiCommon0
+          CFI (cfiCond28) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond28) Conditional ??CrossCallReturnLabel_20, ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_3
+          CFI (cfiCond28) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond28) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond28) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond28) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond28) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond28) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond28) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond28) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond28) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond28) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond28) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond28) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond28) CFA_SP SP+-6
+          CFI (cfiCond28) CFA_XSP16 add(XSP16, 31)
           CFI Block cfiCond29 Using cfiCommon0
           CFI (cfiCond29) Function zclSampleTemperatureSensor_SendTemp
-          CFI (cfiCond29) Conditional ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_5
+          CFI (cfiCond29) Conditional ??CrossCallReturnLabel_20, ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_0
           CFI (cfiCond29) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
           CFI (cfiCond29) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
           CFI (cfiCond29) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
@@ -4709,11 +4589,11 @@ zclSampleTemperatureSensor_SendState:
           CFI (cfiCond29) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
           CFI (cfiCond29) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI (cfiCond29) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond29) CFA_SP SP+-4
+          CFI (cfiCond29) CFA_SP SP+-6
           CFI (cfiCond29) CFA_XSP16 add(XSP16, 16)
           CFI Block cfiCond30 Using cfiCommon0
-          CFI (cfiCond30) Function zclSampleTemperatureSensor_SendTemp
-          CFI (cfiCond30) Conditional ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_6
+          CFI (cfiCond30) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond30) Conditional ??CrossCallReturnLabel_20, ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_1
           CFI (cfiCond30) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
           CFI (cfiCond30) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
           CFI (cfiCond30) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
@@ -4726,28 +4606,11 @@ zclSampleTemperatureSensor_SendState:
           CFI (cfiCond30) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
           CFI (cfiCond30) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI (cfiCond30) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond30) CFA_SP SP+-4
-          CFI (cfiCond30) CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiCond31 Using cfiCommon0
-          CFI (cfiCond31) Function zclSampleTemperatureSensor_SendState
-          CFI (cfiCond31) Conditional ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_7
-          CFI (cfiCond31) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond31) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond31) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond31) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond31) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond31) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond31) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond31) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond31) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond31) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond31) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond31) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond31) CFA_SP SP+-4
-          CFI (cfiCond31) CFA_XSP16 add(XSP16, 14)
-          CFI Block cfiPicker32 Using cfiCommon1
-          CFI (cfiPicker32) NoFunction
-          CFI (cfiPicker32) Picker
+          CFI (cfiCond30) CFA_SP SP+-6
+          CFI (cfiCond30) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiPicker31 Using cfiCommon1
+          CFI (cfiPicker31) NoFunction
+          CFI (cfiPicker31) Picker
         MOVX    @DPTR,A
         MOV     DPL,R2
         MOV     DPH,R3
@@ -4755,15 +4618,160 @@ zclSampleTemperatureSensor_SendState:
         INC     DPTR
         INC     DPTR
         RET
+          CFI EndBlock cfiCond25
+          CFI EndBlock cfiCond26
+          CFI EndBlock cfiCond27
           CFI EndBlock cfiCond28
           CFI EndBlock cfiCond29
           CFI EndBlock cfiCond30
-          CFI EndBlock cfiCond31
-          CFI EndBlock cfiPicker32
+          CFI EndBlock cfiPicker31
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine3:
+          CFI Block cfiCond32 Using cfiCommon0
+          CFI Function zclSampleTemperatureSensor_SendTemp
+          CFI Conditional ??CrossCallReturnLabel_2
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI CFA_SP SP+-2
+          CFI CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond33 Using cfiCommon0
+          CFI (cfiCond33) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond33) Conditional ??CrossCallReturnLabel_3
+          CFI (cfiCond33) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond33) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond33) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond33) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond33) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond33) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond33) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond33) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond33) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond33) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond33) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond33) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond33) CFA_SP SP+-2
+          CFI (cfiCond33) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiPicker34 Using cfiCommon1
+          CFI (cfiPicker34) NoFunction
+          CFI (cfiPicker34) Picker
+        MOV     DPL,R2
+        MOV     DPH,R3
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        MOV     A,R0
+        MOVX    @DPTR,A
+        INC     DPTR
+        MOV     A,R1
+        LCALL   ?Subroutine12 & 0xFFFF
+??CrossCallReturnLabel_17:
+        RET
+          CFI EndBlock cfiCond32
+          CFI EndBlock cfiCond33
+          CFI EndBlock cfiPicker34
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine12:
+          CFI Block cfiCond35 Using cfiCommon0
+          CFI Function zclSampleTemperatureSensor_SendTemp
+          CFI Conditional ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_2
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI CFA_SP SP+-4
+          CFI CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond36 Using cfiCommon0
+          CFI (cfiCond36) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond36) Conditional ??CrossCallReturnLabel_17, ??CrossCallReturnLabel_3
+          CFI (cfiCond36) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond36) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond36) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond36) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond36) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond36) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond36) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond36) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond36) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond36) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond36) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond36) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond36) CFA_SP SP+-4
+          CFI (cfiCond36) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiCond37 Using cfiCommon0
+          CFI (cfiCond37) Function zclSampleTemperatureSensor_SendTemp
+          CFI (cfiCond37) Conditional ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_0
+          CFI (cfiCond37) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond37) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond37) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond37) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond37) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond37) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond37) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond37) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond37) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond37) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond37) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond37) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond37) CFA_SP SP+-4
+          CFI (cfiCond37) CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond38 Using cfiCommon0
+          CFI (cfiCond38) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond38) Conditional ??CrossCallReturnLabel_18, ??CrossCallReturnLabel_1
+          CFI (cfiCond38) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond38) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond38) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond38) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond38) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond38) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond38) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond38) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond38) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond38) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond38) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond38) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond38) CFA_SP SP+-4
+          CFI (cfiCond38) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiPicker39 Using cfiCommon1
+          CFI (cfiPicker39) NoFunction
+          CFI (cfiPicker39) Picker
+        LCALL   ?Subroutine13 & 0xFFFF
+??CrossCallReturnLabel_20:
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        INC     DPTR
+        RET
+          CFI EndBlock cfiCond35
+          CFI EndBlock cfiCond36
+          CFI EndBlock cfiCond37
+          CFI EndBlock cfiCond38
+          CFI EndBlock cfiPicker39
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
 ?Subroutine2:
-          CFI Block cfiCond33 Using cfiCommon0
+          CFI Block cfiCond40 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_SendTemp
           CFI Conditional ??CrossCallReturnLabel_0
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
@@ -4780,29 +4788,28 @@ zclSampleTemperatureSensor_SendState:
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-2
           CFI CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiCond34 Using cfiCommon0
-          CFI (cfiCond34) Function zclSampleTemperatureSensor_SendState
-          CFI (cfiCond34) Conditional ??CrossCallReturnLabel_1
-          CFI (cfiCond34) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond34) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond34) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond34) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond34) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond34) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond34) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond34) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond34) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond34) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond34) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond34) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond34) CFA_SP SP+-2
-          CFI (cfiCond34) CFA_XSP16 add(XSP16, 14)
-          CFI Block cfiPicker35 Using cfiCommon1
-          CFI (cfiPicker35) NoFunction
-          CFI (cfiPicker35) Picker
-        INC     DPTR
-        INC     DPTR
-        INC     DPTR
+          CFI Block cfiCond41 Using cfiCommon0
+          CFI (cfiCond41) Function zclSampleTemperatureSensor_SendState
+          CFI (cfiCond41) Conditional ??CrossCallReturnLabel_1
+          CFI (cfiCond41) R6 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond41) VB load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond41) V0 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond41) V1 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond41) V2 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond41) V3 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond41) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond41) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond41) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond41) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond41) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond41) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond41) CFA_SP SP+-2
+          CFI (cfiCond41) CFA_XSP16 add(XSP16, 31)
+          CFI Block cfiPicker42 Using cfiCommon1
+          CFI (cfiPicker42) NoFunction
+          CFI (cfiPicker42) Picker
+        LCALL   ?Subroutine12 & 0xFFFF
+??CrossCallReturnLabel_18:
         INC     DPTR
         MOV     A,?XSP + 0
         MOVX    @DPTR,A
@@ -4821,27 +4828,27 @@ zclSampleTemperatureSensor_SendState:
         MOV     ?V2,A
         MOV     R0,#?V2
         RET
-          CFI EndBlock cfiCond33
-          CFI EndBlock cfiCond34
-          CFI EndBlock cfiPicker35
-//  906 
-//  907 /*********************************************************************
-//  908  * @fn      zclSampleTemperatureSensor_ProcessIdentifyTimeChange
-//  909  *
-//  910  * @brief   Called to process any change to the IdentifyTime attribute.
-//  911  *
-//  912  * @param   none
-//  913  *
-//  914  * @return  none
-//  915  */
+          CFI EndBlock cfiCond40
+          CFI EndBlock cfiCond41
+          CFI EndBlock cfiPicker42
+//  894 
+//  895 /*********************************************************************
+//  896  * @fn      zclSampleTemperatureSensor_ProcessIdentifyTimeChange
+//  897  *
+//  898  * @brief   Called to process any change to the IdentifyTime attribute.
+//  899  *
+//  900  * @param   none
+//  901  *
+//  902  * @return  none
+//  903  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  916 static void zclSampleTemperatureSensor_ProcessIdentifyTimeChange( void )
+//  904 static void zclSampleTemperatureSensor_ProcessIdentifyTimeChange( void )
 zclSampleTemperatureSensor_ProcessIdentifyTimeChange:
-          CFI Block cfiBlock36 Using cfiCommon0
+          CFI Block cfiBlock43 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         CODE
-//  917 {
+//  905 {
         FUNCALL zclSampleTemperatureSensor_ProcessIdentifyTimeChange, osal_start_timerEx
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -4894,14 +4901,14 @@ zclSampleTemperatureSensor_ProcessIdentifyTimeChange:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  918   if ( zclSampleTemperatureSensor_IdentifyTime > 0 )
+//  906   if ( zclSampleTemperatureSensor_IdentifyTime > 0 )
         LCALL   ?Subroutine10 & 0xFFFF
-??CrossCallReturnLabel_27:
+??CrossCallReturnLabel_29:
         MOV     A,R0
         ORL     A,R1
         JZ      ??zclSampleTemperatureSensor_ProcessIdentifyTim_1
-//  919   {
-//  920     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_IDENTIFY_TIMEOUT_EVT, 1000 );
+//  907   {
+//  908     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_IDENTIFY_TIMEOUT_EVT, 1000 );
         ; Setup parameters for call to function osal_start_timerEx
         MOV     DPTR,#__Constant_3e8
         LCALL   ?PUSH_XSTACK8_X_FOUR
@@ -4916,33 +4923,33 @@ zclSampleTemperatureSensor_ProcessIdentifyTimeChange:
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 XSP16+0
         SJMP    ??zclSampleTemperatureSensor_ProcessIdentifyTim_2
-//  921     //HalLedBlink ( HAL_LED_4, 0xFF, HAL_LED_DEFAULT_DUTY_CYCLE, HAL_LED_DEFAULT_FLASH_TIME );
-//  922   }
-//  923   else
-//  924   {
-//  925     if ( zclSampleTemperatureSensor_OnOff )
+//  909     //HalLedBlink ( HAL_LED_4, 0xFF, HAL_LED_DEFAULT_DUTY_CYCLE, HAL_LED_DEFAULT_FLASH_TIME );
+//  910   }
+//  911   else
+//  912   {
+//  913     if ( zclSampleTemperatureSensor_OnOff )
 ??zclSampleTemperatureSensor_ProcessIdentifyTim_1:
         MOV     DPTR,#zclSampleTemperatureSensor_OnOff
         MOVX    A,@DPTR
         JZ      ??zclSampleTemperatureSensor_ProcessIdentifyTim_3
-//  926     {
-//  927       HalLedSet ( HAL_LED_4, HAL_LED_MODE_ON );
+//  914     {
+//  915       HalLedSet ( HAL_LED_4, HAL_LED_MODE_ON );
         ; Setup parameters for call to function HalLedSet
         MOV     R2,#0x1
         SJMP    ??zclSampleTemperatureSensor_ProcessIdentifyTim_4
-//  928     }
-//  929     else
-//  930     {
-//  931       HalLedSet ( HAL_LED_4, HAL_LED_MODE_OFF );
+//  916     }
+//  917     else
+//  918     {
+//  919       HalLedSet ( HAL_LED_4, HAL_LED_MODE_OFF );
 ??zclSampleTemperatureSensor_ProcessIdentifyTim_3:
         ; Setup parameters for call to function HalLedSet
         MOV     R2,#0x0
 ??zclSampleTemperatureSensor_ProcessIdentifyTim_4:
         MOV     R1,#0x8
         LCALL   `??HalLedSet::?relay`; Banked call to: HalLedSet
-//  932     }
-//  933 
-//  934     osal_stop_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_IDENTIFY_TIMEOUT_EVT );
+//  920     }
+//  921 
+//  922     osal_stop_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_IDENTIFY_TIMEOUT_EVT );
         ; Setup parameters for call to function osal_stop_timerEx
         MOV     R2,#0x1
         MOV     R3,#0x0
@@ -4950,30 +4957,30 @@ zclSampleTemperatureSensor_ProcessIdentifyTimeChange:
         MOVX    A,@DPTR
         MOV     R1,A
         LCALL   `??osal_stop_timerEx::?relay`; Banked call to: osal_stop_timerEx
-//  935   }
-//  936 }
+//  923   }
+//  924 }
 ??zclSampleTemperatureSensor_ProcessIdentifyTim_2:
-        LJMP    ??Subroutine14_0 & 0xFFFF
-          CFI EndBlock cfiBlock36
-//  937 
-//  938 /*********************************************************************
-//  939  * @fn      zclSampleTemperatureSensor_BasicResetCB
-//  940  *
-//  941  * @brief   Callback from the ZCL General Cluster Library
-//  942  *          to set all the Basic Cluster attributes to default values.
-//  943  *
-//  944  * @param   none
-//  945  *
-//  946  * @return  none
-//  947  */
+        LJMP    ??Subroutine15_0 & 0xFFFF
+          CFI EndBlock cfiBlock43
+//  925 
+//  926 /*********************************************************************
+//  927  * @fn      zclSampleTemperatureSensor_BasicResetCB
+//  928  *
+//  929  * @brief   Callback from the ZCL General Cluster Library
+//  930  *          to set all the Basic Cluster attributes to default values.
+//  931  *
+//  932  * @param   none
+//  933  *
+//  934  * @return  none
+//  935  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  948 static void zclSampleTemperatureSensor_BasicResetCB( void )
+//  936 static void zclSampleTemperatureSensor_BasicResetCB( void )
 zclSampleTemperatureSensor_BasicResetCB:
-          CFI Block cfiBlock37 Using cfiCommon0
+          CFI Block cfiBlock44 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_BasicResetCB
         CODE
-//  949 {
+//  937 {
         FUNCALL zclSampleTemperatureSensor_BasicResetCB, zgWriteStartupOptions
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5004,42 +5011,42 @@ zclSampleTemperatureSensor_BasicResetCB:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  950   // Put device back to factory default settings
-//  951   zgWriteStartupOptions( ZG_STARTUP_SET, 3 );   // bit set both default configuration and default network
+//  938   // Put device back to factory default settings
+//  939   zgWriteStartupOptions( ZG_STARTUP_SET, 3 );   // bit set both default configuration and default network
         ; Setup parameters for call to function zgWriteStartupOptions
         MOV     R2,#0x3
         MOV     R1,#-0x1
         LCALL   `??zgWriteStartupOptions::?relay`; Banked call to: zgWriteStartupOptions
-//  952 
-//  953   // restart device
-//  954   MT_SysCommandProcessing( aProcessCmd );
+//  940 
+//  941   // restart device
+//  942   MT_SysCommandProcessing( aProcessCmd );
         ; Setup parameters for call to function MT_SysCommandProcessing
         MOV     R2,#aProcessCmd & 0xff
         MOV     R3,#(aProcessCmd >> 8) & 0xff
         LCALL   `??MT_SysCommandProcessing::?relay`; Banked call to: MT_SysCommandProcessing
-//  955 }
-        LJMP    ??Subroutine14_0 & 0xFFFF
-          CFI EndBlock cfiBlock37
-//  956 
-//  957 /*********************************************************************
-//  958  * @fn      zclSampleTemperatureSensor_IdentifyCB
-//  959  *
-//  960  * @brief   Callback from the ZCL General Cluster Library when
-//  961  *          it received an Identity Command for this application.
-//  962  *
-//  963  * @param   srcAddr - source address and endpoint of the response message
-//  964  * @param   identifyTime - the number of seconds to identify yourself
-//  965  *
-//  966  * @return  none
-//  967  */
+//  943 }
+        LJMP    ??Subroutine15_0 & 0xFFFF
+          CFI EndBlock cfiBlock44
+//  944 
+//  945 /*********************************************************************
+//  946  * @fn      zclSampleTemperatureSensor_IdentifyCB
+//  947  *
+//  948  * @brief   Callback from the ZCL General Cluster Library when
+//  949  *          it received an Identity Command for this application.
+//  950  *
+//  951  * @param   srcAddr - source address and endpoint of the response message
+//  952  * @param   identifyTime - the number of seconds to identify yourself
+//  953  *
+//  954  * @return  none
+//  955  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  968 static void zclSampleTemperatureSensor_IdentifyCB( zclIdentify_t *pCmd )
+//  956 static void zclSampleTemperatureSensor_IdentifyCB( zclIdentify_t *pCmd )
 zclSampleTemperatureSensor_IdentifyCB:
-          CFI Block cfiBlock38 Using cfiCommon0
+          CFI Block cfiBlock45 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_IdentifyCB
         CODE
-//  969 {
+//  957 {
         FUNCALL zclSampleTemperatureSensor_IdentifyCB, zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5059,45 +5066,45 @@ zclSampleTemperatureSensor_IdentifyCB:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  970   zclSampleTemperatureSensor_IdentifyTime = pCmd->identifyTime;
+//  958   zclSampleTemperatureSensor_IdentifyTime = pCmd->identifyTime;
         MOV     DPL,R2
         MOV     DPH,R3
         INC     DPTR
         INC     DPTR
-        LCALL   ??Subroutine15_0 & 0xFFFF
-??CrossCallReturnLabel_24:
+        LCALL   ??Subroutine16_0 & 0xFFFF
+??CrossCallReturnLabel_26:
         MOV     DPTR,#zclSampleTemperatureSensor_IdentifyTime
         MOV     A,R0
         MOVX    @DPTR,A
         INC     DPTR
         MOV     A,R1
         MOVX    @DPTR,A
-//  971   zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
+//  959   zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
         ; Setup parameters for call to function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LCALL   ??zclSampleTemperatureSensor_ProcessIdentifyTim; Banked call to: zclSampleTemperatureSensor_ProcessIdentifyTimeChange
-//  972 }
-        LJMP    ??Subroutine14_0 & 0xFFFF
-          CFI EndBlock cfiBlock38
-//  973 
-//  974 /*********************************************************************
-//  975  * @fn      zclSampleTemperatureSensor_IdentifyQueryRspCB
-//  976  *
-//  977  * @brief   Callback from the ZCL General Cluster Library when
-//  978  *          it received an Identity Query Response Command for this application.
-//  979  *
-//  980  * @param   srcAddr - requestor's address
-//  981  * @param   timeout - number of seconds to identify yourself (valid for query response)
-//  982  *
-//  983  * @return  none
-//  984  */
+//  960 }
+        LJMP    ??Subroutine15_0 & 0xFFFF
+          CFI EndBlock cfiBlock45
+//  961 
+//  962 /*********************************************************************
+//  963  * @fn      zclSampleTemperatureSensor_IdentifyQueryRspCB
+//  964  *
+//  965  * @brief   Callback from the ZCL General Cluster Library when
+//  966  *          it received an Identity Query Response Command for this application.
+//  967  *
+//  968  * @param   srcAddr - requestor's address
+//  969  * @param   timeout - number of seconds to identify yourself (valid for query response)
+//  970  *
+//  971  * @return  none
+//  972  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  985 static void zclSampleTemperatureSensor_IdentifyQueryRspCB( zclIdentifyQueryRsp_t *pRsp )
+//  973 static void zclSampleTemperatureSensor_IdentifyQueryRspCB( zclIdentifyQueryRsp_t *pRsp )
 zclSampleTemperatureSensor_IdentifyQueryRspCB:
-          CFI Block cfiBlock39 Using cfiCommon0
+          CFI Block cfiBlock46 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_IdentifyQueryRspCB
         CODE
-//  986 {
+//  974 {
         FUNCALL zclSampleTemperatureSensor_IdentifyQueryRspCB, zcl_EZModeAction
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -5120,492 +5127,382 @@ zclSampleTemperatureSensor_IdentifyQueryRspCB:
         MOV     A,#-0x2
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 2)
-//  987   (void)pRsp;
-//  988 #ifdef ZCL_EZMODE
-//  989   {
-//  990     zclEZMode_ActionData_t data;
-//  991     data.pIdentifyQueryRsp = pRsp;
+//  975   (void)pRsp;
+//  976 #ifdef ZCL_EZMODE
+//  977   {
+//  978     zclEZMode_ActionData_t data;
+//  979     data.pIdentifyQueryRsp = pRsp;
         LCALL   ?Subroutine5 & 0xFFFF
-//  992     zcl_EZModeAction ( EZMODE_ACTION_IDENTIFY_QUERY_RSP, &data );
-//  993   }
-??CrossCallReturnLabel_20:
+//  980     zcl_EZModeAction ( EZMODE_ACTION_IDENTIFY_QUERY_RSP, &data );
+//  981   }
+??CrossCallReturnLabel_22:
         MOV     R1,#0x4
         LCALL   `??zcl_EZModeAction::?relay`; Banked call to: zcl_EZModeAction
-//  994 #endif
-//  995 }
+//  982 #endif
+//  983 }
         MOV     A,#0x2
         LJMP    ?Subroutine0 & 0xFFFF
-          CFI EndBlock cfiBlock39
-//  996 
-//  997 /******************************************************************************
-//  998  *
-//  999  *  Functions for processing ZCL Foundation incoming Command/Response messages
-// 1000  *
-// 1001  *****************************************************************************/
-// 1002 
-// 1003 /*********************************************************************
-// 1004  * @fn      zclSampleTemperatureSensor_ProcessIncomingMsg
-// 1005  *
-// 1006  * @brief   Process ZCL Foundation incoming message
-// 1007  *
-// 1008  * @param   pInMsg - pointer to the received message
-// 1009  *
-// 1010  * @return  none
-// 1011  */
-// 1012 static void zclSampleTemperatureSensor_ProcessIncomingMsg( zclIncomingMsg_t *pInMsg)
-// 1013 {
-// 1014   switch ( pInMsg->zclHdr.commandID )
-// 1015   {
-// 1016 #ifdef ZCL_READ
-// 1017     case ZCL_CMD_READ_RSP:
-// 1018       zclSampleTemperatureSensor_ProcessInReadRspCmd( pInMsg );
-// 1019       break;
-// 1020 #endif
-// 1021 #ifdef ZCL_WRITE
-// 1022     case ZCL_CMD_WRITE_RSP:
-// 1023       zclSampleTemperatureSensor_ProcessInWriteRspCmd( pInMsg );
-// 1024       break;
-// 1025 #endif
-// 1026 #ifdef ZCL_REPORT
-// 1027     // See ZCL Test Applicaiton (zcl_testapp.c) for sample code on Attribute Reporting
-// 1028     case ZCL_CMD_CONFIG_REPORT:
-// 1029       //zclSampleTemperatureSensor_ProcessInConfigReportCmd( pInMsg );
+          CFI EndBlock cfiBlock46
+//  984 
+//  985 /******************************************************************************
+//  986  *
+//  987  *  Functions for processing ZCL Foundation incoming Command/Response messages
+//  988  *
+//  989  *****************************************************************************/
+//  990 
+//  991 /*********************************************************************
+//  992  * @fn      zclSampleTemperatureSensor_ProcessIncomingMsg
+//  993  *
+//  994  * @brief   Process ZCL Foundation incoming message
+//  995  *
+//  996  * @param   pInMsg - pointer to the received message
+//  997  *
+//  998  * @return  none
+//  999  */
+// 1000 static void zclSampleTemperatureSensor_ProcessIncomingMsg( zclIncomingMsg_t *pInMsg)
+// 1001 {
+// 1002   switch ( pInMsg->zclHdr.commandID )
+// 1003   {
+// 1004 #ifdef ZCL_READ
+// 1005     case ZCL_CMD_READ_RSP:
+// 1006       zclSampleTemperatureSensor_ProcessInReadRspCmd( pInMsg );
+// 1007       break;
+// 1008 #endif
+// 1009 #ifdef ZCL_WRITE
+// 1010     case ZCL_CMD_WRITE_RSP:
+// 1011       zclSampleTemperatureSensor_ProcessInWriteRspCmd( pInMsg );
+// 1012       break;
+// 1013 #endif
+// 1014 #ifdef ZCL_REPORT
+// 1015     // See ZCL Test Applicaiton (zcl_testapp.c) for sample code on Attribute Reporting
+// 1016     case ZCL_CMD_CONFIG_REPORT:
+// 1017       //zclSampleTemperatureSensor_ProcessInConfigReportCmd( pInMsg );
+// 1018       break;
+// 1019 
+// 1020     case ZCL_CMD_CONFIG_REPORT_RSP:
+// 1021       //zclSampleTemperatureSensor_ProcessInConfigReportRspCmd( pInMsg );
+// 1022       break;
+// 1023 
+// 1024     case ZCL_CMD_READ_REPORT_CFG:
+// 1025       //zclSampleTemperatureSensor_ProcessInReadReportCfgCmd( pInMsg );
+// 1026       break;
+// 1027 
+// 1028     case ZCL_CMD_READ_REPORT_CFG_RSP:
+// 1029       //zclSampleTemperatureSensor_ProcessInReadReportCfgRspCmd( pInMsg );
 // 1030       break;
 // 1031 
-// 1032     case ZCL_CMD_CONFIG_REPORT_RSP:
-// 1033       //zclSampleTemperatureSensor_ProcessInConfigReportRspCmd( pInMsg );
+// 1032     case ZCL_CMD_REPORT:
+// 1033       zclSampleTemperatureSensor_ProcessInReportCmd( pInMsg );
 // 1034       break;
-// 1035 
-// 1036     case ZCL_CMD_READ_REPORT_CFG:
-// 1037       //zclSampleTemperatureSensor_ProcessInReadReportCfgCmd( pInMsg );
+// 1035 #endif
+// 1036     case ZCL_CMD_DEFAULT_RSP:
+// 1037       zclSampleTemperatureSensor_ProcessInDefaultRspCmd( pInMsg );
 // 1038       break;
-// 1039 
-// 1040     case ZCL_CMD_READ_REPORT_CFG_RSP:
-// 1041       //zclSampleTemperatureSensor_ProcessInReadReportCfgRspCmd( pInMsg );
+// 1039 #ifdef ZCL_DISCOVER
+// 1040     case ZCL_CMD_DISCOVER_CMDS_RECEIVED_RSP:
+// 1041       zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( pInMsg );
 // 1042       break;
 // 1043 
-// 1044     case ZCL_CMD_REPORT:
-// 1045       zclSampleTemperatureSensor_ProcessInReportCmd( pInMsg );
+// 1044     case ZCL_CMD_DISCOVER_CMDS_GEN_RSP:
+// 1045       zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( pInMsg );
 // 1046       break;
-// 1047 #endif
-// 1048     case ZCL_CMD_DEFAULT_RSP:
-// 1049       zclSampleTemperatureSensor_ProcessInDefaultRspCmd( pInMsg );
+// 1047 
+// 1048     case ZCL_CMD_DISCOVER_ATTRS_RSP:
+// 1049       zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd( pInMsg );
 // 1050       break;
-// 1051 #ifdef ZCL_DISCOVER
-// 1052     case ZCL_CMD_DISCOVER_CMDS_RECEIVED_RSP:
-// 1053       zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( pInMsg );
+// 1051 
+// 1052     case ZCL_CMD_DISCOVER_ATTRS_EXT_RSP:
+// 1053       zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd( pInMsg );
 // 1054       break;
-// 1055 
-// 1056     case ZCL_CMD_DISCOVER_CMDS_GEN_RSP:
-// 1057       zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( pInMsg );
-// 1058       break;
+// 1055 #endif
+// 1056     default:
+// 1057       break;
+// 1058   }
 // 1059 
-// 1060     case ZCL_CMD_DISCOVER_ATTRS_RSP:
-// 1061       zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd( pInMsg );
-// 1062       break;
-// 1063 
-// 1064     case ZCL_CMD_DISCOVER_ATTRS_EXT_RSP:
-// 1065       zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd( pInMsg );
-// 1066       break;
-// 1067 #endif
-// 1068     default:
-// 1069       break;
-// 1070   }
-// 1071 
-// 1072   if ( pInMsg->attrCmd )
-// 1073   {
-// 1074     osal_mem_free( pInMsg->attrCmd );
-// 1075   }
-// 1076 }
-// 1077 
-// 1078 #ifdef ZCL_READ
-// 1079 /*********************************************************************
-// 1080  * @fn      zclSampleTemperatureSensor_ProcessInReadRspCmd
-// 1081  *
-// 1082  * @brief   Process the "Profile" Read Response Command
-// 1083  *
-// 1084  * @param   pInMsg - incoming message to process
-// 1085  *
-// 1086  * @return  none
-// 1087  */
-// 1088 static uint8 zclSampleTemperatureSensor_ProcessInReadRspCmd( zclIncomingMsg_t *pInMsg )
-// 1089 {
-// 1090   zclReadRspCmd_t *readRspCmd;
-// 1091   uint8 i;
+// 1060   if ( pInMsg->attrCmd )
+// 1061   {
+// 1062     osal_mem_free( pInMsg->attrCmd );
+// 1063   }
+// 1064 }
+// 1065 
+// 1066 #ifdef ZCL_READ
+// 1067 /*********************************************************************
+// 1068  * @fn      zclSampleTemperatureSensor_ProcessInReadRspCmd
+// 1069  *
+// 1070  * @brief   Process the "Profile" Read Response Command
+// 1071  *
+// 1072  * @param   pInMsg - incoming message to process
+// 1073  *
+// 1074  * @return  none
+// 1075  */
+// 1076 static uint8 zclSampleTemperatureSensor_ProcessInReadRspCmd( zclIncomingMsg_t *pInMsg )
+// 1077 {
+// 1078   zclReadRspCmd_t *readRspCmd;
+// 1079   uint8 i;
+// 1080 
+// 1081   readRspCmd = (zclReadRspCmd_t *)pInMsg->attrCmd;
+// 1082   for ( i = 0; i < readRspCmd->numAttr; i++ )
+// 1083   {
+// 1084     // Notify the originator of the results of the original read attributes
+// 1085     // attempt and, for each successfull request, the value of the requested
+// 1086     // attribute
+// 1087   }
+// 1088 
+// 1089   return ( TRUE );
+// 1090 }
+// 1091 #endif // ZCL_READ
 // 1092 
-// 1093   readRspCmd = (zclReadRspCmd_t *)pInMsg->attrCmd;
-// 1094   for ( i = 0; i < readRspCmd->numAttr; i++ )
-// 1095   {
-// 1096     // Notify the originator of the results of the original read attributes
-// 1097     // attempt and, for each successfull request, the value of the requested
-// 1098     // attribute
-// 1099   }
-// 1100 
-// 1101   return ( TRUE );
-// 1102 }
-// 1103 #endif // ZCL_READ
-// 1104 
-// 1105 #ifdef ZCL_WRITE
-// 1106 /*********************************************************************
-// 1107  * @fn      zclSampleTemperatureSensor_ProcessInWriteRspCmd
-// 1108  *
-// 1109  * @brief   Process the "Profile" Write Response Command
-// 1110  *
-// 1111  * @param   pInMsg - incoming message to process
-// 1112  *
-// 1113  * @return  none
-// 1114  */
-// 1115 static uint8 zclSampleTemperatureSensor_ProcessInWriteRspCmd( zclIncomingMsg_t *pInMsg )
-// 1116 {
-// 1117   zclWriteRspCmd_t *writeRspCmd;
-// 1118   uint8 i;
-// 1119 
-// 1120   writeRspCmd = (zclWriteRspCmd_t *)pInMsg->attrCmd;
-// 1121   for ( i = 0; i < writeRspCmd->numAttr; i++ )
-// 1122   {
-// 1123     // Notify the device of the results of the its original write attributes
-// 1124     // command.
-// 1125   }
-// 1126 
-// 1127   return ( TRUE );
-// 1128 }
-// 1129 #endif // ZCL_WRITE
-// 1130 
-// 1131 #ifdef ZCL_REPORT
-// 1132 /*********************************************************************
-// 1133  * @fn      zclSampleTemperatureSensor_ProcessInReportCmd
-// 1134  *
-// 1135  * @brief   Process the "Profile" Report Command
-// 1136  *
-// 1137  * @param   pInMsg - incoming message to process
-// 1138  *
-// 1139  * @return  none
-// 1140  */
+// 1093 #ifdef ZCL_WRITE
+// 1094 /*********************************************************************
+// 1095  * @fn      zclSampleTemperatureSensor_ProcessInWriteRspCmd
+// 1096  *
+// 1097  * @brief   Process the "Profile" Write Response Command
+// 1098  *
+// 1099  * @param   pInMsg - incoming message to process
+// 1100  *
+// 1101  * @return  none
+// 1102  */
+// 1103 static uint8 zclSampleTemperatureSensor_ProcessInWriteRspCmd( zclIncomingMsg_t *pInMsg )
+// 1104 {
+// 1105   zclWriteRspCmd_t *writeRspCmd;
+// 1106   uint8 i;
+// 1107 
+// 1108   writeRspCmd = (zclWriteRspCmd_t *)pInMsg->attrCmd;
+// 1109   for ( i = 0; i < writeRspCmd->numAttr; i++ )
+// 1110   {
+// 1111     // Notify the device of the results of the its original write attributes
+// 1112     // command.
+// 1113   }
+// 1114 
+// 1115   return ( TRUE );
+// 1116 }
+// 1117 #endif // ZCL_WRITE
+// 1118 
+// 1119 #ifdef ZCL_REPORT
+// 1120 /*********************************************************************
+// 1121  * @fn      zclSampleTemperatureSensor_ProcessInReportCmd
+// 1122  *
+// 1123  * @brief   Process the "Profile" Report Command
+// 1124  *
+// 1125  * @param   pInMsg - incoming message to process
+// 1126  *
+// 1127  * @return  none
+// 1128  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-// 1141 static void zclSampleTemperatureSensor_ProcessInReportCmd( zclIncomingMsg_t *pInMsg )
+// 1129 static void zclSampleTemperatureSensor_ProcessInReportCmd( zclIncomingMsg_t *pInMsg )
 zclSampleTemperatureSensor_ProcessInReportCmd:
-          CFI Block cfiBlock40 Using cfiCommon0
+          CFI Block cfiBlock47 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_ProcessInReportCmd
         CODE
-// 1142 { 
+// 1130 { 
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintNum
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintNum
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintNum
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintNum
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintNum
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintString
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrintBuffer
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrint
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_SendString
+        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, HalUARTWrite
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_on
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_SendString
+        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_off
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_on
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_on
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_off
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_off
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, strstr
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, TURN_off
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
-        ARGFRAME IOVERLAY, 0, STATIC
-        ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_SendString
-        LOCFRAME ISTACK, 0, STACK
-        LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
-        LOCFRAME IOVERLAY, 0, STATIC
-        LOCFRAME DOVERLAY, 0, STATIC
-        ARGFRAME ISTACK, 0, STACK
-        ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         FUNCALL zclSampleTemperatureSensor_ProcessInReportCmd, UART_ZCmdPrint
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
-        LOCFRAME XSTACK, 38, STACK
+        LOCFRAME XSTACK, 40, STACK
         LOCFRAME IOVERLAY, 0, STATIC
         LOCFRAME DOVERLAY, 0, STATIC
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
-        ARGFRAME XSTACK, 38, STACK
+        ARGFRAME XSTACK, 40, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
         REQUIRE ?V0
@@ -5641,27 +5538,27 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
           CFI CFA_SP SP+0
           CFI CFA_XSP16 add(XSP16, 18)
         ; Saved register size: 18
-        ; Auto size: 20
-        MOV     A,#-0x14
+        ; Auto size: 22
+        MOV     A,#-0x16
         LCALL   ?ALLOC_XSTACK8
-          CFI CFA_XSP16 add(XSP16, 38)
+          CFI CFA_XSP16 add(XSP16, 40)
         MOV     A,R2
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-// 1143   zclReportCmd_t *pInReportCmd;	
-// 1144   pInReportCmd = (zclReportCmd_t *)pInMsg->attrCmd;
+// 1131   zclReportCmd_t *pInReportCmd;	
+// 1132   pInReportCmd = (zclReportCmd_t *)pInMsg->attrCmd;
         MOV     A,R6
         ADD     A,#0x17
         MOV     DPL,A
         CLR     A
         ADDC    A,R7
         MOV     DPH,A
-        LCALL   ??Subroutine15_0 & 0xFFFF
-// 1145 
-// 1146 	/******************************** FREE DATA *********************************/
-// 1147 	if ( pInReportCmd->attrList[0].attrID == ATTRID_FREE_DATA )
-??CrossCallReturnLabel_25:
+        LCALL   ??Subroutine16_0 & 0xFFFF
+// 1133 
+// 1134 	/******************************** FREE DATA *********************************/
+// 1135 	if ( pInReportCmd->attrList[0].attrID == ATTRID_FREE_DATA )
+??CrossCallReturnLabel_27:
         MOV     DPL,R0
         MOV     DPH,R1
         INC     DPTR
@@ -5696,23 +5593,23 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
 ??zclSampleTemperatureSensor_ProcessInReportCmd_1:
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_2 & 0xFFFF
-// 1148 	{
-// 1149 		uint8 i;
-// 1150 		uint8 tmp_Data[20];
-// 1151 				
-// 1152 		if (FLAG_ECHO_RDATA)
+// 1136 	{
+// 1137 		uint8 i;
+// 1138 		uint8 tmp_Data[20];
+// 1139 				
+// 1140 		if (FLAG_ECHO_RDATA)
         MOV     DPTR,#FLAG_ECHO_RDATA
         MOVX    A,@DPTR
         JNZ     $+5
         LJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_3 & 0xFFFF
-// 1153 		{
-// 1154 			UART_ZCmdPrintString(HAL_UART_PORT_0, "@ZBR:");
+// 1141 		{
+// 1142 			UART_ZCmdPrintString(HAL_UART_PORT_0, "@ZBR:");
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,#`?<Constant "@ZBR:">` & 0xff
         MOV     R3,#(`?<Constant "@ZBR:">` >> 8) & 0xff
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1155 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, msg_RSSI);																// RSSI
+// 1143 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, msg_RSSI);																// RSSI
         ; Setup parameters for call to function UART_ZCmdPrintNum
         MOV     DPTR,#msg_RSSI
         MOVX    A,@DPTR
@@ -5724,7 +5621,7 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R5,A
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-// 1156 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
+// 1144 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
         MOV     ?V0,#`?<Constant ";">` & 0xff
         MOV     ?V1,#(`?<Constant ";">` >> 8) & 0xff
         ; Setup parameters for call to function UART_ZCmdPrintString
@@ -5732,7 +5629,7 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R3,?V1
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1157 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.addr.shortAddr);					// shortAddr
+// 1145 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.addr.shortAddr);					// shortAddr
         ; Setup parameters for call to function UART_ZCmdPrintNum
         MOV     DPL,R6
         MOV     DPH,R7
@@ -5757,13 +5654,13 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-// 1158 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
+// 1146 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,?V0
         MOV     R3,?V1
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1159 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.endPoint);								// endPoint
+// 1147 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.endPoint);								// endPoint
         ; Setup parameters for call to function UART_ZCmdPrintNum
         MOV     A,R6
         ADD     A,#0x13
@@ -5779,13 +5676,13 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-// 1160 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
+// 1148 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,?V0
         MOV     R3,?V1
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1161 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrID); 				// coordShortAddr
+// 1149 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrID); 				// coordShortAddr
         ; Setup parameters for call to function UART_ZCmdPrintNum
         MOV     DPL,?V4
         MOV     DPH,?V5
@@ -5800,13 +5697,13 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-// 1162 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";"); 
+// 1150 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";"); 
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,?V0
         MOV     R3,?V1
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1163 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[0]); 	// data size
+// 1151 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[0]); 	// data size
         ; Setup parameters for call to function UART_ZCmdPrintNum
         LCALL   ?Subroutine7 & 0xFFFF
 ??CrossCallReturnLabel_8:
@@ -5817,25 +5714,27 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-// 1164 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
+// 1152 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,?V0
         MOV     R3,?V1
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-// 1165 			
-// 1166 			// eliminate DUMMY byte index[0]
-// 1167 			for (i = 1; i <= pInReportCmd->attrList[1].attrData[0]; i++)
+// 1153 			
+// 1154 			// eliminate DUMMY byte index[0]
+// 1155 			for (i = 1; i <= pInReportCmd->attrList[1].attrData[0]; i++)
         MOV     R2,#0x1
         SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_4
-// 1168 			{
-// 1169 				tmp_Data[i-1] = pInReportCmd->attrList[0].attrData[i];
+// 1156 			{
+// 1157 				tmp_Data[i-1] = pInReportCmd->attrList[0].attrData[i];
 ??zclSampleTemperatureSensor_ProcessInReportCmd_5:
         LCALL   ?Subroutine8 & 0xFFFF
-// 1170 			}
+// 1158 			}
 ??CrossCallReturnLabel_11:
         PUSH    A
           CFI CFA_SP SP+-1
+        MOV     A,#0x2
+        LCALL   ?XSTACK_DISP0_8
         LCALL   ?Subroutine11 & 0xFFFF
 ??CrossCallReturnLabel_15:
         POP     A
@@ -5849,24 +5748,24 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         CLR     C
         SUBB    A,R2
         JNC     ??zclSampleTemperatureSensor_ProcessInReportCmd_5
-// 1171 			UART_ZCmdPrintBuffer(HAL_UART_PORT_0, tmp_Data, pInReportCmd->attrList[1].attrData[0]); 	// Free Data
+// 1159 			UART_ZCmdPrintBuffer(HAL_UART_PORT_0, tmp_Data, pInReportCmd->attrList[1].attrData[0]); 	// Free Data
         ; Setup parameters for call to function UART_ZCmdPrintBuffer
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
+        MOV     A,#0x2
+        LCALL   ?XSTACK_DISP101_8
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintBuffer::?relay`; Banked call to: UART_ZCmdPrintBuffer
-// 1172 			UART_ZCmdPrint			(HAL_UART_PORT_0, "!");
+// 1160 			UART_ZCmdPrint			(HAL_UART_PORT_0, "!");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "!">` & 0xff
         MOV     R3,#(`?<Constant "!">` >> 8) & 0xff
         LJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_6 & 0xFFFF
-// 1173 		}
-// 1174 		return;
-// 1175 	}
-// 1176 
-// 1177 	if (pInReportCmd->attrList[0].attrID == ATTRID_CONTROL_DATA)
+// 1161 		}
+// 1162 		return;
+// 1163 	}
+// 1164 
+// 1165 	if (pInReportCmd->attrList[0].attrID == ATTRID_CONTROL_S)
 ??zclSampleTemperatureSensor_ProcessInReportCmd_2:
-        MOV     A,#0x7
+        MOV     A,#0x8
         XRL     A,R2
         JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_7
         MOV     A,#-0x60
@@ -5874,20 +5773,23 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
 ??zclSampleTemperatureSensor_ProcessInReportCmd_7:
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_8 & 0xFFFF
-// 1178 	{
-// 1179 		uint8 i;
-// 1180 		char tmp_Data[20];
-// 1181 		for (i = 1; i <= pInReportCmd->attrList[1].attrData[0]; i++)
+// 1166 	{
+// 1167 		uint8 i;
+// 1168 		char status[2];
+// 1169 		char tmp_Data[20];
+// 1170 		for (i = 1; i <= pInReportCmd->attrList[1].attrData[0]; i++)
         MOV     R2,#0x1
         SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_9
-// 1182 		{
-// 1183 			tmp_Data[i-1] = pInReportCmd->attrList[0].attrData[i];
+// 1171 		{
+// 1172 			tmp_Data[i-1] = pInReportCmd->attrList[0].attrData[i];
 ??zclSampleTemperatureSensor_ProcessInReportCmd_10:
         LCALL   ?Subroutine8 & 0xFFFF
-// 1184 		}
+// 1173 		}
 ??CrossCallReturnLabel_12:
         PUSH    A
           CFI CFA_SP SP+-1
+        MOV     A,#0x2
+        LCALL   ?XSTACK_DISP0_8
         LCALL   ?Subroutine11 & 0xFFFF
 ??CrossCallReturnLabel_16:
         POP     A
@@ -5900,148 +5802,103 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         CLR     C
         SUBB    A,R2
         JNC     ??zclSampleTemperatureSensor_ProcessInReportCmd_10
-// 1185 		UART_SendString(HAL_UART_PORT_0,tmp_Data);
-        ; Setup parameters for call to function UART_SendString
+// 1174 		status[0] = tmp_Data[17];
+        MOV     A,#0x13
+        LCALL   ?XSTACK_DISP0_8
+        MOVX    A,@DPTR
+        MOV     DPL,?XSP + 0
+        MOV     DPH,?XSP + 1
+        MOVX    @DPTR,A
+// 1175 		status[1] = tmp_Data[18];
+        MOV     A,#0x14
+        LCALL   ?XSTACK_DISP0_8
+        MOVX    A,@DPTR
+        PUSH    A
+          CFI CFA_SP SP+-1
+        MOV     A,#0x1
+        LCALL   ?XSTACK_DISP0_8
+        POP     A
+          CFI CFA_SP SP+0
+        MOVX    @DPTR,A
+// 1176 		HalUARTWrite(HAL_UART_PORT_0,status,1);
+        ; Setup parameters for call to function HalUARTWrite
+        MOV     R4,#0x1
+        MOV     R5,#0x0
         MOV     R2,?XSP + 0
         MOV     R3,?XSP + 1
         MOV     R1,#0x0
-        LCALL   `??UART_SendString::?relay`; Banked call to: UART_SendString
-// 1186 		if (strstr(tmp_Data,"R2;OUT3;1"))
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT3;1">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT3;1">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_11
-// 1187 		{
-// 1188 			TURN_on(Output_1);
+        LCALL   `??HalUARTWrite::?relay`; Banked call to: HalUARTWrite
+// 1177 		if(status[0] == '1' && status[1] == '1' )
+        MOV     DPL,?XSP + 0
+        MOV     DPH,?XSP + 1
+        MOVX    A,@DPTR
+        XRL     A,#0x31
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_11
+        MOV     A,#0x1
+        LCALL   ?XSTACK_DISP0_8
+        MOVX    A,@DPTR
+        MOV     R0,A
+        MOV     A,#0x31
+        XRL     A,R0
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_12
+// 1178 		{
+// 1179 			TURN_on(Output_2);
         ; Setup parameters for call to function TURN_on
-        MOV     R1,#0x1
-??zclSampleTemperatureSensor_ProcessInReportCmd_12:
+        MOV     R1,#0x2
         LCALL   `??TURN_on::?relay`  ; Banked call to: TURN_on
-// 1189 		}
-// 1190 		else if (strstr(tmp_Data,"R2;OUT1;1"))
-// 1191 		{
-// 1192 			TURN_on(Output_2);
-// 1193 		}
-// 1194 		else if (strstr(tmp_Data,"R2;OUT2;1"))
-// 1195 		{
-// 1196 			TURN_on(Output_3);
-// 1197 		}
-// 1198 		else if (strstr(tmp_Data,"R2;OUT3;0"))
-// 1199 		{
-// 1200 			TURN_off(Output_1);
-// 1201 		}
-// 1202 		else if (strstr(tmp_Data,"R2;OUT1;0"))
-// 1203 		{
-// 1204 			TURN_off(Output_2);
-// 1205 		}
-// 1206 		else if (strstr(tmp_Data,"R2;OUT2;0"))
-// 1207 		{
-// 1208 			TURN_off(Output_3);
-// 1209 		}
-// 1210 		else
-// 1211 		{
-// 1212 			UART_SendString(HAL_UART_PORT_0,"ERROR!");
-// 1213 			return;
-// 1214 		}
-// 1215 		UART_SendString(HAL_UART_PORT_0,"Done!");
-??zclSampleTemperatureSensor_ProcessInReportCmd_13:
-        ; Setup parameters for call to function UART_SendString
-        MOV     R2,#`?<Constant "Done!">` & 0xff
-        MOV     R3,#(`?<Constant "Done!">` >> 8) & 0xff
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_14
-??zclSampleTemperatureSensor_ProcessInReportCmd_11:
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT1;1">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT1;1">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_15
-        ; Setup parameters for call to function TURN_on
-        MOV     R1,#0x2
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_12
-??zclSampleTemperatureSensor_ProcessInReportCmd_15:
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT2;1">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT2;1">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_16
-        ; Setup parameters for call to function TURN_on
-        MOV     R1,#0x3
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_12
-??zclSampleTemperatureSensor_ProcessInReportCmd_16:
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT3;0">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT3;0">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_17
+        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_11
+// 1180 		}
+??zclSampleTemperatureSensor_ProcessInReportCmd_12:
+        MOV     A,#0x30
+        XRL     A,R0
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_3
+// 1181 		else if (status[0] == '1' && status[1] == '0')
+// 1182 		{
+// 1183 			TURN_off(Output_2);
         ; Setup parameters for call to function TURN_off
-        MOV     R1,#0x1
-??zclSampleTemperatureSensor_ProcessInReportCmd_18:
+        MOV     R1,#0x2
         LCALL   `??TURN_off::?relay` ; Banked call to: TURN_off
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_13
-??zclSampleTemperatureSensor_ProcessInReportCmd_17:
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT1;0">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT1;0">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_19
-        ; Setup parameters for call to function TURN_off
-        MOV     R1,#0x2
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_18
-??zclSampleTemperatureSensor_ProcessInReportCmd_19:
-        ; Setup parameters for call to function strstr
-        MOV     R4,#`?<Constant "R2;OUT2;0">` & 0xff
-        MOV     R5,#(`?<Constant "R2;OUT2;0">` >> 8) & 0xff
-        MOV     R2,?XSP + 0
-        MOV     R3,?XSP + 1
-        LCALL   `??strstr::?relay`   ; Banked call to: strstr
-        MOV     ?V1,R3
-        MOV     A,R2
-        ORL     A,?V1
-        JZ      ??zclSampleTemperatureSensor_ProcessInReportCmd_20
+// 1184 		}
+// 1185 		if(status[0] == '2' && status[1] == '1' )
+??zclSampleTemperatureSensor_ProcessInReportCmd_11:
+        MOV     DPL,?XSP + 0
+        MOV     DPH,?XSP + 1
+        MOVX    A,@DPTR
+        XRL     A,#0x32
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_3
+        MOV     A,#0x1
+        LCALL   ?XSTACK_DISP0_8
+        MOVX    A,@DPTR
+        MOV     R0,A
+        MOV     A,#0x31
+        XRL     A,R0
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_13
+// 1186 		{
+// 1187 			TURN_on(Output_3);
+        ; Setup parameters for call to function TURN_on
+        MOV     R1,#0x3
+        LCALL   `??TURN_on::?relay`  ; Banked call to: TURN_on
+        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_3
+// 1188 		}
+??zclSampleTemperatureSensor_ProcessInReportCmd_13:
+        MOV     A,#0x30
+        XRL     A,R0
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_3
+// 1189 		else if (status[0] == '2' && status[1] == '0')
+// 1190 		{
+// 1191 			TURN_off(Output_3);
         ; Setup parameters for call to function TURN_off
         MOV     R1,#0x3
-        SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_18
-??zclSampleTemperatureSensor_ProcessInReportCmd_20:
-        ; Setup parameters for call to function UART_SendString
-        MOV     R2,#`?<Constant "ERROR!">` & 0xff
-        MOV     R3,#(`?<Constant "ERROR!">` >> 8) & 0xff
-??zclSampleTemperatureSensor_ProcessInReportCmd_14:
-        MOV     R1,#0x0
-        LCALL   `??UART_SendString::?relay`; Banked call to: UART_SendString
+        LCALL   `??TURN_off::?relay` ; Banked call to: TURN_off
+// 1192 		}		
+// 1193 		return;
         SJMP    ??zclSampleTemperatureSensor_ProcessInReportCmd_3
-// 1216 		return;
-// 1217 		
-// 1218 	}
-// 1219 	/*************************** THERMOSTAT DEMAND ******************************/
-// 1220 	if ( ( pInReportCmd->attrList[0].attrID == 0x0008 ) &&
-// 1221        ( pInReportCmd->attrList[1].attrID == 0x0007 ) &&
-// 1222        ( pInReportCmd->attrList[2].attrID == 0x0029	) )
+// 1194 		
+// 1195 	}
+// 1196 	/*************************** THERMOSTAT DEMAND ******************************/
+// 1197 	if ( ( pInReportCmd->attrList[0].attrID == 0x0008 ) &&
+// 1198        ( pInReportCmd->attrList[1].attrID == 0x0007 ) &&
+// 1199        ( pInReportCmd->attrList[2].attrID == 0x0029	) )
 ??zclSampleTemperatureSensor_ProcessInReportCmd_8:
         MOV     A,#0x8
         XRL     A,R2
@@ -6051,10 +5908,10 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     DPH,?V5
         MOVX    A,@DPTR
         XRL     A,#0x7
-        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_21
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_14
         INC     DPTR
         MOVX    A,@DPTR
-??zclSampleTemperatureSensor_ProcessInReportCmd_21:
+??zclSampleTemperatureSensor_ProcessInReportCmd_14:
         JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_3
         MOV     A,R0
         ADD     A,#0xb
@@ -6064,33 +5921,33 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     DPH,A
         MOVX    A,@DPTR
         XRL     A,#0x29
-        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_22
+        JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_15
         INC     DPTR
         MOVX    A,@DPTR
-??zclSampleTemperatureSensor_ProcessInReportCmd_22:
+??zclSampleTemperatureSensor_ProcessInReportCmd_15:
         JNZ     ??zclSampleTemperatureSensor_ProcessInReportCmd_3
-// 1223 	{
-// 1224   	UART_ZCmdPrint(HAL_UART_PORT_0, "ATTRID_HVAC_THERMOSTAT");
+// 1200 	{
+// 1201   	UART_ZCmdPrint(HAL_UART_PORT_0, "ATTRID_HVAC_THERMOSTAT");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "ATTRID_HVAC_THERMOSTAT">` & 0xff
         MOV     R3,#(`?<Constant "ATTRID_HVAC_THERMOSTAT">` >> 8) & 0xff
 ??zclSampleTemperatureSensor_ProcessInReportCmd_6:
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrint::?relay`; Banked call to: UART_ZCmdPrint
-// 1225 	}
-// 1226 	
-// 1227 }
+// 1202 	}
+// 1203 	
+// 1204 }
 ??zclSampleTemperatureSensor_ProcessInReportCmd_3:
-        MOV     A,#0x14
+        MOV     A,#0x16
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 18)
         MOV     R7,#0xa
         LJMP    ?BANKED_LEAVE_XDATA
-          CFI EndBlock cfiBlock40
+          CFI EndBlock cfiBlock47
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
 ?Subroutine11:
-          CFI Block cfiCond41 Using cfiCommon0
+          CFI Block cfiCond48 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_ProcessInReportCmd
           CFI Conditional ??CrossCallReturnLabel_15
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
@@ -6111,115 +5968,10 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
           CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
           CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiCond42 Using cfiCommon0
-          CFI (cfiCond42) Function zclSampleTemperatureSensor_ProcessInReportCmd
-          CFI (cfiCond42) Conditional ??CrossCallReturnLabel_16
-          CFI (cfiCond42) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
-          CFI (cfiCond42) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
-          CFI (cfiCond42) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
-          CFI (cfiCond42) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
-          CFI (cfiCond42) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI (cfiCond42) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI (cfiCond42) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond42) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond42) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond42) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond42) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond42) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond42) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond42) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond42) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond42) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond42) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond42) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond42) CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiPicker43 Using cfiCommon1
-          CFI (cfiPicker43) NoFunction
-          CFI (cfiPicker43) Picker
-        MOV     DPL,?XSP + 0
-        MOV     DPH,?XSP + 1
-        MOV     A,DPL
-        ADD     A,R0
-        MOV     R0,A
-        CLR     A
-        ADDC    A,DPH
-        MOV     R1,A
-        MOV     A,R0
-        ADD     A,#-0x1
-        MOV     DPL,A
-        MOV     A,R1
-        ADDC    A,#-0x1
-        MOV     DPH,A
-        RET
-          CFI EndBlock cfiCond41
-          CFI EndBlock cfiCond42
-          CFI EndBlock cfiPicker43
-
-        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-?Subroutine10:
-          CFI Block cfiCond44 Using cfiCommon0
-          CFI Function zclSampleTemperatureSensor_event_loop
-          CFI Conditional ??CrossCallReturnLabel_26
-          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI V4 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI V5 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI CFA_SP SP+-2
-          CFI CFA_XSP16 add(XSP16, 16)
-          CFI Block cfiCond45 Using cfiCommon0
-          CFI (cfiCond45) Function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
-          CFI (cfiCond45) Conditional ??CrossCallReturnLabel_27
-          CFI (cfiCond45) DPL0 Frame(CFA_SP, 4)
-          CFI (cfiCond45) DPH0 Frame(CFA_SP, 5)
-          CFI (cfiCond45) CFA_SP SP+-7
-          CFI Block cfiPicker46 Using cfiCommon1
-          CFI (cfiPicker46) NoFunction
-          CFI (cfiPicker46) Picker
-        MOV     DPTR,#zclSampleTemperatureSensor_IdentifyTime
-          CFI EndBlock cfiCond44
-          CFI EndBlock cfiCond45
-          CFI EndBlock cfiPicker46
-        REQUIRE ??Subroutine15_0
-        ; // Fall through to label ??Subroutine15_0
-
-        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-??Subroutine15_0:
-          CFI Block cfiCond47 Using cfiCommon0
-          CFI Function zclSampleTemperatureSensor_LcdDisplayMainMode
-          CFI Conditional ??CrossCallReturnLabel_23
-          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI CFA_SP SP+-2
-          CFI CFA_XSP16 add(XSP16, 29)
-          CFI Block cfiCond48 Using cfiCommon0
-          CFI (cfiCond48) Function zclSampleTemperatureSensor_IdentifyCB
-          CFI (cfiCond48) Conditional ??CrossCallReturnLabel_24
-          CFI (cfiCond48) DPL0 Frame(CFA_SP, 4)
-          CFI (cfiCond48) DPH0 Frame(CFA_SP, 5)
-          CFI (cfiCond48) CFA_SP SP+-7
+          CFI CFA_XSP16 add(XSP16, 40)
           CFI Block cfiCond49 Using cfiCommon0
           CFI (cfiCond49) Function zclSampleTemperatureSensor_ProcessInReportCmd
-          CFI (cfiCond49) Conditional ??CrossCallReturnLabel_25
+          CFI (cfiCond49) Conditional ??CrossCallReturnLabel_16
           CFI (cfiCond49) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
           CFI (cfiCond49) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
           CFI (cfiCond49) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
@@ -6238,52 +5990,155 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
           CFI (cfiCond49) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
           CFI (cfiCond49) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI (cfiCond49) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond49) CFA_SP SP+-2
-          CFI (cfiCond49) CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiCond50 Using cfiCommon0
-          CFI (cfiCond50) Function zclSampleTemperatureSensor_event_loop
-          CFI (cfiCond50) Conditional ??CrossCallReturnLabel_26
-          CFI (cfiCond50) R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI (cfiCond50) VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI (cfiCond50) V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond50) V1 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond50) V2 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond50) V3 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond50) V4 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond50) V5 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond50) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond50) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond50) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond50) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond50) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond50) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond50) CFA_SP SP+-2
-          CFI (cfiCond50) CFA_XSP16 add(XSP16, 16)
+          CFI (cfiCond49) CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiPicker50 Using cfiCommon1
+          CFI (cfiPicker50) NoFunction
+          CFI (cfiPicker50) Picker
+        MOV     A,DPL
+        ADD     A,R0
+        MOV     R0,A
+        CLR     A
+        ADDC    A,DPH
+        MOV     R1,A
+        MOV     A,R0
+        ADD     A,#-0x1
+        MOV     DPL,A
+        MOV     A,R1
+        ADDC    A,#-0x1
+        MOV     DPH,A
+        RET
+          CFI EndBlock cfiCond48
+          CFI EndBlock cfiCond49
+          CFI EndBlock cfiPicker50
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+?Subroutine10:
           CFI Block cfiCond51 Using cfiCommon0
-          CFI (cfiCond51) Function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
-          CFI (cfiCond51) Conditional ??CrossCallReturnLabel_27
-          CFI (cfiCond51) DPL0 Frame(CFA_SP, 4)
-          CFI (cfiCond51) DPH0 Frame(CFA_SP, 5)
-          CFI (cfiCond51) CFA_SP SP+-7
-          CFI Block cfiPicker52 Using cfiCommon1
-          CFI (cfiPicker52) NoFunction
-          CFI (cfiPicker52) Picker
+          CFI Function zclSampleTemperatureSensor_event_loop
+          CFI Conditional ??CrossCallReturnLabel_28
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI V3 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI V4 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V5 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI CFA_SP SP+-2
+          CFI CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond52 Using cfiCommon0
+          CFI (cfiCond52) Function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
+          CFI (cfiCond52) Conditional ??CrossCallReturnLabel_29
+          CFI (cfiCond52) DPL0 Frame(CFA_SP, 4)
+          CFI (cfiCond52) DPH0 Frame(CFA_SP, 5)
+          CFI (cfiCond52) CFA_SP SP+-7
+          CFI Block cfiPicker53 Using cfiCommon1
+          CFI (cfiPicker53) NoFunction
+          CFI (cfiPicker53) Picker
+        MOV     DPTR,#zclSampleTemperatureSensor_IdentifyTime
+          CFI EndBlock cfiCond51
+          CFI EndBlock cfiCond52
+          CFI EndBlock cfiPicker53
+        REQUIRE ??Subroutine16_0
+        ; // Fall through to label ??Subroutine16_0
+
+        RSEG BANKED_CODE:HUGECODE:NOROOT(0)
+??Subroutine16_0:
+          CFI Block cfiCond54 Using cfiCommon0
+          CFI Function zclSampleTemperatureSensor_LcdDisplayMainMode
+          CFI Conditional ??CrossCallReturnLabel_25
+          CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI VB load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI V1 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI V2 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI CFA_SP SP+-2
+          CFI CFA_XSP16 add(XSP16, 29)
+          CFI Block cfiCond55 Using cfiCommon0
+          CFI (cfiCond55) Function zclSampleTemperatureSensor_IdentifyCB
+          CFI (cfiCond55) Conditional ??CrossCallReturnLabel_26
+          CFI (cfiCond55) DPL0 Frame(CFA_SP, 4)
+          CFI (cfiCond55) DPH0 Frame(CFA_SP, 5)
+          CFI (cfiCond55) CFA_SP SP+-7
+          CFI Block cfiCond56 Using cfiCommon0
+          CFI (cfiCond56) Function zclSampleTemperatureSensor_ProcessInReportCmd
+          CFI (cfiCond56) Conditional ??CrossCallReturnLabel_27
+          CFI (cfiCond56) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
+          CFI (cfiCond56) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
+          CFI (cfiCond56) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
+          CFI (cfiCond56) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
+          CFI (cfiCond56) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI (cfiCond56) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI (cfiCond56) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond56) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond56) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond56) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond56) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond56) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond56) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond56) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond56) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond56) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond56) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond56) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond56) CFA_SP SP+-2
+          CFI (cfiCond56) CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiCond57 Using cfiCommon0
+          CFI (cfiCond57) Function zclSampleTemperatureSensor_event_loop
+          CFI (cfiCond57) Conditional ??CrossCallReturnLabel_28
+          CFI (cfiCond57) R6 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI (cfiCond57) VB load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI (cfiCond57) V0 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond57) V1 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond57) V2 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond57) V3 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond57) V4 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond57) V5 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond57) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond57) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond57) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond57) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond57) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond57) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond57) CFA_SP SP+-2
+          CFI (cfiCond57) CFA_XSP16 add(XSP16, 16)
+          CFI Block cfiCond58 Using cfiCommon0
+          CFI (cfiCond58) Function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
+          CFI (cfiCond58) Conditional ??CrossCallReturnLabel_29
+          CFI (cfiCond58) DPL0 Frame(CFA_SP, 4)
+          CFI (cfiCond58) DPH0 Frame(CFA_SP, 5)
+          CFI (cfiCond58) CFA_SP SP+-7
+          CFI Block cfiPicker59 Using cfiCommon1
+          CFI (cfiPicker59) NoFunction
+          CFI (cfiPicker59) Picker
         MOVX    A,@DPTR
         MOV     R0,A
         INC     DPTR
         MOVX    A,@DPTR
         MOV     R1,A
         RET
-          CFI EndBlock cfiCond47
-          CFI EndBlock cfiCond48
-          CFI EndBlock cfiCond49
-          CFI EndBlock cfiCond50
-          CFI EndBlock cfiCond51
-          CFI EndBlock cfiPicker52
+          CFI EndBlock cfiCond54
+          CFI EndBlock cfiCond55
+          CFI EndBlock cfiCond56
+          CFI EndBlock cfiCond57
+          CFI EndBlock cfiCond58
+          CFI EndBlock cfiPicker59
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
 ?Subroutine8:
-          CFI Block cfiCond53 Using cfiCommon0
+          CFI Block cfiCond60 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_ProcessInReportCmd
           CFI Conditional ??CrossCallReturnLabel_11
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
@@ -6305,33 +6160,33 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
           CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-2
-          CFI CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiCond54 Using cfiCommon0
-          CFI (cfiCond54) Function zclSampleTemperatureSensor_ProcessInReportCmd
-          CFI (cfiCond54) Conditional ??CrossCallReturnLabel_12
-          CFI (cfiCond54) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
-          CFI (cfiCond54) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
-          CFI (cfiCond54) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
-          CFI (cfiCond54) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
-          CFI (cfiCond54) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI (cfiCond54) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI (cfiCond54) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond54) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond54) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond54) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond54) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond54) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond54) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond54) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond54) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond54) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond54) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond54) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond54) CFA_SP SP+-2
-          CFI (cfiCond54) CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiPicker55 Using cfiCommon1
-          CFI (cfiPicker55) NoFunction
-          CFI (cfiPicker55) Picker
+          CFI CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiCond61 Using cfiCommon0
+          CFI (cfiCond61) Function zclSampleTemperatureSensor_ProcessInReportCmd
+          CFI (cfiCond61) Conditional ??CrossCallReturnLabel_12
+          CFI (cfiCond61) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
+          CFI (cfiCond61) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
+          CFI (cfiCond61) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
+          CFI (cfiCond61) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
+          CFI (cfiCond61) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI (cfiCond61) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI (cfiCond61) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond61) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond61) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond61) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond61) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond61) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond61) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond61) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond61) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond61) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond61) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond61) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond61) CFA_SP SP+-2
+          CFI (cfiCond61) CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiPicker62 Using cfiCommon1
+          CFI (cfiPicker62) NoFunction
+          CFI (cfiPicker62) Picker
         MOV     A,R2
         MOV     R0,A
         MOV     DPL,?V6
@@ -6346,13 +6201,13 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     DPH,A
         MOVX    A,@DPTR
         RET
-          CFI EndBlock cfiCond53
-          CFI EndBlock cfiCond54
-          CFI EndBlock cfiPicker55
+          CFI EndBlock cfiCond60
+          CFI EndBlock cfiCond61
+          CFI EndBlock cfiPicker62
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
 ?Subroutine7:
-          CFI Block cfiCond56 Using cfiCommon0
+          CFI Block cfiCond63 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_ProcessInReportCmd
           CFI Conditional ??CrossCallReturnLabel_8
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
@@ -6374,56 +6229,56 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
           CFI DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-2
-          CFI CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiCond57 Using cfiCommon0
-          CFI (cfiCond57) Function zclSampleTemperatureSensor_ProcessInReportCmd
-          CFI (cfiCond57) Conditional ??CrossCallReturnLabel_9
-          CFI (cfiCond57) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
-          CFI (cfiCond57) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
-          CFI (cfiCond57) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
-          CFI (cfiCond57) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
-          CFI (cfiCond57) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI (cfiCond57) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI (cfiCond57) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond57) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond57) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond57) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond57) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond57) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond57) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond57) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond57) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond57) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond57) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond57) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond57) CFA_SP SP+-2
-          CFI (cfiCond57) CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiCond58 Using cfiCommon0
-          CFI (cfiCond58) Function zclSampleTemperatureSensor_ProcessInReportCmd
-          CFI (cfiCond58) Conditional ??CrossCallReturnLabel_10
-          CFI (cfiCond58) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
-          CFI (cfiCond58) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
-          CFI (cfiCond58) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
-          CFI (cfiCond58) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
-          CFI (cfiCond58) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
-          CFI (cfiCond58) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
-          CFI (cfiCond58) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
-          CFI (cfiCond58) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
-          CFI (cfiCond58) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
-          CFI (cfiCond58) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
-          CFI (cfiCond58) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
-          CFI (cfiCond58) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
-          CFI (cfiCond58) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
-          CFI (cfiCond58) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
-          CFI (cfiCond58) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
-          CFI (cfiCond58) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
-          CFI (cfiCond58) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
-          CFI (cfiCond58) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
-          CFI (cfiCond58) CFA_SP SP+-2
-          CFI (cfiCond58) CFA_XSP16 add(XSP16, 38)
-          CFI Block cfiPicker59 Using cfiCommon1
-          CFI (cfiPicker59) NoFunction
-          CFI (cfiPicker59) Picker
+          CFI CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiCond64 Using cfiCommon0
+          CFI (cfiCond64) Function zclSampleTemperatureSensor_ProcessInReportCmd
+          CFI (cfiCond64) Conditional ??CrossCallReturnLabel_9
+          CFI (cfiCond64) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
+          CFI (cfiCond64) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
+          CFI (cfiCond64) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
+          CFI (cfiCond64) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
+          CFI (cfiCond64) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI (cfiCond64) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI (cfiCond64) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond64) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond64) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond64) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond64) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond64) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond64) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond64) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond64) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond64) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond64) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond64) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond64) CFA_SP SP+-2
+          CFI (cfiCond64) CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiCond65 Using cfiCommon0
+          CFI (cfiCond65) Function zclSampleTemperatureSensor_ProcessInReportCmd
+          CFI (cfiCond65) Conditional ??CrossCallReturnLabel_10
+          CFI (cfiCond65) R6 load(1, XDATA, add(CFA_XSP16, literal(-18)))
+          CFI (cfiCond65) VB load(1, XDATA, add(CFA_XSP16, literal(-17)))
+          CFI (cfiCond65) V0 load(1, XDATA, add(CFA_XSP16, literal(-16)))
+          CFI (cfiCond65) V1 load(1, XDATA, add(CFA_XSP16, literal(-15)))
+          CFI (cfiCond65) V2 load(1, XDATA, add(CFA_XSP16, literal(-14)))
+          CFI (cfiCond65) V3 load(1, XDATA, add(CFA_XSP16, literal(-13)))
+          CFI (cfiCond65) V4 load(1, XDATA, add(CFA_XSP16, literal(-12)))
+          CFI (cfiCond65) V5 load(1, XDATA, add(CFA_XSP16, literal(-11)))
+          CFI (cfiCond65) V6 load(1, XDATA, add(CFA_XSP16, literal(-10)))
+          CFI (cfiCond65) V7 load(1, XDATA, add(CFA_XSP16, literal(-9)))
+          CFI (cfiCond65) V8 load(1, XDATA, add(CFA_XSP16, literal(-8)))
+          CFI (cfiCond65) V9 load(1, XDATA, add(CFA_XSP16, literal(-7)))
+          CFI (cfiCond65) R7 load(1, XDATA, add(CFA_XSP16, literal(-6)))
+          CFI (cfiCond65) ?RET_LOW load(1, XDATA, add(CFA_XSP16, literal(-5)))
+          CFI (cfiCond65) ?RET_HIGH load(1, XDATA, add(CFA_XSP16, literal(-4)))
+          CFI (cfiCond65) ?BRET_EXT load(1, XDATA, add(CFA_XSP16, literal(-3)))
+          CFI (cfiCond65) DPL0 load(1, XDATA, add(CFA_XSP16, literal(-2)))
+          CFI (cfiCond65) DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
+          CFI (cfiCond65) CFA_SP SP+-2
+          CFI (cfiCond65) CFA_XSP16 add(XSP16, 40)
+          CFI Block cfiPicker66 Using cfiCommon1
+          CFI (cfiPicker66) NoFunction
+          CFI (cfiPicker66) Picker
         MOV     DPL,?V2
         MOV     DPH,?V3
         MOVX    A,@DPTR
@@ -6434,48 +6289,71 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
         MOV     DPL,R0
         MOVX    A,@DPTR
         RET
-          CFI EndBlock cfiCond56
-          CFI EndBlock cfiCond57
-          CFI EndBlock cfiCond58
-          CFI EndBlock cfiPicker59
-// 1228 #endif  // ZCL_REPORT
-// 1229 
-// 1230 /*********************************************************************
-// 1231  * @fn      zclSampleTemperatureSensor_ProcessInDefaultRspCmd
-// 1232  *
-// 1233  * @brief   Process the "Profile" Default Response Command
-// 1234  *
-// 1235  * @param   pInMsg - incoming message to process
-// 1236  *
-// 1237  * @return  none
-// 1238  */
-// 1239 static uint8 zclSampleTemperatureSensor_ProcessInDefaultRspCmd( zclIncomingMsg_t *pInMsg )
-// 1240 {
-// 1241   // zclDefaultRspCmd_t *defaultRspCmd = (zclDefaultRspCmd_t *)pInMsg->attrCmd;
-// 1242 
-// 1243   // Device is notified of the Default Response command.
-// 1244   (void)pInMsg;
-// 1245 
-// 1246   return ( TRUE );
-// 1247 }
-// 1248 
-// 1249 #ifdef ZCL_DISCOVER
+          CFI EndBlock cfiCond63
+          CFI EndBlock cfiCond64
+          CFI EndBlock cfiCond65
+          CFI EndBlock cfiPicker66
+// 1205 #endif  // ZCL_REPORT
+// 1206 
+// 1207 /*********************************************************************
+// 1208  * @fn      zclSampleTemperatureSensor_ProcessInDefaultRspCmd
+// 1209  *
+// 1210  * @brief   Process the "Profile" Default Response Command
+// 1211  *
+// 1212  * @param   pInMsg - incoming message to process
+// 1213  *
+// 1214  * @return  none
+// 1215  */
+// 1216 static uint8 zclSampleTemperatureSensor_ProcessInDefaultRspCmd( zclIncomingMsg_t *pInMsg )
+// 1217 {
+// 1218   // zclDefaultRspCmd_t *defaultRspCmd = (zclDefaultRspCmd_t *)pInMsg->attrCmd;
+// 1219 
+// 1220   // Device is notified of the Default Response command.
+// 1221   (void)pInMsg;
+// 1222 
+// 1223   return ( TRUE );
+// 1224 }
+// 1225 
+// 1226 #ifdef ZCL_DISCOVER
+// 1227 /*********************************************************************
+// 1228  * @fn      zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd
+// 1229  *
+// 1230  * @brief   Process the Discover Commands Response Command
+// 1231  *
+// 1232  * @param   pInMsg - incoming message to process
+// 1233  *
+// 1234  * @return  none
+// 1235  */
+// 1236 static uint8 zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( zclIncomingMsg_t *pInMsg )
+// 1237 {
+// 1238   zclDiscoverCmdsCmdRsp_t *discoverRspCmd;
+// 1239   uint8 i;
+// 1240 
+// 1241   discoverRspCmd = (zclDiscoverCmdsCmdRsp_t *)pInMsg->attrCmd;
+// 1242   for ( i = 0; i < discoverRspCmd->numCmd; i++ )
+// 1243   {
+// 1244     // Device is notified of the result of its attribute discovery command.
+// 1245   }
+// 1246 
+// 1247   return ( TRUE );
+// 1248 }
+// 1249 
 // 1250 /*********************************************************************
-// 1251  * @fn      zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd
+// 1251  * @fn      zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd
 // 1252  *
-// 1253  * @brief   Process the Discover Commands Response Command
+// 1253  * @brief   Process the "Profile" Discover Attributes Response Command
 // 1254  *
 // 1255  * @param   pInMsg - incoming message to process
 // 1256  *
 // 1257  * @return  none
 // 1258  */
-// 1259 static uint8 zclSampleTemperatureSensor_ProcessInDiscCmdsRspCmd( zclIncomingMsg_t *pInMsg )
+// 1259 static uint8 zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd( zclIncomingMsg_t *pInMsg )
 // 1260 {
-// 1261   zclDiscoverCmdsCmdRsp_t *discoverRspCmd;
+// 1261   zclDiscoverAttrsRspCmd_t *discoverRspCmd;
 // 1262   uint8 i;
 // 1263 
-// 1264   discoverRspCmd = (zclDiscoverCmdsCmdRsp_t *)pInMsg->attrCmd;
-// 1265   for ( i = 0; i < discoverRspCmd->numCmd; i++ )
+// 1264   discoverRspCmd = (zclDiscoverAttrsRspCmd_t *)pInMsg->attrCmd;
+// 1265   for ( i = 0; i < discoverRspCmd->numAttr; i++ )
 // 1266   {
 // 1267     // Device is notified of the result of its attribute discovery command.
 // 1268   }
@@ -6484,20 +6362,20 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
 // 1271 }
 // 1272 
 // 1273 /*********************************************************************
-// 1274  * @fn      zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd
+// 1274  * @fn      zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd
 // 1275  *
-// 1276  * @brief   Process the "Profile" Discover Attributes Response Command
+// 1276  * @brief   Process the "Profile" Discover Attributes Extended Response Command
 // 1277  *
 // 1278  * @param   pInMsg - incoming message to process
 // 1279  *
 // 1280  * @return  none
 // 1281  */
-// 1282 static uint8 zclSampleTemperatureSensor_ProcessInDiscAttrsRspCmd( zclIncomingMsg_t *pInMsg )
+// 1282 static uint8 zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd( zclIncomingMsg_t *pInMsg )
 // 1283 {
-// 1284   zclDiscoverAttrsRspCmd_t *discoverRspCmd;
+// 1284   zclDiscoverAttrsExtRsp_t *discoverRspCmd;
 // 1285   uint8 i;
 // 1286 
-// 1287   discoverRspCmd = (zclDiscoverAttrsRspCmd_t *)pInMsg->attrCmd;
+// 1287   discoverRspCmd = (zclDiscoverAttrsExtRsp_t *)pInMsg->attrCmd;
 // 1288   for ( i = 0; i < discoverRspCmd->numAttr; i++ )
 // 1289   {
 // 1290     // Device is notified of the result of its attribute discovery command.
@@ -6505,75 +6383,52 @@ zclSampleTemperatureSensor_ProcessInReportCmd:
 // 1292 
 // 1293   return ( TRUE );
 // 1294 }
-// 1295 
-// 1296 /*********************************************************************
-// 1297  * @fn      zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd
-// 1298  *
-// 1299  * @brief   Process the "Profile" Discover Attributes Extended Response Command
-// 1300  *
-// 1301  * @param   pInMsg - incoming message to process
-// 1302  *
-// 1303  * @return  none
-// 1304  */
-// 1305 static uint8 zclSampleTemperatureSensor_ProcessInDiscAttrsExtRspCmd( zclIncomingMsg_t *pInMsg )
-// 1306 {
-// 1307   zclDiscoverAttrsExtRsp_t *discoverRspCmd;
-// 1308   uint8 i;
-// 1309 
-// 1310   discoverRspCmd = (zclDiscoverAttrsExtRsp_t *)pInMsg->attrCmd;
-// 1311   for ( i = 0; i < discoverRspCmd->numAttr; i++ )
-// 1312   {
-// 1313     // Device is notified of the result of its attribute discovery command.
-// 1314   }
-// 1315 
-// 1316   return ( TRUE );
-// 1317 }
-// 1318 #endif // ZCL_DISCOVER
-// 1319 
-// 1320 #ifdef ZCL_EZMODE
-// 1321 
-// 1322 /*********************************************************************
-// 1323  * @fn      zclSampleTemperatureSensor_ProcessZDOMsgs
-// 1324  *
-// 1325  * @brief   Called when this node receives a ZDO/ZDP response.
-// 1326  *
-// 1327  * @param   none
+// 1295 #endif // ZCL_DISCOVER
+// 1296 
+// 1297 #ifdef ZCL_EZMODE
+// 1298 
+// 1299 /*********************************************************************
+// 1300  * @fn      zclSampleTemperatureSensor_ProcessZDOMsgs
+// 1301  *
+// 1302  * @brief   Called when this node receives a ZDO/ZDP response.
+// 1303  *
+// 1304  * @param   none
+// 1305  *
+// 1306  * @return  status
+// 1307  */
+// 1308 static void zclSampleTemperatureSensor_ProcessZDOMsgs( zdoIncomingMsg_t *pMsg )
+// 1309 {
+// 1310   zclEZMode_ActionData_t data;
+// 1311   ZDO_MatchDescRsp_t *pMatchDescRsp;
+// 1312 
+// 1313   // Let EZ-Mode know of the Match Descriptor Response
+// 1314   if ( pMsg->clusterID == Match_Desc_rsp )
+// 1315   {
+// 1316     pMatchDescRsp = ZDO_ParseEPListRsp( pMsg );
+// 1317     data.pMatchDescRsp = pMatchDescRsp;
+// 1318     zcl_EZModeAction( EZMODE_ACTION_MATCH_DESC_RSP, &data );
+// 1319     osal_mem_free( pMatchDescRsp );
+// 1320   }
+// 1321 }
+// 1322 
+// 1323 /*********************************************************************
+// 1324  * @fn      zclSampleTemperatureSensor_EZModeCB
+// 1325  *
+// 1326  * @brief   The Application is informed of events. This can be used to show on the UI what is
+// 1327 *           going on during EZ-Mode steering/finding/binding.
 // 1328  *
-// 1329  * @return  status
-// 1330  */
-// 1331 static void zclSampleTemperatureSensor_ProcessZDOMsgs( zdoIncomingMsg_t *pMsg )
-// 1332 {
-// 1333   zclEZMode_ActionData_t data;
-// 1334   ZDO_MatchDescRsp_t *pMatchDescRsp;
-// 1335 
-// 1336   // Let EZ-Mode know of the Match Descriptor Response
-// 1337   if ( pMsg->clusterID == Match_Desc_rsp )
-// 1338   {
-// 1339     pMatchDescRsp = ZDO_ParseEPListRsp( pMsg );
-// 1340     data.pMatchDescRsp = pMatchDescRsp;
-// 1341     zcl_EZModeAction( EZMODE_ACTION_MATCH_DESC_RSP, &data );
-// 1342     osal_mem_free( pMatchDescRsp );
-// 1343   }
-// 1344 }
-// 1345 
-// 1346 /*********************************************************************
-// 1347  * @fn      zclSampleTemperatureSensor_EZModeCB
-// 1348  *
-// 1349  * @brief   The Application is informed of events. This can be used to show on the UI what is
-// 1350 *           going on during EZ-Mode steering/finding/binding.
-// 1351  *
-// 1352  * @param   state - an
-// 1353  *
-// 1354  * @return  none
-// 1355  */
+// 1329  * @param   state - an
+// 1330  *
+// 1331  * @return  none
+// 1332  */
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-// 1356 static void zclSampleTemperatureSensor_EZModeCB( zlcEZMode_State_t state, zclEZMode_CBData_t *pData )
+// 1333 static void zclSampleTemperatureSensor_EZModeCB( zlcEZMode_State_t state, zclEZMode_CBData_t *pData )
 zclSampleTemperatureSensor_EZModeCB:
-          CFI Block cfiBlock60 Using cfiCommon0
+          CFI Block cfiBlock67 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_EZModeCB
         CODE
-// 1357 {
+// 1334 {
         FUNCALL zclSampleTemperatureSensor_EZModeCB, zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -6719,120 +6574,120 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     R6,A
         MOV     A,R3
         MOV     R7,A
-// 1358 #ifdef LCD_SUPPORTED
-// 1359   char szLine[20];
-// 1360   char *pStr;
-// 1361   uint8 err;
-// 1362 #endif
-// 1363 
-// 1364   // time to go into identify mode
-// 1365   if ( state == EZMODE_STATE_IDENTIFYING )
+// 1335 #ifdef LCD_SUPPORTED
+// 1336   char szLine[20];
+// 1337   char *pStr;
+// 1338   uint8 err;
+// 1339 #endif
+// 1340 
+// 1341   // time to go into identify mode
+// 1342   if ( state == EZMODE_STATE_IDENTIFYING )
         MOV     A,#0x4
         XRL     A,?V2
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_0
-// 1366   {
-// 1367     zclSampleTemperatureSensor_IdentifyTime = ( EZMODE_TIME / 1000 );  // convert to seconds
+// 1343   {
+// 1344     zclSampleTemperatureSensor_IdentifyTime = ( EZMODE_TIME / 1000 );  // convert to seconds
         MOV     DPTR,#zclSampleTemperatureSensor_IdentifyTime
         MOV     A,#-0x4c
         MOVX    @DPTR,A
         INC     DPTR
         CLR     A
         MOVX    @DPTR,A
-// 1368     zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
+// 1345     zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
         ; Setup parameters for call to function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LCALL   ??zclSampleTemperatureSensor_ProcessIdentifyTim; Banked call to: zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1369   }
-// 1370 
-// 1371   // autoclosing, show what happened (success, cancelled, etc...)
-// 1372   if( state == EZMODE_STATE_AUTOCLOSE )
+// 1346   }
+// 1347 
+// 1348   // autoclosing, show what happened (success, cancelled, etc...)
+// 1349   if( state == EZMODE_STATE_AUTOCLOSE )
 ??zclSampleTemperatureSensor_EZModeCB_0:
         MOV     A,#0x7
         XRL     A,?V2
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_2
-// 1373   {
-// 1374 #ifdef LCD_SUPPORTED
-// 1375     pStr = NULL;
-// 1376     err = pData->sAutoClose.err;
+// 1350   {
+// 1351 #ifdef LCD_SUPPORTED
+// 1352     pStr = NULL;
+// 1353     err = pData->sAutoClose.err;
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    A,@DPTR
         MOV     R0,A
-// 1377     if ( err == EZMODE_ERR_SUCCESS )
+// 1354     if ( err == EZMODE_ERR_SUCCESS )
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_3
-// 1378     {
-// 1379       pStr = "EZMode: Success";
+// 1355     {
+// 1356       pStr = "EZMode: Success";
         MOV     R2,#`?<Constant "EZMode: Success">` & 0xff
         MOV     R3,#(`?<Constant "EZMode: Success">` >> 8) & 0xff
         SJMP    ??zclSampleTemperatureSensor_EZModeCB_4
-// 1380     }
-// 1381     else if ( err == EZMODE_ERR_NOMATCH )
+// 1357     }
+// 1358     else if ( err == EZMODE_ERR_NOMATCH )
 ??zclSampleTemperatureSensor_EZModeCB_3:
         MOV     A,#0x4
         XRL     A,R0
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1382     {
-// 1383       pStr = "EZMode: NoMatch"; // not a match made in heaven
+// 1359     {
+// 1360       pStr = "EZMode: NoMatch"; // not a match made in heaven
         MOV     R2,#`?<Constant "EZMode: NoMatch">` & 0xff
         MOV     R3,#(`?<Constant "EZMode: NoMatch">` >> 8) & 0xff
-// 1384     }
-// 1385     if ( pStr )
+// 1361     }
+// 1362     if ( pStr )
 ??zclSampleTemperatureSensor_EZModeCB_4:
         MOV     A,R2
         ORL     A,R3
         JNZ     $+5
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1386     {
-// 1387       if ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE )
+// 1363     {
+// 1364       if ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE )
         MOV     DPTR,#giTemperatureSensorScreenMode
         MOVX    A,@DPTR
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1388       {
-// 1389         HalLcdWriteString ( pStr, HAL_LCD_LINE_2 );
+// 1365       {
+// 1366         HalLcdWriteString ( pStr, HAL_LCD_LINE_2 );
         ; Setup parameters for call to function HalLcdWriteString
         MOV     R1,#0x2
         LCALL   `??HalLcdWriteString::?relay`; Banked call to: HalLcdWriteString
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1390       }
-// 1391     }
-// 1392 #endif
-// 1393   }
-// 1394 
-// 1395   // finished, either show DstAddr/EP, or nothing (depending on success or not)
-// 1396   if( state == EZMODE_STATE_FINISH )
+// 1367       }
+// 1368     }
+// 1369 #endif
+// 1370   }
+// 1371 
+// 1372   // finished, either show DstAddr/EP, or nothing (depending on success or not)
+// 1373   if( state == EZMODE_STATE_FINISH )
 ??zclSampleTemperatureSensor_EZModeCB_2:
         MOV     A,#0x63
         XRL     A,?V2
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_1 & 0xFFFF
-// 1397   {
-// 1398     // turn off identify mode
-// 1399     zclSampleTemperatureSensor_IdentifyTime = 0;
+// 1374   {
+// 1375     // turn off identify mode
+// 1376     zclSampleTemperatureSensor_IdentifyTime = 0;
         MOV     DPTR,#zclSampleTemperatureSensor_IdentifyTime
         CLR     A
         MOVX    @DPTR,A
         INC     DPTR
         MOVX    @DPTR,A
-// 1400     zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
+// 1377     zclSampleTemperatureSensor_ProcessIdentifyTimeChange();
         ; Setup parameters for call to function zclSampleTemperatureSensor_ProcessIdentifyTimeChange
         LCALL   ??zclSampleTemperatureSensor_ProcessIdentifyTim; Banked call to: zclSampleTemperatureSensor_ProcessIdentifyTimeChange
-// 1401 
-// 1402 #ifdef LCD_SUPPORTED
-// 1403     // if successful, inform user which nwkaddr/ep we bound to
-// 1404     pStr = NULL;
-// 1405     err = pData->sFinish.err;
+// 1378 
+// 1379 #ifdef LCD_SUPPORTED
+// 1380     // if successful, inform user which nwkaddr/ep we bound to
+// 1381     pStr = NULL;
+// 1382     err = pData->sFinish.err;
         MOV     DPL,R6
         MOV     DPH,R7
         MOVX    A,@DPTR
         MOV     R0,A
-// 1406     if( err == EZMODE_ERR_SUCCESS )
+// 1383     if( err == EZMODE_ERR_SUCCESS )
         JZ      $+5
         LJMP    ??zclSampleTemperatureSensor_EZModeCB_5 & 0xFFFF
-// 1407     {
-// 1408       // "EZDst:1234 EP:34"
-// 1409       osal_memcpy( szLine, "EZDst:", 6 );
+// 1384     {
+// 1385       // "EZDst:1234 EP:34"
+// 1386       osal_memcpy( szLine, "EZDst:", 6 );
         ; Setup parameters for call to function osal_memcpy
         MOV     ?V4,#`?<Constant "EZDst:">` & 0xff
         MOV     ?V5,#(`?<Constant "EZDst:">` >> 8) & 0xff
@@ -6848,7 +6703,7 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     A,#0x3
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 35)
-// 1410       zclHA_uint16toa( pData->sFinish.nwkaddr, &szLine[6] );
+// 1387       zclHA_uint16toa( pData->sFinish.nwkaddr, &szLine[6] );
         ; Setup parameters for call to function zclHA_uint16toa
         MOV     A,#0x6
         LCALL   ?XSTACK_DISP0_8
@@ -6864,7 +6719,7 @@ zclSampleTemperatureSensor_EZModeCB:
         MOVX    A,@DPTR
         MOV     R3,A
         LCALL   `??zclHA_uint16toa::?relay`; Banked call to: zclHA_uint16toa
-// 1411       osal_memcpy( &szLine[10], " EP:", 4 );
+// 1388       osal_memcpy( &szLine[10], " EP:", 4 );
         ; Setup parameters for call to function osal_memcpy
         MOV     ?V4,#`?<Constant " EP:">` & 0xff
         MOV     ?V5,#(`?<Constant " EP:">` >> 8) & 0xff
@@ -6881,7 +6736,7 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     A,#0x3
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 35)
-// 1412       _ltoa( pData->sFinish.ep, (void *)(&szLine[14]), 16 );  // _ltoa NULL terminates
+// 1389       _ltoa( pData->sFinish.ep, (void *)(&szLine[14]), 16 );  // _ltoa NULL terminates
         ; Setup parameters for call to function _ltoa
         MOV     A,#0xe
         LCALL   ?XSTACK_DISP0_8
@@ -6904,7 +6759,7 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     A,#0x2
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 35)
-// 1413       pStr = szLine;
+// 1390       pStr = szLine;
         MOV     R0,?XSP + 0
         MOV     R1,?XSP + 1
         MOV     ?V0,R0
@@ -6912,57 +6767,57 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     R2,?V0
         MOV     R3,?V1
         SJMP    ??zclSampleTemperatureSensor_EZModeCB_6
-// 1414     }
-// 1415     else if ( err == EZMODE_ERR_BAD_PARAMETER )
+// 1391     }
+// 1392     else if ( err == EZMODE_ERR_BAD_PARAMETER )
 ??zclSampleTemperatureSensor_EZModeCB_5:
         MOV     A,#0x1
         XRL     A,R0
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_7
-// 1416     {
-// 1417       pStr = "EZMode: BadParm";
+// 1393     {
+// 1394       pStr = "EZMode: BadParm";
         MOV     R2,#`?<Constant "EZMode: BadParm">` & 0xff
         MOV     R3,#(`?<Constant "EZMode: BadParm">` >> 8) & 0xff
         SJMP    ??zclSampleTemperatureSensor_EZModeCB_6
-// 1418     }
-// 1419     else if ( err == EZMODE_ERR_CANCELLED )
+// 1395     }
+// 1396     else if ( err == EZMODE_ERR_CANCELLED )
 ??zclSampleTemperatureSensor_EZModeCB_7:
         MOV     A,#0x2
         XRL     A,R0
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_8
-// 1420     {
-// 1421       pStr = "EZMode: Cancel";
+// 1397     {
+// 1398       pStr = "EZMode: Cancel";
         MOV     R2,#`?<Constant "EZMode: Cancel">` & 0xff
         MOV     R3,#(`?<Constant "EZMode: Cancel">` >> 8) & 0xff
         SJMP    ??zclSampleTemperatureSensor_EZModeCB_6
-// 1422     }
-// 1423     else
-// 1424     {
-// 1425       pStr = "EZMode: TimeOut";
+// 1399     }
+// 1400     else
+// 1401     {
+// 1402       pStr = "EZMode: TimeOut";
 ??zclSampleTemperatureSensor_EZModeCB_8:
         MOV     R2,#`?<Constant "EZMode: TimeOut">` & 0xff
         MOV     R3,#(`?<Constant "EZMode: TimeOut">` >> 8) & 0xff
-// 1426     }
-// 1427     if ( pStr )
+// 1403     }
+// 1404     if ( pStr )
 ??zclSampleTemperatureSensor_EZModeCB_6:
         MOV     A,R2
         ORL     A,R3
         JZ      ??zclSampleTemperatureSensor_EZModeCB_9
-// 1428     {
-// 1429       if ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE )
+// 1405     {
+// 1406       if ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE )
         MOV     DPTR,#giTemperatureSensorScreenMode
         MOVX    A,@DPTR
         JNZ     ??zclSampleTemperatureSensor_EZModeCB_9
-// 1430       {
-// 1431         HalLcdWriteString ( pStr, HAL_LCD_LINE_2 );
+// 1407       {
+// 1408         HalLcdWriteString ( pStr, HAL_LCD_LINE_2 );
         ; Setup parameters for call to function HalLcdWriteString
         MOV     R1,#0x2
         LCALL   `??HalLcdWriteString::?relay`; Banked call to: HalLcdWriteString
-// 1432       }
-// 1433     }
-// 1434 #endif  // LCD_SUPPORTED
-// 1435 
-// 1436     // show main UI screen 3 seconds after joining network
-// 1437     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_MAIN_SCREEN_EVT, 3000 );
+// 1409       }
+// 1410     }
+// 1411 #endif  // LCD_SUPPORTED
+// 1412 
+// 1413     // show main UI screen 3 seconds after joining network
+// 1414     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_MAIN_SCREEN_EVT, 3000 );
 ??zclSampleTemperatureSensor_EZModeCB_9:
         ; Setup parameters for call to function osal_start_timerEx
         MOV     DPTR,#__Constant_bb8
@@ -6977,9 +6832,9 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 35)
-// 1438 
-// 1439     // report current temperature reading 15 seconds after joinging the network
-// 1440     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_TEMP_SEND_EVT, SAMPLETEMPERATURESENSOR_REPORT_INTERVAL );
+// 1415 
+// 1416     // report current temperature reading 15 seconds after joinging the network
+// 1417     osal_start_timerEx( zclSampleTemperatureSensor_TaskID, SAMPLETEMPERATURESENSOR_TEMP_SEND_EVT, SAMPLETEMPERATURESENSOR_REPORT_INTERVAL );
         ; Setup parameters for call to function osal_start_timerEx
         MOV     DPTR,#__Constant_9c4
         LCALL   ?PUSH_XSTACK8_X_FOUR
@@ -6993,27 +6848,27 @@ zclSampleTemperatureSensor_EZModeCB:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 35)
-// 1441   }
-// 1442 }
+// 1418   }
+// 1419 }
 ??zclSampleTemperatureSensor_EZModeCB_1:
         MOV     A,#0x14
         LCALL   ?DEALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 15)
         MOV     R7,#0x7
         LJMP    ?BANKED_LEAVE_XDATA
-          CFI EndBlock cfiBlock60
-// 1443 #endif // ZCL_EZMODE
-// 1444 
-// 1445 /****************************************************************************
-// 1446 ****************************************************************************/
+          CFI EndBlock cfiBlock67
+// 1420 #endif // ZCL_EZMODE
+// 1421 
+// 1422 /****************************************************************************
+// 1423 ****************************************************************************/
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-// 1447 void zclSampleTemperatureSensor_BindingProcess(void)
+// 1424 void zclSampleTemperatureSensor_BindingProcess(void)
 zclSampleTemperatureSensor_BindingProcess:
-          CFI Block cfiBlock61 Using cfiCommon0
+          CFI Block cfiBlock68 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_BindingProcess
         CODE
-// 1448 { 
+// 1425 { 
         FUNCALL zclSampleTemperatureSensor_BindingProcess, zcl_InvokeEZMode
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -7047,20 +6902,20 @@ zclSampleTemperatureSensor_BindingProcess:
         MOV     A,#-0x9
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 9)
-// 1449 	if ( ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE ) ||
-// 1450 			( giTemperatureSensorScreenMode == TEMPSENSE_HELPMODE ) )
+// 1426 	if ( ( giTemperatureSensorScreenMode == TEMPSENSE_MAINMODE ) ||
+// 1427 			( giTemperatureSensorScreenMode == TEMPSENSE_HELPMODE ) )
         MOV     DPTR,#giTemperatureSensorScreenMode
         MOVX    A,@DPTR
         JZ      ??zclSampleTemperatureSensor_BindingProcess_0
         XRL     A,#0x1
         JNZ     ??zclSampleTemperatureSensor_BindingProcess_1
-// 1451 	{
-// 1452 		giTemperatureSensorScreenMode = TEMPSENSE_MAINMODE;
+// 1428 	{
+// 1429 		giTemperatureSensorScreenMode = TEMPSENSE_MAINMODE;
 ??zclSampleTemperatureSensor_BindingProcess_0:
         CLR     A
         MOVX    @DPTR,A
-// 1453 
-// 1454 	FLAG_BINDING = !FLAG_BINDING;
+// 1430 
+// 1431 	FLAG_BINDING = !FLAG_BINDING;
         MOV     DPTR,#FLAG_BINDING
         MOVX    A,@DPTR
         JNZ     ??zclSampleTemperatureSensor_BindingProcess_2
@@ -7069,18 +6924,18 @@ zclSampleTemperatureSensor_BindingProcess:
 ??zclSampleTemperatureSensor_BindingProcess_2:
         CLR     A
 ??zclSampleTemperatureSensor_BindingProcess_3:
-        LCALL   ?Subroutine3 & 0xFFFF
-// 1455 	
-// 1456 	#ifdef ZCL_EZMODE
-// 1457 		zclEZMode_InvokeData_t ezModeData;
-// 1458 		static uint16 clusterIDs[] = { ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT }; 	// only bind on the Temperature Measurement cluster
-// 1459 	
-// 1460 		// Invoke EZ-Mode
-// 1461 		ezModeData.endpoint = SAMPLETEMPERATURESENSOR_ENDPOINT; // endpoint on which to invoke EZ-Mode
-// 1462 		if ( ( zclSampleTemperatureSensor_NwkState == DEV_ZB_COORD ) ||
-// 1463 				 ( zclSampleTemperatureSensor_NwkState == DEV_ROUTER )	 ||
-// 1464 				 ( zclSampleTemperatureSensor_NwkState == DEV_END_DEVICE ) )
-??CrossCallReturnLabel_3:
+        LCALL   ?Subroutine4 & 0xFFFF
+// 1432 	
+// 1433 	#ifdef ZCL_EZMODE
+// 1434 		zclEZMode_InvokeData_t ezModeData;
+// 1435 		static uint16 clusterIDs[] = { ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT }; 	// only bind on the Temperature Measurement cluster
+// 1436 	
+// 1437 		// Invoke EZ-Mode
+// 1438 		ezModeData.endpoint = SAMPLETEMPERATURESENSOR_ENDPOINT; // endpoint on which to invoke EZ-Mode
+// 1439 		if ( ( zclSampleTemperatureSensor_NwkState == DEV_ZB_COORD ) ||
+// 1440 				 ( zclSampleTemperatureSensor_NwkState == DEV_ROUTER )	 ||
+// 1441 				 ( zclSampleTemperatureSensor_NwkState == DEV_END_DEVICE ) )
+??CrossCallReturnLabel_5:
         JZ      ??zclSampleTemperatureSensor_BindingProcess_4
         MOVX    A,@DPTR
         XRL     A,#0x7
@@ -7088,35 +6943,35 @@ zclSampleTemperatureSensor_BindingProcess:
         MOVX    A,@DPTR
         XRL     A,#0x6
         JNZ     ??zclSampleTemperatureSensor_BindingProcess_5
-// 1465 		{
-// 1466 			ezModeData.onNetwork = TRUE;			// node is already on the network
+// 1442 		{
+// 1443 			ezModeData.onNetwork = TRUE;			// node is already on the network
 ??zclSampleTemperatureSensor_BindingProcess_4:
         MOV     A,#0x1
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
         SJMP    ??zclSampleTemperatureSensor_BindingProcess_6
-// 1467 		}
-// 1468 		else
-// 1469 		{
-// 1470 			ezModeData.onNetwork = FALSE; 		// node is not yet on the network
+// 1444 		}
+// 1445 		else
+// 1446 		{
+// 1447 			ezModeData.onNetwork = FALSE; 		// node is not yet on the network
 ??zclSampleTemperatureSensor_BindingProcess_5:
         MOV     A,#0x1
         LCALL   ?XSTACK_DISP0_8
         CLR     A
 ??zclSampleTemperatureSensor_BindingProcess_6:
         MOVX    @DPTR,A
-// 1471 		}
-// 1472 		ezModeData.initiator = TRUE;				// Temperature Sensor is an initiator
+// 1448 		}
+// 1449 		ezModeData.initiator = TRUE;				// Temperature Sensor is an initiator
         MOV     A,#0x2
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
         MOVX    @DPTR,A
-// 1473 		ezModeData.numActiveInClusters = 1;
+// 1450 		ezModeData.numActiveInClusters = 1;
         MOV     A,#0x3
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#0x1
         MOVX    @DPTR,A
-// 1474 		ezModeData.pActiveInClusterIDs = clusterIDs;
+// 1451 		ezModeData.pActiveInClusterIDs = clusterIDs;
         MOV     A,#0x4
         LCALL   ?XSTACK_DISP0_8
         MOV     A,#??clusterIDs_1 & 0xff
@@ -7124,62 +6979,62 @@ zclSampleTemperatureSensor_BindingProcess:
         INC     DPTR
         MOV     A,#(??clusterIDs_1 >> 8) & 0xff
         MOVX    @DPTR,A
-// 1475 		ezModeData.numActiveOutClusters = 0;	 // active output cluster
+// 1452 		ezModeData.numActiveOutClusters = 0;	 // active output cluster
         MOV     A,#0x6
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         MOVX    @DPTR,A
-// 1476 		ezModeData.pActiveOutClusterIDs = NULL;
+// 1453 		ezModeData.pActiveOutClusterIDs = NULL;
         MOV     A,#0x7
         LCALL   ?XSTACK_DISP0_8
         CLR     A
         MOVX    @DPTR,A
         INC     DPTR
-        LCALL   ??Subroutine13_0 & 0xFFFF
-// 1477 		zcl_InvokeEZMode( &ezModeData );
-??CrossCallReturnLabel_22:
+        LCALL   ??Subroutine14_0 & 0xFFFF
+// 1454 		zcl_InvokeEZMode( &ezModeData );
+??CrossCallReturnLabel_24:
         LCALL   `??zcl_InvokeEZMode::?relay`; Banked call to: zcl_InvokeEZMode
-// 1478 	
-// 1479 	#ifdef LCD_SUPPORTED
-// 1480 		HalLcdWriteString( "EZMode", HAL_LCD_LINE_2 );
+// 1455 	
+// 1456 	#ifdef LCD_SUPPORTED
+// 1457 		HalLcdWriteString( "EZMode", HAL_LCD_LINE_2 );
         ; Setup parameters for call to function HalLcdWriteString
         MOV     R1,#0x2
         MOV     R2,#`?<Constant "EZMode">` & 0xff
         MOV     R3,#(`?<Constant "EZMode">` >> 8) & 0xff
         LCALL   `??HalLcdWriteString::?relay`; Banked call to: HalLcdWriteString
-// 1481 	#endif
-// 1482 	
-// 1483 		// NOT ZCL_EZMODE, Use EndDeviceBind
-// 1484 	#else
-// 1485 		{
-// 1486 			zAddrType_t dstAddr;
-// 1487 			dstAddr.addrMode = Addr16Bit;
-// 1488 			dstAddr.addr.shortAddr = 0; 	// Coordinator makes the EDB match
-// 1489 	
-// 1490 			// Initiate an End Device Bind Request, this bind request will
-// 1491 			// only use a cluster list that is important to binding.
-// 1492 			HalLedSet ( HAL_LED_4, HAL_LED_MODE_OFF );
-// 1493 			ZDP_EndDeviceBindReq( &dstAddr, NLME_GetShortAddr(),
-// 1494 														SAMPLETEMPERATURESENSOR_ENDPOINT,
-// 1495 														ZCL_HA_PROFILE_ID,
-// 1496 														0, NULL,
-// 1497 														ZCLSAMPLETEMPERATURESENSOR_BINDINGLIST, bindingOutClusters,
-// 1498 														FALSE );
-// 1499 		}
-// 1500 	#endif // ZCL_EZMODE
-// 1501 	}
-// 1502 
-// 1503 }
+// 1458 	#endif
+// 1459 	
+// 1460 		// NOT ZCL_EZMODE, Use EndDeviceBind
+// 1461 	#else
+// 1462 		{
+// 1463 			zAddrType_t dstAddr;
+// 1464 			dstAddr.addrMode = Addr16Bit;
+// 1465 			dstAddr.addr.shortAddr = 0; 	// Coordinator makes the EDB match
+// 1466 	
+// 1467 			// Initiate an End Device Bind Request, this bind request will
+// 1468 			// only use a cluster list that is important to binding.
+// 1469 			HalLedSet ( HAL_LED_4, HAL_LED_MODE_OFF );
+// 1470 			ZDP_EndDeviceBindReq( &dstAddr, NLME_GetShortAddr(),
+// 1471 														SAMPLETEMPERATURESENSOR_ENDPOINT,
+// 1472 														ZCL_HA_PROFILE_ID,
+// 1473 														0, NULL,
+// 1474 														ZCLSAMPLETEMPERATURESENSOR_BINDINGLIST, bindingOutClusters,
+// 1475 														FALSE );
+// 1476 		}
+// 1477 	#endif // ZCL_EZMODE
+// 1478 	}
+// 1479 
+// 1480 }
 ??zclSampleTemperatureSensor_BindingProcess_1:
         MOV     A,#0x9
         LJMP    ?Subroutine0 & 0xFFFF
-          CFI EndBlock cfiBlock61
+          CFI EndBlock cfiBlock68
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-?Subroutine3:
-          CFI Block cfiCond62 Using cfiCommon0
+?Subroutine4:
+          CFI Block cfiCond69 Using cfiCommon0
           CFI Function zclSampleTemperatureSensor_HandleKeys
-          CFI Conditional ??CrossCallReturnLabel_2
+          CFI Conditional ??CrossCallReturnLabel_4
           CFI R6 load(1, XDATA, add(CFA_XSP16, literal(-9)))
           CFI VB load(1, XDATA, add(CFA_XSP16, literal(-8)))
           CFI V0 load(1, XDATA, add(CFA_XSP16, literal(-7)))
@@ -7191,16 +7046,16 @@ zclSampleTemperatureSensor_BindingProcess:
           CFI DPH0 load(1, XDATA, add(CFA_XSP16, literal(-1)))
           CFI CFA_SP SP+-2
           CFI CFA_XSP16 add(XSP16, 18)
-          CFI Block cfiCond63 Using cfiCommon0
-          CFI (cfiCond63) Function zclSampleTemperatureSensor_BindingProcess
-          CFI (cfiCond63) Conditional ??CrossCallReturnLabel_3
-          CFI (cfiCond63) DPL0 Frame(CFA_SP, 4)
-          CFI (cfiCond63) DPH0 Frame(CFA_SP, 5)
-          CFI (cfiCond63) CFA_SP SP+-7
-          CFI (cfiCond63) CFA_XSP16 add(XSP16, 9)
-          CFI Block cfiPicker64 Using cfiCommon1
-          CFI (cfiPicker64) NoFunction
-          CFI (cfiPicker64) Picker
+          CFI Block cfiCond70 Using cfiCommon0
+          CFI (cfiCond70) Function zclSampleTemperatureSensor_BindingProcess
+          CFI (cfiCond70) Conditional ??CrossCallReturnLabel_5
+          CFI (cfiCond70) DPL0 Frame(CFA_SP, 4)
+          CFI (cfiCond70) DPH0 Frame(CFA_SP, 5)
+          CFI (cfiCond70) CFA_SP SP+-7
+          CFI (cfiCond70) CFA_XSP16 add(XSP16, 9)
+          CFI Block cfiPicker71 Using cfiCommon1
+          CFI (cfiPicker71) NoFunction
+          CFI (cfiPicker71) Picker
         MOVX    @DPTR,A
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
@@ -7210,9 +7065,9 @@ zclSampleTemperatureSensor_BindingProcess:
         MOVX    A,@DPTR
         XRL     A,#0x9
         RET
-          CFI EndBlock cfiCond62
-          CFI EndBlock cfiCond63
-          CFI EndBlock cfiPicker64
+          CFI EndBlock cfiCond69
+          CFI EndBlock cfiCond70
+          CFI EndBlock cfiPicker71
 
         RSEG XDATA_I:XDATA:NOROOT(0)
 ??clusterIDs_1:
@@ -7452,8 +7307,8 @@ zclSampleTemperatureSensor_BindingProcess:
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
-`?<Constant "!\\n">`:
-        DB "!\012"
+`?<Constant "00124B000A91EF1D">`:
+        DB "00124B000A91EF1D"
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
@@ -7469,46 +7324,6 @@ zclSampleTemperatureSensor_BindingProcess:
         DATA16
 `?<Constant "!">`:
         DB "!"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT3;1">`:
-        DB "R2;OUT3;1"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT1;1">`:
-        DB "R2;OUT1;1"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT2;1">`:
-        DB "R2;OUT2;1"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT3;0">`:
-        DB "R2;OUT3;0"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT1;0">`:
-        DB "R2;OUT1;0"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "R2;OUT2;0">`:
-        DB "R2;OUT2;0"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "ERROR!">`:
-        DB "ERROR!"
-
-        RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
-        DATA8
-`?<Constant "Done!">`:
-        DB "Done!"
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
@@ -7581,18 +7396,18 @@ __Constant_9c4:
         DD 2500
 
         END
-// 1504 
+// 1481 
 // 
-// 3 229 bytes in segment BANKED_CODE
+// 3 163 bytes in segment BANKED_CODE
 //    90 bytes in segment BANK_RELAYS
 //    39 bytes in segment XDATA_I
 //    39 bytes in segment XDATA_ID
-//   627 bytes in segment XDATA_ROM_C
+//   568 bytes in segment XDATA_ROM_C
 //    16 bytes in segment XDATA_Z
 // 
 //   129 bytes of CODE     memory
-//   603 bytes of CONST    memory (+ 24 bytes shared)
-// 3 229 bytes of HUGECODE memory
+//   544 bytes of CONST    memory (+ 24 bytes shared)
+// 3 163 bytes of HUGECODE memory
 //    55 bytes of XDATA    memory
 //
 //Errors: none

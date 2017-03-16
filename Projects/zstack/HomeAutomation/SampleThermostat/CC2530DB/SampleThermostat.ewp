@@ -3491,6 +3491,12 @@
       <file>
         <name>$PROJ_DIR$\..\..\MY-SOURCE\MS_UART_CMD.h</name>
       </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\MY-SOURCE\uti.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\..\MY-SOURCE\uti.h</name>
+      </file>
     </group>
     <file>
       <name>$PROJ_DIR$\..\Source\OSAL_SampleThermostat.c</name>

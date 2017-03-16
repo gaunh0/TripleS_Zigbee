@@ -145,7 +145,6 @@ extern UINT16 zclSampleThermostat_event_loop( byte task_id, UINT16 events );
 ********************************************************************************/
 extern void zclSampleThermostat_BindingProcess(void);
 extern void zclSampleThermostat_SendFreeData(void);
-extern void zclSampleThermostat_SendControlData(void);
 extern void zclSampleThermostat_SendC(void);
 
 #ifdef __cplusplus

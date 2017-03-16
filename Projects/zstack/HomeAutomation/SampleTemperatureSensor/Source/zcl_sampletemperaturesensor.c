@@ -177,7 +177,7 @@ void zclSampleTemperatureSensor_LcdDisplayTempMode(void);
 void zclSampleTemperatureSensor_LcdDisplayHelpMode(void);
 
 static void zclSampleTemperatureSensor_SendTemp(void);
-static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTX);
+static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTx);
 
 
 // Functions to process ZCL Foundation incoming Command/Response messages
@@ -458,7 +458,7 @@ uint16 zclSampleTemperatureSensor_event_loop( uint8 task_id, uint16 events )
 	}
 	if ( events & SAMPLETEMPERATURESENSOR_SW2 )
 	{
-      Toggle(Output_3);
+	  Toggle(Output_3);
 	  zclSampleTemperatureSensor_SendState(Output_3);
 	  return (events ^ SAMPLETEMPERATURESENSOR_SW2);
 	}
@@ -466,7 +466,7 @@ uint16 zclSampleTemperatureSensor_event_loop( uint8 task_id, uint16 events )
 	{
       Toggle(Output_2);
 	  Toggle(Output_3);
-	  zclSampleTemperatureSensor_SendState(Output_1);
+	  zclSampleTemperatureSensor_SendState(Output_3);	  
 	  return (events ^ SAMPLETEMPERATURESENSOR_SW3);
 	}
 
@@ -856,52 +856,40 @@ static void zclSampleTemperatureSensor_SendTemp( void )
 
 //----------------------------
 
-static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTX)
+static void zclSampleTemperatureSensor_SendState(OUTPUT_TypeDef OUTx)
 {
-	uint8 pos;
+	
+	char data[] = "00124B000A91EF1D";
+	uint8 t_state;
 	uint16 state;
-	uint8 temp_s;
-	 if(OUTX == 1)
-     {
-		 temp_s = CheckOutputState(Output_1);
-		 pos = 23;
-	 }
-	 else if (OUTX == 2)
-	 {
-		 temp_s = CheckOutputState(Output_2);
-		 pos = 21;
-	 }
-	 else if (OUTX == 3)
-	 {
-		 temp_s = CheckOutputState(Output_3);
-		 pos = 22;
-	 }
-	 state = BUILD_UINT16(temp_s,pos);
-	 UART_SendNum(HAL_UART_PORT_0,state);
-	 UART_SendString(HAL_UART_PORT_0,"!\n");
-	
-	#ifdef ZCL_REPORT
+	t_state = CheckOutputState(OUTx);
+	if(OUTx == 2 )
+		{
+		state = BUILD_UINT16(1,t_state);
+		}
+	else if (OUTx == 3)
+		{
+		state = BUILD_UINT16(2,t_state);
+		}
   zclReportCmd_t *pReportCmd;
-	
-  pReportCmd = osal_mem_alloc( sizeof(zclReportCmd_t) + 1 * sizeof(zclReport_t) );
+  pReportCmd = osal_mem_alloc( sizeof(zclReportCmd_t) + 2 * sizeof(zclReport_t) );
   if ( pReportCmd != NULL )
   {
-    pReportCmd->numAttr = 1;
-		// Data
-    pReportCmd->attrList[0].attrID = ATTRID_SENDSTATE;
-    pReportCmd->attrList[0].dataType = ZCL_DATATYPE_UINT16;
-    pReportCmd->attrList[0].attrData = (void *)(&state);
-
-    // pReportCmd->attrList[1].attrID = NLME_GetCoordShortAddr();
-    // pReportCmd->attrList[1].dataType = ZCL_DATATYPE_UINT8;
-    // pReportCmd->attrList[1].attrData = (void *)(&state);
+    pReportCmd->numAttr = 2;
 		
-    zcl_SendReportCmd( SAMPLETEMPERATURESENSOR_ENDPOINT, &zclSampleTemperatureSensor_DstAddr,
+		// Data
+    pReportCmd->attrList[0].attrID 		= ATTRID_SENDSTATE;
+    pReportCmd->attrList[0].dataType 	= ZCL_DATATYPE_CHAR_STR;
+    pReportCmd->attrList[0].attrData 	= (void *)(data);
+
+	pReportCmd->attrList[1].dataType 	= ZCL_DATATYPE_UINT16;
+    pReportCmd->attrList[1].attrData 	= (void *)(&state);
+
+   zcl_SendReportCmd( SAMPLETEMPERATURESENSOR_ENDPOINT, &zclSampleTemperatureSensor_DstAddr,
                        ZCL_CLUSTER_ID_MS_TEMPERATURE_MEASUREMENT,
                        pReportCmd, ZCL_FRAME_SERVER_CLIENT_DIR, TRUE, zclSampleTemperatureSensorSeqNum++ );
+ 	 osal_mem_free( pReportCmd );
   }
-  osal_mem_free( pReportCmd );
-	#endif  // ZCL_REPORT
 }
 
 /*********************************************************************
@@ -1174,45 +1162,34 @@ static void zclSampleTemperatureSensor_ProcessInReportCmd( zclIncomingMsg_t *pIn
 		return;
 	}
 
-	if (pInReportCmd->attrList[0].attrID == ATTRID_CONTROL_DATA)
+	if (pInReportCmd->attrList[0].attrID == ATTRID_CONTROL_S)
 	{
 		uint8 i;
+		char status[2];
 		char tmp_Data[20];
 		for (i = 1; i <= pInReportCmd->attrList[1].attrData[0]; i++)
 		{
 			tmp_Data[i-1] = pInReportCmd->attrList[0].attrData[i];
 		}
-		UART_SendString(HAL_UART_PORT_0,tmp_Data);
-		if (strstr(tmp_Data,"R2;OUT3;1"))
-		{
-			TURN_on(Output_1);
-		}
-		else if (strstr(tmp_Data,"R2;OUT1;1"))
+		status[0] = tmp_Data[17];
+		status[1] = tmp_Data[18];
+		HalUARTWrite(HAL_UART_PORT_0,status,1);
+		if(status[0] == '1' && status[1] == '1' )
 		{
 			TURN_on(Output_2);
 		}
-		else if (strstr(tmp_Data,"R2;OUT2;1"))
-		{
-			TURN_on(Output_3);
-		}
-		else if (strstr(tmp_Data,"R2;OUT3;0"))
-		{
-			TURN_off(Output_1);
-		}
-		else if (strstr(tmp_Data,"R2;OUT1;0"))
+		else if (status[0] == '1' && status[1] == '0')
 		{
 			TURN_off(Output_2);
 		}
-		else if (strstr(tmp_Data,"R2;OUT2;0"))
+		if(status[0] == '2' && status[1] == '1' )
+		{
+			TURN_on(Output_3);
+		}
+		else if (status[0] == '2' && status[1] == '0')
 		{
 			TURN_off(Output_3);
-		}
-		else
-		{
-			UART_SendString(HAL_UART_PORT_0,"ERROR!");
-			return;
-		}
-		UART_SendString(HAL_UART_PORT_0,"Done!");
+		}		
 		return;
 		
 	}

@@ -87,6 +87,7 @@
 #include "MS_UART.h"
 #include "MS_UART_CMD.h"
 #include "MS_GPIO.h"
+#include "uti.h"
 
 #if ( defined (ZGP_DEVICE_TARGET) || defined (ZGP_DEVICE_TARGETPLUS) \
       || defined (ZGP_DEVICE_COMBO) || defined (ZGP_DEVICE_COMBO_MIN) )
@@ -1383,34 +1384,37 @@ static void zclSampleThermostat_ProcessInReportCmd( zclIncomingMsg_t *pInMsg )
   {		
 	
 			UART_ZCmdPrintString(HAL_UART_PORT_0, "@ZBS:");
-			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, msg_RSSI);																	// RSSI
+			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, msg_RSSI);																	
 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
-			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.addr.shortAddr);						// shortAddr
+			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInMsg->srcAddr.addr.shortAddr);
 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
-			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[0].attrData[1]);			// temperature
+			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[0].attrData[1]);
 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
-			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[0].attrData[0]);			// humidity
+			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[0].attrData[0]);	
 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
-			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[1]);			// temperature
+			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[1]);
 			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
 			UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[0]);
-			UART_ZCmdPrint		(HAL_UART_PORT_0, "!");		
-
+			UART_ZCmdPrint		(HAL_UART_PORT_0, "!");
   }
-	
 	
 	if (pInReportCmd->attrList[0].attrID == ATTRID_SENDSTATE)
 	{	
-
-			UART_ZCmdPrintString(HAL_UART_PORT_0, "@ZBC:");
-			UART_ZCmdPrintNum    (HAL_UART_PORT_0, msg_RSSI);
-			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
-			UART_ZCmdPrintNum(HAL_UART_PORT_0,pInMsg->srcAddr.addr.shortAddr);
-			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");					
-			UART_ZCmdPrintNum(HAL_UART_PORT_0,pInReportCmd->attrList[0].attrData[1]);
-			UART_ZCmdPrintString(HAL_UART_PORT_0, ";");	
-			UART_ZCmdPrintNum(HAL_UART_PORT_0,pInReportCmd->attrList[0].attrData[0]);
-		    UART_ZCmdPrint		(HAL_UART_PORT_0, "!");
+		int i;
+		uint8 add[16];
+		UART_ZCmdPrintString(HAL_UART_PORT_0, "@ZBR:");
+		UART_ZCmdPrintNum 	(HAL_UART_PORT_0, msg_RSSI);																	
+		UART_ZCmdPrintString(HAL_UART_PORT_0, ";"); 
+		for(i = 0;i<16;i++)
+		{
+			add[i] = pInReportCmd->attrList[0].attrData[i];
+		}
+		add[16] == '\0';
+		HalUARTWrite(HAL_UART_PORT_0, add,16); 
+		UART_ZCmdPrintString(HAL_UART_PORT_0, ";");
+		UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[0]);
+		UART_ZCmdPrintNum 	(HAL_UART_PORT_0, pInReportCmd->attrList[1].attrData[1]);
+		UART_ZCmdPrint		(HAL_UART_PORT_0, "!");
 		return;
 	}
 
@@ -1734,14 +1738,36 @@ void zclSampleThermostat_SendFreeData(void)
   osal_mem_free( pReportCmd );
 	#endif  // ZCL_REPORT
 }
-void  zclSampleThermostat_SendControlData(void)
+void zclSampleThermostat_SendC(void)
+{
+	char add[17];
+	for(uint8 i = 1;i<=16;i++)
 	{
+		add[i-1] =  Free_Data[i];
+	}
+	for(uint8 i = 0; i < 16;i++) 
+	{
+	   	if( add[i] >= 'A' )
+	  		add[i] = add[i] - '7';
+	   	else 
+	      	add[i] = add[i] - '0';
+		if ( i%2 != 0 ) 
+			add[i-1] = (add[i-1]<<4) + add[i];
+ 	}	
 	#ifdef ZCL_REPORT
 	// Can't send via indirect ??? (system reset)
 	afAddrType_t DstAddr;
-  DstAddr.addrMode = (afAddrMode_t)AddrBroadcast;
+  DstAddr.addrMode = (afAddrMode_t)afAddr64Bit;
   DstAddr.endPoint = 0xFF;
   DstAddr.addr.shortAddr = 0xFFFF;
+  DstAddr.addr.extAddr[0] = add[14];
+  DstAddr.addr.extAddr[1] = add[12];
+  DstAddr.addr.extAddr[2] = add[10];
+  DstAddr.addr.extAddr[3] = add[8];
+  DstAddr.addr.extAddr[4] = add[6];
+  DstAddr.addr.extAddr[5] = add[4];
+  DstAddr.addr.extAddr[6] = add[2];
+  DstAddr.addr.extAddr[7] = add[0];
 	
   zclReportCmd_t *pReportCmd;
   pReportCmd = osal_mem_alloc( sizeof(zclReportCmd_t) + 2 * sizeof(zclReport_t) );
@@ -1750,7 +1776,7 @@ void  zclSampleThermostat_SendControlData(void)
     pReportCmd->numAttr = 2;
 		
 		// Data
-    pReportCmd->attrList[0].attrID 		= ATTRID_CONTROL_DATA;
+    pReportCmd->attrList[0].attrID 		= ATTRID_CONTROL_S;
     pReportCmd->attrList[0].dataType 	= ZCL_DATATYPE_CHAR_STR;
     pReportCmd->attrList[0].attrData 	= (void *)(Free_Data);
 		// Endpoint and coordShortAddr

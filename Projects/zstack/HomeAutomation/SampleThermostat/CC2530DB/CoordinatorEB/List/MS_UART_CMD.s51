@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// IAR C/C++ Compiler V9.30.3.3983 for 8051               11/Mar/2017  09:25:36
+// IAR C/C++ Compiler V9.30.3.3983 for 8051               14/Mar/2017  10:34:54
 // Copyright 2004-2016 IAR Systems AB.
 // Standalone license - IAR Embedded Workbench for 8051
 //
@@ -12,16 +12,14 @@
 //    Dptr setup         =  1,16
 //                          
 //    Source file        =  
-//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
 //    Command line       =  
-//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"
+//        -f
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg
 //        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRUE
 //        -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8 -DMAC_CFG_RX_MAX=5
-//        -DZDO_COORDINATOR -DRTR_NWK) -f "C:\Users\Teddy\Desktop\aaa\[COMBROS]
-//        Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+//        -DZDO_COORDINATOR -DRTR_NWK) -f
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg
 //        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
 //        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFAFA
 //        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
@@ -37,78 +35,73 @@
 //        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
 //        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
 //        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000)
-//        -f "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c"
+//        -f
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
 //        -D COORDINATOR -D SECURE=1 -D TC_LINKKEY_JOIN -D NV_INIT -D
 //        NV_RESTORE -D xHOLD_AUTO_START -D ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC
 //        -D MT_SYS_FUNC -D MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -D
 //        MULTICAST_ENABLED=FALSE -D ZCL_READ -D ZCL_WRITE -D ZCL_REPORT -D
 //        ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D ZCL_ON_OFF -D
 //        ZCL_HVAC_CLUSTER -D xHAL_UART=TRUE -D xHAL_UART_DMA=1 -lC
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List"
-//        -lA "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List"
-//        --diag_suppress Pe001,Pa010 -o "C:\Users\Teddy\Desktop\aaa\[COMBROS]
-//        Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\Obj"
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List
+//        -lA
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List
+//        --diag_suppress Pe001,Pa010 -o
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\Obj
 //        -e --debug --core=plain --dptr=16,1 --data_model=large
 //        --code_model=banked --calling_convention=xdata_reentrant
 //        --place_constants=data_rom --nr_virtual_regs 16 -I
-//        "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\"
-//        -I "C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\Source\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\Source\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\HomeAutomation\MY-SOURCE\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\ZMain\TI2530DB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\high_level\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\mt\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\osal\include\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\saddr\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\services\sdata\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\af\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\nwk\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sapi\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sec\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\sys\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zcl\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\stack\zdo\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\
+//        -I
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\..\..\..\..\..\Components\zmac\f8w\
 //        -Ohz --require_prototypes
 //    List file          =  
-//        C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home
-//        1.2.2a.44539\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List\MS_UART_CMD.s51
+//        D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\SampleThermostat\CC2530DB\CoordinatorEB\List\MS_UART_CMD.s51
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -349,8 +342,8 @@ strstr              SYMBOL "strstr"
 `??strstr::?relay`  SYMBOL "?relay", strstr
 zclSampleThermostat_BindingProcess SYMBOL "zclSampleThermostat_BindingProcess"
 `??zclSampleThermostat_BindingProcess::?relay` SYMBOL "?relay", zclSampleThermostat_BindingProcess
-zclSampleThermostat_SendControlData SYMBOL "zclSampleThermostat_SendControlData"
-`??zclSampleThermostat_SendControlData::?relay` SYMBOL "?relay", zclSampleThermostat_SendControlData
+zclSampleThermostat_SendC SYMBOL "zclSampleThermostat_SendC"
+`??zclSampleThermostat_SendC::?relay` SYMBOL "?relay", zclSampleThermostat_SendC
 zclSampleThermostat_SendFreeData SYMBOL "zclSampleThermostat_SendFreeData"
 `??zclSampleThermostat_SendFreeData::?relay` SYMBOL "?relay", zclSampleThermostat_SendFreeData
 ZCMD_ReplyCMD       SYMBOL "ZCMD_ReplyCMD"
@@ -378,8 +371,8 @@ ZCMD_ReplyCMD       SYMBOL "ZCMD_ReplyCMD"
         FUNCTION `??strstr::?relay`,00H
         EXTERN `??zclSampleThermostat_BindingProcess::?relay`
         FUNCTION `??zclSampleThermostat_BindingProcess::?relay`,00H
-        EXTERN `??zclSampleThermostat_SendControlData::?relay`
-        FUNCTION `??zclSampleThermostat_SendControlData::?relay`,00H
+        EXTERN `??zclSampleThermostat_SendC::?relay`
+        FUNCTION `??zclSampleThermostat_SendC::?relay`,00H
         EXTERN `??zclSampleThermostat_SendFreeData::?relay`
         FUNCTION `??zclSampleThermostat_SendFreeData::?relay`,00H
         EXTERN FLAG_BINDING
@@ -461,8 +454,8 @@ ZCMD_ReplyCMD       SYMBOL "ZCMD_ReplyCMD"
         ARGFRAME XSTACK, 14, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        EXTERN zclSampleThermostat_SendControlData
-        FUNCTION zclSampleThermostat_SendControlData,0202H
+        EXTERN zclSampleThermostat_SendC
+        FUNCTION zclSampleThermostat_SendC,0202H
         ARGFRAME ISTACK, 0, STACK
         ARGFRAME PSTACK, 0, STACK
         ARGFRAME XSTACK, 14, STACK
@@ -476,7 +469,7 @@ ZCMD_ReplyCMD       SYMBOL "ZCMD_ReplyCMD"
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
 
-// C:\Users\Teddy\Desktop\aaa\[COMBROS] Z-Stack Home 1.2.2a.44539\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
+// D:\GitHub\TripleS_Zigbee\Projects\zstack\HomeAutomation\MY-SOURCE\MS_UART_CMD.c
 //    1 /*******************************************************************************
 //    2  *                                            INCLUDES
 //    3  *******************************************************************************/
@@ -518,82 +511,81 @@ ZCMD_ReplyCMD       SYMBOL "ZCMD_ReplyCMD"
 //   39 #define CMD_ENABLE_ECHO_RDATA									7
 //   40 #define CMD_DISABLE_ECHO_RDATA								8
 //   41 #define CMD_SEND_FREE_DATA										10
-//   42 #define CMD_SEND_CONTROL                              11
+//   42 #define CMD_SEND_C                                12
 //   43 
-//   44 
-//   45 /*******************************************************************************
-//   46  *                                             TYPEDEFS
-//   47  *******************************************************************************/
-//   48 
-//   49 /*******************************************************************************
-//   50  *                                         GLOBAL VARIABLES
-//   51  *******************************************************************************/
+//   44 /*******************************************************************************
+//   45  *                                             TYPEDEFS
+//   46  *******************************************************************************/
+//   47 
+//   48 /*******************************************************************************
+//   49  *                                         GLOBAL VARIABLES
+//   50  *******************************************************************************/
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA16
-//   52 static uint16 packageLength = 0;
+//   51 static uint16 packageLength = 0;
 packageLength:
         DS 2
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA16
-//   53 char* pcmdData;
+//   52 char* pcmdData;
 pcmdData:
         DS 2
         REQUIRE __INIT_XDATA_Z
-//   54 
+//   53 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//   55 bool FLAG_ECHO_SDATA 	= FALSE;
+//   54 bool FLAG_ECHO_SDATA 	= FALSE;
 FLAG_ECHO_SDATA:
         DS 1
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//   56 bool FLAG_ECHO_RDATA 	= FALSE;
+//   55 bool FLAG_ECHO_RDATA 	= FALSE;
 FLAG_ECHO_RDATA:
         DS 1
         REQUIRE __INIT_XDATA_Z
-//   57 
+//   56 
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//   58 char		Free_Data[FREE_DATA_BFR_SIZE + 1];
+//   57 char		Free_Data[FREE_DATA_BFR_SIZE + 1];
 Free_Data:
         DS 21
         REQUIRE __INIT_XDATA_Z
 
         RSEG XDATA_Z:XDATA:NOROOT(0)
         DATA8
-//   59 uint8 	Free_Data_Size;
+//   58 uint8 	Free_Data_Size;
 Free_Data_Size:
         DS 1
         REQUIRE __INIT_XDATA_Z
-//   60 
-//   61 /*******************************************************************************
-//   62  *                                          FUNCTIONS - External
-//   63  *******************************************************************************/
-//   64 
-//   65 /*******************************************************************************
-//   66  *                                          FUNCTIONS - Local
-//   67  *******************************************************************************/
-//   68 static char* ZCMD_MatchCMD(char* buf, char* str);
-//   69 static uint8 ZCMD_FindChrStr(char* buf, uint8 chr);
-//   70 static void ZCMD_ProcessCMD(uint8 CMD);
-//   71 /*******************************************************************************
-//   72  *                                          FUNCTIONS - API
-//   73  *******************************************************************************/
+//   59 
+//   60 /*******************************************************************************
+//   61  *                                          FUNCTIONS - External
+//   62  *******************************************************************************/
+//   63 
+//   64 /*******************************************************************************
+//   65  *                                          FUNCTIONS - Local
+//   66  *******************************************************************************/
+//   67 static char* ZCMD_MatchCMD(char* buf, char* str);
+//   68 static uint8 ZCMD_FindChrStr(char* buf, uint8 chr);
+//   69 static void ZCMD_ProcessCMD(uint8 CMD);
+//   70 /*******************************************************************************
+//   71  *                                          FUNCTIONS - API
+//   72  *******************************************************************************/
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//   74 void ZCMD_ReplyCMD(void)
+//   73 void ZCMD_ReplyCMD(void)
 ZCMD_ReplyCMD:
           CFI Block cfiBlock0 Using cfiCommon0
           CFI Function ZCMD_ReplyCMD
         CODE
-//   75 {
+//   74 {
         FUNCALL ZCMD_ReplyCMD, UART_ParseLength
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -912,8 +904,8 @@ ZCMD_ReplyCMD:
         MOV     A,#-0x80
         LCALL   ?ALLOC_XSTACK8
           CFI CFA_XSP16 add(XSP16, 138)
-//   76 	char Rx0_tmpBuffer[UART_CMD_BUF_SIZE_128];
-//   77 	packageLength = UART_ParseLength(HAL_UART_PORT_0);
+//   75 	char Rx0_tmpBuffer[UART_CMD_BUF_SIZE_128];
+//   76 	packageLength = UART_ParseLength(HAL_UART_PORT_0);
         ; Setup parameters for call to function UART_ParseLength
         MOV     R1,#0x0
         LCALL   `??UART_ParseLength::?relay`; Banked call to: UART_ParseLength
@@ -923,8 +915,8 @@ ZCMD_ReplyCMD:
         INC     DPTR
         CLR     A
         MOVX    @DPTR,A
-//   78 	
-//   79 	UART_GetData(HAL_UART_PORT_0, (uint8*)Rx0_tmpBuffer, packageLength);
+//   77 	
+//   78 	UART_GetData(HAL_UART_PORT_0, (uint8*)Rx0_tmpBuffer, packageLength);
         ; Setup parameters for call to function UART_GetData
         MOV     DPTR,#packageLength
         MOVX    A,@DPTR
@@ -933,7 +925,7 @@ ZCMD_ReplyCMD:
         MOV     R3,?XSP + 1
         MOV     R1,#0x0
         LCALL   `??UART_GetData::?relay`; Banked call to: UART_GetData
-//   80 	UART_DebugPrintNum(HAL_UART_PORT_0, packageLength);
+//   79 	UART_DebugPrintNum(HAL_UART_PORT_0, packageLength);
         ; Setup parameters for call to function UART_DebugPrintNum
         MOV     DPTR,#packageLength
         MOVX    A,@DPTR
@@ -947,16 +939,16 @@ ZCMD_ReplyCMD:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_DebugPrintNum::?relay`; Banked call to: UART_DebugPrintNum
-//   81 	UART_DebugPrint(HAL_UART_PORT_0, " ");
+//   80 	UART_DebugPrint(HAL_UART_PORT_0, " ");
         ; Setup parameters for call to function UART_DebugPrint
         MOV     R2,#`?<Constant " ">` & 0xff
         MOV     R3,#(`?<Constant " ">` >> 8) & 0xff
         MOV     R1,#0x0
         LCALL   `??UART_DebugPrint::?relay`; Banked call to: UART_DebugPrint
-//   82 
-//   83 	if ( Rx0_tmpBuffer[0] == '@' && Rx0_tmpBuffer[1] == 'Z' &&
-//   84 		 	 Rx0_tmpBuffer[2] == 'B' && Rx0_tmpBuffer[packageLength-1] == '!' &&
-//   85 		 	 ZCMD_FindChrStr(Rx0_tmpBuffer, '!') )
+//   81 
+//   82 	if ( Rx0_tmpBuffer[0] == '@' && Rx0_tmpBuffer[1] == 'Z' &&
+//   83 		 	 Rx0_tmpBuffer[2] == 'B' && Rx0_tmpBuffer[packageLength-1] == '!' &&
+//   84 		 	 ZCMD_FindChrStr(Rx0_tmpBuffer, '!') )
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOVX    A,@DPTR
@@ -1027,9 +1019,9 @@ ZCMD_ReplyCMD:
         XRL     A,R5
         JZ      $+5
         LJMP    ??ZCMD_ReplyCMD_0 & 0xFFFF
-//   86 	{
-//   87 		// Check alive
-//   88 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB!"))
+//   85 	{
+//   86 		// Check alive
+//   87 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB!"))
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB!">` & 0xff
         MOV     R5,#(`?<Constant "@ZB!">` >> 8) & 0xff
@@ -1040,16 +1032,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_4
-//   89 		{
-//   90 			ZCMD_ProcessCMD(CMD_CHECK_ALIVE);
+//   88 		{
+//   89 			ZCMD_ProcessCMD(CMD_CHECK_ALIVE);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x0
         LJMP    ??ZCMD_ReplyCMD_5 & 0xFFFF
-//   91 			return;
-//   92 		}
-//   93 		
-//   94 		// Binding STOP
-//   95 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=0!"))
+//   90 			return;
+//   91 		}
+//   92 		
+//   93 		// Binding STOP
+//   94 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=0!"))
 ??ZCMD_ReplyCMD_4:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+BIND=0!">` & 0xff
@@ -1061,16 +1053,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_6
-//   96 		{
-//   97 			ZCMD_ProcessCMD(CMD_BINDING_STOP);
+//   95 		{
+//   96 			ZCMD_ProcessCMD(CMD_BINDING_STOP);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x2
         LJMP    ??ZCMD_ReplyCMD_5 & 0xFFFF
-//   98 			return;
-//   99 		}
-//  100 		
-//  101 		// Binding START
-//  102 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=1!"))
+//   97 			return;
+//   98 		}
+//   99 		
+//  100 		// Binding START
+//  101 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+BIND=1!"))
 ??ZCMD_ReplyCMD_6:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+BIND=1!">` & 0xff
@@ -1082,16 +1074,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_7
-//  103 		{
-//  104 			ZCMD_ProcessCMD(CMD_BINDING_START);
+//  102 		{
+//  103 			ZCMD_ProcessCMD(CMD_BINDING_START);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x1
         LJMP    ??ZCMD_ReplyCMD_5 & 0xFFFF
-//  105 			return;
-//  106 		}
-//  107 		
-//  108 		// Get Short Address
-//  109 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+SHORTADDR!"))
+//  104 			return;
+//  105 		}
+//  106 		
+//  107 		// Get Short Address
+//  108 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+SHORTADDR!"))
 ??ZCMD_ReplyCMD_7:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+SHORTADDR!">` & 0xff
@@ -1103,16 +1095,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_8
-//  110 		{
-//  111 			ZCMD_ProcessCMD(CMD_RETURN_SHORT_ADDRESS);
+//  109 		{
+//  110 			ZCMD_ProcessCMD(CMD_RETURN_SHORT_ADDRESS);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x3
         LJMP    ??ZCMD_ReplyCMD_5 & 0xFFFF
-//  112 			return;
-//  113 		}
-//  114 
-//  115 		// Get Coord Short Address
-//  116 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+COORDSHORTADDR!"))
+//  111 			return;
+//  112 		}
+//  113 
+//  114 		// Get Coord Short Address
+//  115 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+COORDSHORTADDR!"))
 ??ZCMD_ReplyCMD_8:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+COORDSHORTADDR!">` & 0xff
@@ -1124,16 +1116,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_9
-//  117 		{
-//  118 			ZCMD_ProcessCMD(CMD_RETURN_COORD_SHORT_ADDRESS);
+//  116 		{
+//  117 			ZCMD_ProcessCMD(CMD_RETURN_COORD_SHORT_ADDRESS);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x4
         LJMP    ??ZCMD_ReplyCMD_5 & 0xFFFF
-//  119 			return;
-//  120 		}
-//  121 
-//  122 		// Disable Echo SEND Data
-//  123 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=0!"))
+//  118 			return;
+//  119 		}
+//  120 
+//  121 		// Disable Echo SEND Data
+//  122 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=0!"))
 ??ZCMD_ReplyCMD_9:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+ECHOSDATA=0!">` & 0xff
@@ -1145,16 +1137,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_10
-//  124 		{
-//  125 			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_SDATA);
+//  123 		{
+//  124 			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_SDATA);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x6
         SJMP    ??ZCMD_ReplyCMD_5
-//  126 			return;
-//  127 		}
-//  128 
-//  129 		// Enable Echo SEND Data
-//  130 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=1!"))
+//  125 			return;
+//  126 		}
+//  127 
+//  128 		// Enable Echo SEND Data
+//  129 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHOSDATA=1!"))
 ??ZCMD_ReplyCMD_10:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+ECHOSDATA=1!">` & 0xff
@@ -1166,16 +1158,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_11
-//  131 		{		
-//  132 			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_SDATA);
+//  130 		{		
+//  131 			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_SDATA);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x5
         SJMP    ??ZCMD_ReplyCMD_5
-//  133 			return;
-//  134 		}
-//  135 
-//  136 		// Disable Echo RECEIVE Data
-//  137 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=0!"))
+//  132 			return;
+//  133 		}
+//  134 
+//  135 		// Disable Echo RECEIVE Data
+//  136 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=0!"))
 ??ZCMD_ReplyCMD_11:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+ECHORDATA=0!">` & 0xff
@@ -1187,16 +1179,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_12
-//  138 		{
-//  139 			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_RDATA);
+//  137 		{
+//  138 			ZCMD_ProcessCMD(CMD_DISABLE_ECHO_RDATA);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x8
         SJMP    ??ZCMD_ReplyCMD_5
-//  140 			return;
-//  141 		}
-//  142 
-//  143 		// Enable Echo RECEIVE Data
-//  144 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=1!"))
+//  139 			return;
+//  140 		}
+//  141 
+//  142 		// Enable Echo RECEIVE Data
+//  143 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+ECHORDATA=1!"))
 ??ZCMD_ReplyCMD_12:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+ECHORDATA=1!">` & 0xff
@@ -1208,16 +1200,16 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_13
-//  145 		{		
-//  146 			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_RDATA);
+//  144 		{		
+//  145 			ZCMD_ProcessCMD(CMD_ENABLE_ECHO_RDATA);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0x7
         SJMP    ??ZCMD_ReplyCMD_5
-//  147 			return;
-//  148 		}
-//  149 
-//  150 		// Send FREE DATA - Only for ZB Coordinator
-//  151 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+DATA="))
+//  146 			return;
+//  147 		}
+//  148 
+//  149 		// Send FREE DATA - Only for ZB Coordinator
+//  150 		if (ZCMD_MatchCMD(Rx0_tmpBuffer, "@ZB+DATA="))
 ??ZCMD_ReplyCMD_13:
         ; Setup parameters for call to function ZCMD_MatchCMD
         MOV     R4,#`?<Constant "@ZB+DATA=">` & 0xff
@@ -1229,19 +1221,19 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_14
-//  152 		{		
-//  153 			ZCMD_ProcessCMD(CMD_SEND_FREE_DATA);
+//  151 		{		
+//  152 			ZCMD_ProcessCMD(CMD_SEND_FREE_DATA);
         ; Setup parameters for call to function ZCMD_ProcessCMD
         MOV     R1,#0xa
         SJMP    ??ZCMD_ReplyCMD_5
-//  154 			return;
-//  155 		}
-//  156 		// control led -  only for ZBC
-//  157 		if (ZCMD_MatchCMD(Rx0_tmpBuffer,"@ZB+CONTROL="))
+//  153 			return;
+//  154 		}
+//  155 		// control led -  only for ZBC
+//  156 		if (ZCMD_MatchCMD(Rx0_tmpBuffer,"@ZBC="))
 ??ZCMD_ReplyCMD_14:
         ; Setup parameters for call to function ZCMD_MatchCMD
-        MOV     R4,#`?<Constant "@ZB+CONTROL=">` & 0xff
-        MOV     R5,#(`?<Constant "@ZB+CONTROL=">` >> 8) & 0xff
+        MOV     R4,#`?<Constant "@ZBC=">` & 0xff
+        MOV     R5,#(`?<Constant "@ZBC=">` >> 8) & 0xff
         MOV     R2,?XSP + 0
         MOV     R3,?XSP + 1
         LCALL   `??ZCMD_MatchCMD::?relay`; Banked call to: ZCMD_MatchCMD
@@ -1249,25 +1241,24 @@ ZCMD_ReplyCMD:
         MOV     A,R2
         ORL     A,?V1
         JZ      ??ZCMD_ReplyCMD_0
-//  158 		{
-//  159 			ZCMD_ProcessCMD(CMD_SEND_CONTROL);
+//  157 		{
+//  158 			ZCMD_ProcessCMD(CMD_SEND_C);
         ; Setup parameters for call to function ZCMD_ProcessCMD
-        MOV     R1,#0xb
+        MOV     R1,#0xc
 ??ZCMD_ReplyCMD_5:
         LCALL   `??ZCMD_ProcessCMD::?relay`; Banked call to: ZCMD_ProcessCMD
-//  160 			return;
+//  159 			return;
         SJMP    ??ZCMD_ReplyCMD_15
-//  161 		}
-//  162 		
-//  163 	}
-//  164 	UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");		
+//  160 		}
+//  161 	}
+//  162 	UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");		
 ??ZCMD_ReplyCMD_0:
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "ERROR">` & 0xff
         MOV     R3,#(`?<Constant "ERROR">` >> 8) & 0xff
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrint::?relay`; Banked call to: UART_ZCmdPrint
-//  165 }
+//  163 }
 ??ZCMD_ReplyCMD_15:
         MOV     A,#-0x80
         LCALL   ?DEALLOC_XSTACK8
@@ -1275,15 +1266,15 @@ ZCMD_ReplyCMD:
         MOV     R7,#0x2
         LJMP    ?BANKED_LEAVE_XDATA
           CFI EndBlock cfiBlock0
-//  166 
+//  164 
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  167 void ZCMD_ProcessCMD(uint8 CMD)
+//  165 void ZCMD_ProcessCMD(uint8 CMD)
 ZCMD_ProcessCMD:
           CFI Block cfiBlock1 Using cfiCommon0
           CFI Function ZCMD_ProcessCMD
         CODE
-//  168 {
+//  166 {
         FUNCALL ZCMD_ProcessCMD, UART_ZCmdPrint
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -1493,7 +1484,7 @@ ZCMD_ProcessCMD:
         ARGFRAME XSTACK, 14, STACK
         ARGFRAME IOVERLAY, 0, STATIC
         ARGFRAME DOVERLAY, 0, STATIC
-        FUNCALL ZCMD_ProcessCMD, zclSampleThermostat_SendControlData
+        FUNCALL ZCMD_ProcessCMD, zclSampleThermostat_SendC
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
         LOCFRAME XSTACK, 14, STACK
@@ -1552,7 +1543,7 @@ ZCMD_ProcessCMD:
           CFI CFA_XSP16 add(XSP16, 14)
         ; Saved register size: 14
         ; Auto size: 0
-//  169 	switch (CMD)
+//  167 	switch (CMD)
         MOV     A,R1
         JZ      ??ZCMD_ProcessCMD_0
         DEC     A
@@ -1574,95 +1565,95 @@ ZCMD_ProcessCMD:
         ADD     A,#-0x2
         JNZ     $+5
         LJMP    ??ZCMD_ProcessCMD_9 & 0xFFFF
-        DEC     A
+        ADD     A,#-0x2
         JNZ     $+5
         LJMP    ??ZCMD_ProcessCMD_10 & 0xFFFF
         LJMP    ??ZCMD_ProcessCMD_11 & 0xFFFF
-//  170 	{
-//  171 		case CMD_CHECK_ALIVE:
-//  172 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+//  168 	{
+//  169 		case CMD_CHECK_ALIVE:
+//  170 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
 ??ZCMD_ProcessCMD_0:
         ; Setup parameters for call to function UART_ZCmdPrint
         LJMP    ??ZCMD_ProcessCMD_12 & 0xFFFF
-//  173 			break;
-//  174 			
-//  175 		case CMD_BINDING_STOP:
-//  176 			if (FLAG_BINDING)
+//  171 			break;
+//  172 			
+//  173 		case CMD_BINDING_STOP:
+//  174 			if (FLAG_BINDING)
 ??ZCMD_ProcessCMD_2:
         MOV     DPTR,#FLAG_BINDING
         MOVX    A,@DPTR
         JZ      ??ZCMD_ProcessCMD_13
-//  177 			{
-//  178 				#if 	(defined COORDINATOR) || (defined ROUTER)
-//  179 					zclSampleThermostat_BindingProcess();
+//  175 			{
+//  176 				#if 	(defined COORDINATOR) || (defined ROUTER)
+//  177 					zclSampleThermostat_BindingProcess();
         ; Setup parameters for call to function zclSampleThermostat_BindingProcess
         LCALL   `??zclSampleThermostat_BindingProcess::?relay`; Banked call to: zclSampleThermostat_BindingProcess
-//  180 				#elif (defined END_DEVICE_SENSOR)
-//  181 					zclSampleTemperatureSensor_BindingProcess();
-//  182 				#elif (defined END_DEVICE_ENGINE)
-//  183 					zclSampleHeatingCoolingUnit_BindingProcess();
-//  184 				#endif
-//  185 				FLAG_HARD_BINDING = FALSE;
+//  178 				#elif (defined END_DEVICE_SENSOR)
+//  179 					zclSampleTemperatureSensor_BindingProcess();
+//  180 				#elif (defined END_DEVICE_ENGINE)
+//  181 					zclSampleHeatingCoolingUnit_BindingProcess();
+//  182 				#endif
+//  183 				FLAG_HARD_BINDING = FALSE;
         MOV     DPTR,#FLAG_HARD_BINDING
         CLR     A
         MOVX    @DPTR,A
-//  186 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOPPED");
+//  184 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOPPED");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "BINDING STOPPED">` & 0xff
         MOV     R3,#(`?<Constant "BINDING STOPPED">` >> 8) & 0xff
         SJMP    ??ZCMD_ProcessCMD_14
-//  187 			}
-//  188 			else
-//  189 			{
-//  190 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOP ALREADY");
+//  185 			}
+//  186 			else
+//  187 			{
+//  188 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STOP ALREADY");
 ??ZCMD_ProcessCMD_13:
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "BINDING STOP ALREADY">` & 0xff
         MOV     R3,#(`?<Constant "BINDING STOP ALREADY">` >> 8) & 0xff
         LJMP    ??ZCMD_ProcessCMD_15 & 0xFFFF
-//  191 			}
-//  192 			break;
-//  193 
-//  194 		case CMD_BINDING_START:
-//  195 			if (!FLAG_BINDING)
+//  189 			}
+//  190 			break;
+//  191 
+//  192 		case CMD_BINDING_START:
+//  193 			if (!FLAG_BINDING)
 ??ZCMD_ProcessCMD_1:
         MOV     DPTR,#FLAG_BINDING
         MOVX    A,@DPTR
         JNZ     ??ZCMD_ProcessCMD_16
-//  196 			{
-//  197 				#if 	(defined COORDINATOR) || (defined ROUTER)
-//  198 					zclSampleThermostat_BindingProcess();
+//  194 			{
+//  195 				#if 	(defined COORDINATOR) || (defined ROUTER)
+//  196 					zclSampleThermostat_BindingProcess();
         ; Setup parameters for call to function zclSampleThermostat_BindingProcess
         LCALL   `??zclSampleThermostat_BindingProcess::?relay`; Banked call to: zclSampleThermostat_BindingProcess
-//  199 				#elif (defined END_DEVICE_SENSOR)
-//  200 					zclSampleTemperatureSensor_BindingProcess();
-//  201 				#elif (defined END_DEVICE_ENGINE)
-//  202 					zclSampleHeatingCoolingUnit_BindingProcess();
-//  203 				#endif
-//  204 				FLAG_HARD_BINDING = TRUE;
+//  197 				#elif (defined END_DEVICE_SENSOR)
+//  198 					zclSampleTemperatureSensor_BindingProcess();
+//  199 				#elif (defined END_DEVICE_ENGINE)
+//  200 					zclSampleHeatingCoolingUnit_BindingProcess();
+//  201 				#endif
+//  202 				FLAG_HARD_BINDING = TRUE;
         MOV     DPTR,#FLAG_HARD_BINDING
         MOV     A,#0x1
         MOVX    @DPTR,A
-//  205 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STARTED");
+//  203 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING STARTED");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "BINDING STARTED">` & 0xff
         MOV     R3,#(`?<Constant "BINDING STARTED">` >> 8) & 0xff
         LJMP    ??ZCMD_ProcessCMD_15 & 0xFFFF
-//  206 			}
-//  207 			else
-//  208 			{					
-//  209 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING START ALREADY");
+//  204 			}
+//  205 			else
+//  206 			{					
+//  207 				UART_ZCmdPrint(HAL_UART_PORT_0, "BINDING START ALREADY");
 ??ZCMD_ProcessCMD_16:
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "BINDING START ALREADY">` & 0xff
         MOV     R3,#(`?<Constant "BINDING START ALREADY">` >> 8) & 0xff
         LJMP    ??ZCMD_ProcessCMD_15 & 0xFFFF
-//  210 			}
-//  211 			
-//  212 			break;
-//  213 
-//  214 		case CMD_RETURN_SHORT_ADDRESS:
-//  215 			UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetShortAddr());
+//  208 			}
+//  209 			
+//  210 			break;
+//  211 
+//  212 		case CMD_RETURN_SHORT_ADDRESS:
+//  213 			UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetShortAddr());
 ??ZCMD_ProcessCMD_3:
         ; Setup parameters for call to function NLME_GetShortAddr
         LCALL   `??NLME_GetShortAddr::?relay`; Banked call to: NLME_GetShortAddr
@@ -1672,79 +1663,79 @@ ZCMD_ProcessCMD:
         MOV     R5,A
         MOV     R1,A
         LCALL   `??UART_ZCmdPrintNum::?relay`; Banked call to: UART_ZCmdPrintNum
-//  216 			UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
+//  214 			UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
         ; Setup parameters for call to function UART_ZCmdPrintString
         MOV     R2,#`?<Constant "\\r\\n">` & 0xff
         MOV     R3,#(`?<Constant "\\r\\n">` >> 8) & 0xff
         MOV     R1,#0x0
         LCALL   `??UART_ZCmdPrintString::?relay`; Banked call to: UART_ZCmdPrintString
-//  217 			break;
+//  215 			break;
         LJMP    ??ZCMD_ProcessCMD_11 & 0xFFFF
-//  218 
-//  219 		case CMD_RETURN_COORD_SHORT_ADDRESS:
-//  220 			#ifndef COORDINATOR
-//  221 				UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetCoordShortAddr());
-//  222 				UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
-//  223 			#else
-//  224 				UART_ZCmdPrint(HAL_UART_PORT_0, "COORDINATOR!");
+//  216 
+//  217 		case CMD_RETURN_COORD_SHORT_ADDRESS:
+//  218 			#ifndef COORDINATOR
+//  219 				UART_ZCmdPrintNum(HAL_UART_PORT_0, NLME_GetCoordShortAddr());
+//  220 				UART_ZCmdPrintString(HAL_UART_PORT_0, "\r\n");
+//  221 			#else
+//  222 				UART_ZCmdPrint(HAL_UART_PORT_0, "COORDINATOR!");
 ??ZCMD_ProcessCMD_4:
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "COORDINATOR!">` & 0xff
         MOV     R3,#(`?<Constant "COORDINATOR!">` >> 8) & 0xff
         LJMP    ??ZCMD_ProcessCMD_15 & 0xFFFF
-//  225 			#endif		
-//  226 
-//  227 			break;
-//  228 			
-//  229 		case CMD_ENABLE_ECHO_SDATA:
-//  230 			FLAG_ECHO_SDATA = TRUE;
+//  223 			#endif		
+//  224 
+//  225 			break;
+//  226 			
+//  227 		case CMD_ENABLE_ECHO_SDATA:
+//  228 			FLAG_ECHO_SDATA = TRUE;
 ??ZCMD_ProcessCMD_5:
         MOV     DPTR,#FLAG_ECHO_SDATA
         SJMP    ??ZCMD_ProcessCMD_17
-//  231 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");			
-//  232 			break;
-//  233 
-//  234 		case CMD_DISABLE_ECHO_SDATA:
-//  235 			FLAG_ECHO_SDATA = FALSE;
+//  229 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");			
+//  230 			break;
+//  231 
+//  232 		case CMD_DISABLE_ECHO_SDATA:
+//  233 			FLAG_ECHO_SDATA = FALSE;
 ??ZCMD_ProcessCMD_6:
         MOV     DPTR,#FLAG_ECHO_SDATA
         SJMP    ??ZCMD_ProcessCMD_18
-//  236 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");		
-//  237 			break;
-//  238 
-//  239 		case CMD_ENABLE_ECHO_RDATA:
-//  240 			FLAG_ECHO_RDATA = TRUE;
+//  234 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");		
+//  235 			break;
+//  236 
+//  237 		case CMD_ENABLE_ECHO_RDATA:
+//  238 			FLAG_ECHO_RDATA = TRUE;
 ??ZCMD_ProcessCMD_7:
         MOV     DPTR,#FLAG_ECHO_RDATA
 ??ZCMD_ProcessCMD_17:
         MOV     A,#0x1
         MOVX    @DPTR,A
-//  241 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+//  239 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
         ; Setup parameters for call to function UART_ZCmdPrint
         SJMP    ??ZCMD_ProcessCMD_12
-//  242 			break;
-//  243 
-//  244 		case CMD_DISABLE_ECHO_RDATA:
-//  245 			FLAG_ECHO_RDATA = FALSE;
+//  240 			break;
+//  241 
+//  242 		case CMD_DISABLE_ECHO_RDATA:
+//  243 			FLAG_ECHO_RDATA = FALSE;
 ??ZCMD_ProcessCMD_8:
         MOV     DPTR,#FLAG_ECHO_RDATA
 ??ZCMD_ProcessCMD_18:
         CLR     A
         MOVX    @DPTR,A
-//  246 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+//  244 			UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "OK">` & 0xff
         MOV     R3,#(`?<Constant "OK">` >> 8) & 0xff
 ??ZCMD_ProcessCMD_14:
         MOV     R1,A
         LJMP    ??ZCMD_ProcessCMD_19 & 0xFFFF
-//  247 			break;
-//  248 
-//  249 		case CMD_SEND_FREE_DATA:
-//  250 			{
-//  251 				#ifdef COORDINATOR
-//  252 				uint8 i = 0;
-//  253 				uint8 parseStr_len = osal_strlen("@ZB+DATA=");
+//  245 			break;
+//  246 
+//  247 		case CMD_SEND_FREE_DATA:
+//  248 			{
+//  249 				#ifdef COORDINATOR
+//  250 				uint8 i = 0;
+//  251 				uint8 parseStr_len = osal_strlen("@ZB+DATA=");
 ??ZCMD_ProcessCMD_9:
         ; Setup parameters for call to function osal_strlen
         MOV     R2,#`?<Constant "@ZB+DATA=">` & 0xff
@@ -1752,104 +1743,104 @@ ZCMD_ProcessCMD:
         LCALL   `??osal_strlen::?relay`; Banked call to: osal_strlen
         MOV     A,R2
         MOV     ?V2,A
-//  254 				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
+//  252 				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
         MOV     DPTR,#packageLength
         MOVX    A,@DPTR
         CLR     C
         SUBB    A,?V2
         LCALL   ?Subroutine2 & 0xFFFF
-//  255 				Free_Data[0] = '0'; 																			// DUMMY Byte
-//  256 
-//  257 				if ( Free_Data_Size <= FREE_DATA_BFR_SIZE )
+//  253 				Free_Data[0] = '0'; 																			// DUMMY Byte
+//  254 
+//  255 				if ( Free_Data_Size <= FREE_DATA_BFR_SIZE )
 ??CrossCallReturnLabel_4:
         JNC     ??ZCMD_ProcessCMD_20
-//  258 				{	
-//  259 					
-//  260 					for (i = 1; i <= FREE_DATA_BFR_SIZE; i++)
+//  256 				{	
+//  257 					
+//  258 					for (i = 1; i <= FREE_DATA_BFR_SIZE; i++)
         MOV     ?V1,#0x1
-//  261 					{
-//  262 						if (i <= Free_Data_Size)
+//  259 					{
+//  260 						if (i <= Free_Data_Size)
 ??ZCMD_ProcessCMD_21:
         MOV     R0,?V1
         LCALL   ?Subroutine1 & 0xFFFF
 ??CrossCallReturnLabel_2:
         SUBB    A,?V1
         JC      ??ZCMD_ProcessCMD_22
-//  263 						{
-//  264 							Free_Data[i] = *(pcmdData + parseStr_len + i - 1);
+//  261 						{
+//  262 							Free_Data[i] = *(pcmdData + parseStr_len + i - 1);
         MOV     R2,?V2
         MOV     DPTR,#pcmdData
         MOVX    A,@DPTR
         ADD     A,R2
         LCALL   ?Subroutine0 & 0xFFFF
-//  265 						}
+//  263 						}
 ??CrossCallReturnLabel_0:
         SJMP    ??ZCMD_ProcessCMD_23
-//  266 						else
-//  267 						{
-//  268 							Free_Data[i] = ' ';
+//  264 						else
+//  265 						{
+//  266 							Free_Data[i] = ' ';
 ??ZCMD_ProcessCMD_22:
         MOV     DPL,R4
         MOV     DPH,R5
         MOV     A,#0x20
 ??ZCMD_ProcessCMD_23:
         MOVX    @DPTR,A
-//  269 						}
-//  270 					}
+//  267 						}
+//  268 					}
         INC     ?V1
         MOV     A,?V1
         CLR     C
         SUBB    A,#0x15
         JC      ??ZCMD_ProcessCMD_21
-//  271 					zclSampleThermostat_SendFreeData();
+//  269 					zclSampleThermostat_SendFreeData();
         ; Setup parameters for call to function zclSampleThermostat_SendFreeData
         LCALL   `??zclSampleThermostat_SendFreeData::?relay`; Banked call to: zclSampleThermostat_SendFreeData
-//  272 					
-//  273 					UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
+//  270 					
+//  271 					UART_ZCmdPrint(HAL_UART_PORT_0, "OK");
         ; Setup parameters for call to function UART_ZCmdPrint
 ??ZCMD_ProcessCMD_12:
         MOV     R2,#`?<Constant "OK">` & 0xff
         MOV     R3,#(`?<Constant "OK">` >> 8) & 0xff
         SJMP    ??ZCMD_ProcessCMD_15
-//  274 				}
-//  275 				else
-//  276 				{
-//  277 					UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");
-//  278 				}
-//  279 				#else
-//  280 					UART_ZCmdPrint(HAL_UART_PORT_0, "NOT SUPPORT");
-//  281 				#endif
-//  282 			}
-//  283 			break;
-//  284 		case CMD_SEND_CONTROL:
-//  285 			{
-//  286 				#ifdef COORDINATOR
-//  287 				uint8 i = 0;
-//  288 				uint8 parseStr_len = osal_strlen("@ZB+CONTROL=");
+//  272 				}
+//  273 				else
+//  274 				{
+//  275 					UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");
+//  276 				}
+//  277 				#else
+//  278 					UART_ZCmdPrint(HAL_UART_PORT_0, "NOT SUPPORT");
+//  279 				#endif
+//  280 			}
+//  281 			break;
+//  282 			case CMD_SEND_C:
+//  283 			{
+//  284 				#ifdef COORDINATOR
+//  285 				uint8 i = 0;
+//  286 				uint8 parseStr_len = osal_strlen("@ZBC=");
 ??ZCMD_ProcessCMD_10:
         ; Setup parameters for call to function osal_strlen
-        MOV     R2,#`?<Constant "@ZB+CONTROL=">` & 0xff
-        MOV     R3,#(`?<Constant "@ZB+CONTROL=">` >> 8) & 0xff
+        MOV     R2,#`?<Constant "@ZBC=">` & 0xff
+        MOV     R3,#(`?<Constant "@ZBC=">` >> 8) & 0xff
         LCALL   `??osal_strlen::?relay`; Banked call to: osal_strlen
         MOV     A,R2
         MOV     R7,A
-//  289 				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
+//  287 				Free_Data_Size = packageLength - (parseStr_len + 1); 			// +  "!" ->  + 1
         MOV     DPTR,#packageLength
         MOVX    A,@DPTR
         CLR     C
         SUBB    A,R7
         LCALL   ?Subroutine2 & 0xFFFF
-//  290 				Free_Data[0] = '0'; 																			// DUMMY Byte
-//  291 
-//  292 				if ( Free_Data_Size <= FREE_DATA_BFR_SIZE )
+//  288 				Free_Data[0] = '0'; 																			// DUMMY Byte
+//  289 
+//  290 				if ( Free_Data_Size <= FREE_DATA_BFR_SIZE )
 ??CrossCallReturnLabel_5:
         JNC     ??ZCMD_ProcessCMD_20
-//  293 				{	
-//  294 					
-//  295 					for (i = 1; i <= FREE_DATA_BFR_SIZE; i++)
+//  291 				{	
+//  292 					
+//  293 					for (i = 1; i <= FREE_DATA_BFR_SIZE; i++)
         MOV     R6,#0x1
-//  296 					{
-//  297 						if (i <= Free_Data_Size)
+//  294 					{
+//  295 						if (i <= Free_Data_Size)
 ??ZCMD_ProcessCMD_24:
         MOV     A,R6
         MOV     R0,A
@@ -1857,44 +1848,44 @@ ZCMD_ProcessCMD:
 ??CrossCallReturnLabel_3:
         SUBB    A,R6
         JC      ??ZCMD_ProcessCMD_25
-//  298 						{
-//  299 							Free_Data[i] = *(pcmdData + parseStr_len + i - 1);
+//  296 						{
+//  297 							Free_Data[i] = *(pcmdData + parseStr_len + i - 1);
         MOV     DPTR,#pcmdData
         MOVX    A,@DPTR
         ADD     A,R7
         LCALL   ?Subroutine0 & 0xFFFF
-//  300 						}
+//  298 						}
 ??CrossCallReturnLabel_1:
         SJMP    ??ZCMD_ProcessCMD_26
-//  301 						else
-//  302 						{
-//  303 							Free_Data[i] = ' ';
+//  299 						else
+//  300 						{
+//  301 							Free_Data[i] = ' ';
 ??ZCMD_ProcessCMD_25:
         MOV     DPL,R4
         MOV     DPH,R5
         MOV     A,#0x20
 ??ZCMD_ProcessCMD_26:
         MOVX    @DPTR,A
-//  304 						}
-//  305 					}
+//  302 						}
+//  303 					}
         INC     R6
         MOV     A,R6
         CLR     C
         SUBB    A,#0x15
         JC      ??ZCMD_ProcessCMD_24
-//  306 					zclSampleThermostat_SendControlData();
-        ; Setup parameters for call to function zclSampleThermostat_SendControlData
-        LCALL   `??zclSampleThermostat_SendControlData::?relay`; Banked call to: zclSampleThermostat_SendControlData
-//  307 					
-//  308 					UART_ZCmdPrint(HAL_UART_PORT_0, "DONE");
+//  304 					zclSampleThermostat_SendC();
+        ; Setup parameters for call to function zclSampleThermostat_SendC
+        LCALL   `??zclSampleThermostat_SendC::?relay`; Banked call to: zclSampleThermostat_SendC
+//  305 					
+//  306 					UART_ZCmdPrint(HAL_UART_PORT_0, "DONE");
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "DONE">` & 0xff
         MOV     R3,#(`?<Constant "DONE">` >> 8) & 0xff
         SJMP    ??ZCMD_ProcessCMD_15
-//  309 				}
-//  310 				else
-//  311 				{
-//  312 					UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");
+//  307 				}
+//  308 				else
+//  309 				{
+//  310 					UART_ZCmdPrint(HAL_UART_PORT_0, "ERROR");
 ??ZCMD_ProcessCMD_20:
         ; Setup parameters for call to function UART_ZCmdPrint
         MOV     R2,#`?<Constant "ERROR">` & 0xff
@@ -1903,17 +1894,16 @@ ZCMD_ProcessCMD:
         MOV     R1,#0x0
 ??ZCMD_ProcessCMD_19:
         LCALL   `??UART_ZCmdPrint::?relay`; Banked call to: UART_ZCmdPrint
-//  313 				}
-//  314 				#else
-//  315 					UART_ZCmdPrint(HAL_UART_PORT_0, "ONLY ZBC");
-//  316 				#endif
-//  317 			}
-//  318 			break;		
-//  319 
-//  320 		default:
-//  321 			break;
-//  322 	}
-//  323 }
+//  311 				}
+//  312 				#else
+//  313 					UART_ZCmdPrint(HAL_UART_PORT_0, "ONLY ZBC");
+//  314 				#endif
+//  315 			}
+//  316 			break;		
+//  317 		default:
+//  318 			break;
+//  319 	}
+//  320 }
 ??ZCMD_ProcessCMD_11:
         MOV     R7,#0x6
         LJMP    ?BANKED_LEAVE_XDATA
@@ -2171,15 +2161,15 @@ ZCMD_ProcessCMD:
           CFI EndBlock cfiCond12
           CFI EndBlock cfiCond13
           CFI EndBlock cfiPicker14
-//  324 
+//  321 
 
         RSEG BANKED_CODE:HUGECODE:NOROOT(0)
-//  325 char* ZCMD_MatchCMD(char* buf, char* str)
+//  322 char* ZCMD_MatchCMD(char* buf, char* str)
 ZCMD_MatchCMD:
           CFI Block cfiBlock15 Using cfiCommon0
           CFI Function ZCMD_MatchCMD
         CODE
-//  326 {
+//  323 {
         FUNCALL ZCMD_MatchCMD, strstr
         LOCFRAME ISTACK, 2, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -2199,7 +2189,7 @@ ZCMD_MatchCMD:
           CFI CFA_SP SP+-5
         ; Saved register size: 2
         ; Auto size: 0
-//  327 	pcmdData = strstr(buf, str);
+//  324 	pcmdData = strstr(buf, str);
         ; Setup parameters for call to function strstr
         LCALL   `??strstr::?relay`   ; Banked call to: strstr
         MOV     DPTR,#pcmdData
@@ -2208,7 +2198,7 @@ ZCMD_MatchCMD:
         INC     DPTR
         MOV     A,R3
         MOVX    @DPTR,A
-//  328 	return pcmdData;
+//  325 	return pcmdData;
         POP     DPH
           CFI DPH0 SameValue
           CFI CFA_SP SP+-4
@@ -2216,7 +2206,7 @@ ZCMD_MatchCMD:
           CFI DPL0 SameValue
           CFI CFA_SP SP+-3
         LJMP    ?BRET
-//  329 }
+//  326 }
           CFI EndBlock cfiBlock15
 
         RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
@@ -2297,8 +2287,8 @@ ZCMD_MatchCMD:
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
-`?<Constant "@ZB+CONTROL=">`:
-        DB "@ZB+CONTROL="
+`?<Constant "@ZBC=">`:
+        DB "@ZBC="
 
         RSEG XDATA_ROM_C:CONST:REORDER:NOROOT(0)
         DATA8
@@ -2346,39 +2336,39 @@ ZCMD_MatchCMD:
         DB "DONE"
 
         END
-//  330 
-//  331 uint8 ZCMD_FindChrStr(char* buf, uint8 chr)
-//  332 {
-//  333 	uint8 i, num;
-//  334 
-//  335 	num = 0;
-//  336 	for (i = 0; i < packageLength; i++)
-//  337 	{
-//  338 		if (buf[i] == chr)
-//  339 		{
-//  340 			num++;
-//  341 		}
-//  342 	}
-//  343 
-//  344 	if (num == 1)
-//  345 	{
-//  346 		return 1;
-//  347 	}
+//  327 
+//  328 uint8 ZCMD_FindChrStr(char* buf, uint8 chr)
+//  329 {
+//  330 	uint8 i, num;
+//  331 
+//  332 	num = 0;
+//  333 	for (i = 0; i < packageLength; i++)
+//  334 	{
+//  335 		if (buf[i] == chr)
+//  336 		{
+//  337 			num++;
+//  338 		}
+//  339 	}
+//  340 
+//  341 	if (num == 1)
+//  342 	{
+//  343 		return 1;
+//  344 	}
+//  345 
+//  346 	return 0;
+//  347 }
 //  348 
-//  349 	return 0;
-//  350 }
-//  351 
-//  352 /*******************************************************************************
-//  353 ********************************************************************************/
+//  349 /*******************************************************************************
+//  350 ********************************************************************************/
 // 
-// 859 bytes in segment BANKED_CODE
+// 860 bytes in segment BANKED_CODE
 //  18 bytes in segment BANK_RELAYS
-// 262 bytes in segment XDATA_ROM_C
+// 255 bytes in segment XDATA_ROM_C
 //  28 bytes in segment XDATA_Z
 // 
 //  18 bytes of CODE     memory
-// 262 bytes of CONST    memory
-// 859 bytes of HUGECODE memory
+// 255 bytes of CONST    memory
+// 860 bytes of HUGECODE memory
 //  28 bytes of XDATA    memory
 //
 //Errors: none
